@@ -41,6 +41,10 @@ public:
     void setMessageCallback(const MessageCallback &cb) { messageCallback_ = cb; }
     void setWriteCompleteCallback(const WriteCompleteCallback &cb) { writeCompleteCallback_ = cb; }
 
+    EventLoop* getLoop() const { return loop_; }
+    const std::string ipPort() const { return ipPort_; }
+    const std::string name() const { return name_; }
+
     // 设置底层subloop的个数
     void setThreadNum(int numThreads);
     /**

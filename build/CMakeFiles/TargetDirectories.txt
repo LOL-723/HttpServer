@@ -1,8 +1,3 @@
-/home/sorrow/Desktop/muduo/build/CMakeFiles/edit_cache.dir
-/home/sorrow/Desktop/muduo/build/CMakeFiles/rebuild_cache.dir
-/home/sorrow/Desktop/muduo/build/src/CMakeFiles/muduo_core.dir
-/home/sorrow/Desktop/muduo/build/src/CMakeFiles/edit_cache.dir
-/home/sorrow/Desktop/muduo/build/src/CMakeFiles/rebuild_cache.dir
-/home/sorrow/Desktop/muduo/build/example/CMakeFiles/testserver.dir
-/home/sorrow/Desktop/muduo/build/example/CMakeFiles/edit_cache.dir
-/home/sorrow/Desktop/muduo/build/example/CMakeFiles/rebuild_cache.dir
+/home/sorrow/Desktop/HttpServer/build/CMakeFiles/simple_server.dir
+/home/sorrow/Desktop/HttpServer/build/CMakeFiles/edit_cache.dir
+/home/sorrow/Desktop/HttpServer/build/CMakeFiles/rebuild_cache.dir

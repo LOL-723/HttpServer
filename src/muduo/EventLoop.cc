@@ -4,10 +4,12 @@
 #include <errno.h>
 #include <memory>
 
-#include "EventLoop.h"
-#include "Logger.h"
-#include "Channel.h"
-#include "Poller.h"
+#include <muduo/EventLoop.h>
+#include <muduo/Logger.h>
+#include <muduo/Channel.h>
+#include <muduo/Poller.h>
+
+using namespace muduo;
 
 // 防止一个线程创建多个EventLoop
 __thread EventLoop *t_loopInThisThread=nullptr;

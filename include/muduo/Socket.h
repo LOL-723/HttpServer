@@ -2,9 +2,9 @@
 
 #include "noncopyable.h"
 
-class InetAddress;
-
 namespace muduo{
+
+class InetAddress;
 // 封装socket fd
 class Socket : noncopyable{
 public:

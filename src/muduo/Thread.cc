@@ -1,7 +1,9 @@
-#include "Thread.h"
-#include "CurrentThread.h"
+#include <muduo/Thread.h>
+#include <muduo/CurrentThread.h>
 
 #include <semaphore.h>
+
+using namespace muduo;
 
 std::atomic_int Thread::numCreated_(0);
 

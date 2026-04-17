@@ -1,7 +1,9 @@
 #include <strings.h>
 #include <string.h>
 
-#include "InetAddress.h"
+#include <muduo/InetAddress.h>
+
+using namespace muduo;
 
 InetAddress::InetAddress(uint16_t port,std::string ip){
     ::memset(&addr_,0,sizeof(addr_));

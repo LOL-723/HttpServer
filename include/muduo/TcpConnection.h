@@ -3,12 +3,14 @@
 #include <memory>
 #include <string>
 #include <atomic>
+#include <any>
 
 #include "noncopyable.h"
 #include "InetAddress.h"
 #include "Callbacks.h"
 #include "Buffer.h"
 #include "Timestamp.h"
+
 
 namespace muduo
 {
@@ -32,6 +34,15 @@ public:
                   const InetAddress &peerAddr);
     ~TcpConnection();
 
+    void setContext(const std::any& context)
+    {
+        context_ = context;
+    }
+    std::any* getMutableContext()
+    { 
+        return &context_; 
+    }
+    
     EventLoop *getLoop() const { return loop_; }
     const std::string &name() const { return name_; }
     const InetAddress &localAddress() const { return localAddr_; }
@@ -40,7 +51,9 @@ public:
     bool connected() const { return state_ == kConnected; }
 
     // 发送数据
-    void send(const std::string &buf);
+    void send(Buffer* buf);
+    void send(const std::string& data);
+    void send(const std::string &buf,size_t bytes);
     void sendFile(int fileDescriptor, off_t offset, size_t count); 
     
     // 关闭半连接
@@ -103,6 +116,8 @@ private:
     // 数据缓冲区
     Buffer inputBuffer_;    // 接收数据的缓冲区
     Buffer outputBuffer_;   // 发送数据的缓冲区 用户send向outputBuffer_发
+
+    std::any context_;
 };
 
 } // namespace muduo

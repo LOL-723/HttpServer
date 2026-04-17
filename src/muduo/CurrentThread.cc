@@ -1,5 +1,6 @@
-#include "CurrentThread.h"
+#include <muduo/CurrentThread.h>
 
+namespace muduo {
 namespace CurrentThread
 {
     __thread int t_cachedTid = 0;
@@ -11,4 +12,5 @@ namespace CurrentThread
             t_cachedTid = static_cast<pid_t>(::syscall(SYS_gettid));
         }
     }
+}
 }

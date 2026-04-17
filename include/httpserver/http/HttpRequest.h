@@ -16,6 +16,19 @@ public:
     {
         kInvalid, kGet, kPost, kHead, kPut, kDelete, kOptions
     };
+    const char* methodString() const
+    {
+        switch (method_)
+        {
+        case kGet: return "GET";
+        case kPost: return "POST";
+        case kHead: return "HEAD";
+        case kPut: return "PUT";
+        case kDelete: return "DELETE";
+        case kOptions: return "OPTIONS";
+        default: return "INVALID";
+        }
+    }
     
     HttpRequest()
         : method_(kInvalid)

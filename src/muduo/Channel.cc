@@ -1,8 +1,10 @@
 #include <sys/epoll.h>
 
-#include "Channel.h"
-#include "EventLoop.h"
-#include "Logger.h"
+#include <muduo/Channel.h>
+#include <muduo/EventLoop.h>
+#include <muduo/Logger.h>
+
+using namespace muduo;
 
 int Channel::KNoneEvent =0;
 int Channel::KReadEvent =EPOLLIN | EPOLLPRI;

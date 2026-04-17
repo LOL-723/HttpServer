@@ -2,7 +2,11 @@
 #include <sys/uio.h>
 #include <unistd.h>
 
-#include "Buffer.h"
+#include <muduo/Buffer.h>
+
+using namespace muduo;
+
+const char Buffer::kCRLF[] = "\r\n";
 
 /**
  * 从fd上读取数据 Poller工作在LT模式

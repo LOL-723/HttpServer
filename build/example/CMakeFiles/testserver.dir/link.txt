@@ -1,1 +1,0 @@
-/usr/bin/g++ -g -rdynamic CMakeFiles/testserver.dir/testserver.cc.o -o ../../example/testserver  -Wl,-rpath,/home/sorrow/Desktop/muduo/lib ../../lib/libmuduo_core.so -lpthread 

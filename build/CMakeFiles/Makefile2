@@ -54,110 +54,51 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sorrow/Desktop/muduo
+CMAKE_SOURCE_DIR = /home/sorrow/Desktop/HttpServer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sorrow/Desktop/muduo/build
+CMAKE_BINARY_DIR = /home/sorrow/Desktop/HttpServer/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: src/all
-all: example/all
+all: CMakeFiles/simple_server.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: src/preinstall
-preinstall: example/preinstall
+preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: src/clean
-clean: example/clean
+clean: CMakeFiles/simple_server.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory example
-
-# Recursive "all" directory target.
-example/all: example/CMakeFiles/testserver.dir/all
-.PHONY : example/all
-
-# Recursive "preinstall" directory target.
-example/preinstall:
-.PHONY : example/preinstall
-
-# Recursive "clean" directory target.
-example/clean: example/CMakeFiles/testserver.dir/clean
-.PHONY : example/clean
-
-#=============================================================================
-# Directory level rules for directory src
-
-# Recursive "all" directory target.
-src/all: src/CMakeFiles/muduo_core.dir/all
-.PHONY : src/all
-
-# Recursive "preinstall" directory target.
-src/preinstall:
-.PHONY : src/preinstall
-
-# Recursive "clean" directory target.
-src/clean: src/CMakeFiles/muduo_core.dir/clean
-.PHONY : src/clean
-
-#=============================================================================
-# Target rules for target src/CMakeFiles/muduo_core.dir
+# Target rules for target CMakeFiles/simple_server.dir
 
 # All Build rule for target.
-src/CMakeFiles/muduo_core.dir/all:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/muduo_core.dir/build.make src/CMakeFiles/muduo_core.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/muduo_core.dir/build.make src/CMakeFiles/muduo_core.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sorrow/Desktop/muduo/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17 "Built target muduo_core"
-.PHONY : src/CMakeFiles/muduo_core.dir/all
+CMakeFiles/simple_server.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28 "Built target simple_server"
+.PHONY : CMakeFiles/simple_server.dir/all
 
 # Build rule for subdir invocation for target.
-src/CMakeFiles/muduo_core.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sorrow/Desktop/muduo/build/CMakeFiles 17
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/muduo_core.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sorrow/Desktop/muduo/build/CMakeFiles 0
-.PHONY : src/CMakeFiles/muduo_core.dir/rule
+CMakeFiles/simple_server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sorrow/Desktop/HttpServer/build/CMakeFiles 28
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/simple_server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sorrow/Desktop/HttpServer/build/CMakeFiles 0
+.PHONY : CMakeFiles/simple_server.dir/rule
 
 # Convenience name for target.
-muduo_core: src/CMakeFiles/muduo_core.dir/rule
-.PHONY : muduo_core
+simple_server: CMakeFiles/simple_server.dir/rule
+.PHONY : simple_server
 
 # clean rule for target.
-src/CMakeFiles/muduo_core.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/muduo_core.dir/build.make src/CMakeFiles/muduo_core.dir/clean
-.PHONY : src/CMakeFiles/muduo_core.dir/clean
-
-#=============================================================================
-# Target rules for target example/CMakeFiles/testserver.dir
-
-# All Build rule for target.
-example/CMakeFiles/testserver.dir/all: src/CMakeFiles/muduo_core.dir/all
-	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/testserver.dir/build.make example/CMakeFiles/testserver.dir/depend
-	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/testserver.dir/build.make example/CMakeFiles/testserver.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sorrow/Desktop/muduo/build/CMakeFiles --progress-num=18,19 "Built target testserver"
-.PHONY : example/CMakeFiles/testserver.dir/all
-
-# Build rule for subdir invocation for target.
-example/CMakeFiles/testserver.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sorrow/Desktop/muduo/build/CMakeFiles 19
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/testserver.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sorrow/Desktop/muduo/build/CMakeFiles 0
-.PHONY : example/CMakeFiles/testserver.dir/rule
-
-# Convenience name for target.
-testserver: example/CMakeFiles/testserver.dir/rule
-.PHONY : testserver
-
-# clean rule for target.
-example/CMakeFiles/testserver.dir/clean:
-	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/testserver.dir/build.make example/CMakeFiles/testserver.dir/clean
-.PHONY : example/CMakeFiles/testserver.dir/clean
+CMakeFiles/simple_server.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/clean
+.PHONY : CMakeFiles/simple_server.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

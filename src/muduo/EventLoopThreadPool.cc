@@ -1,8 +1,10 @@
 #include <memory>
 
-#include "EventLoopThreadPool.h"
-#include "EventLoopThread.h"
-#include "Logger.h"
+#include <muduo/EventLoopThreadPool.h>
+#include <muduo/EventLoopThread.h>
+#include <muduo/Logger.h>
+
+using namespace muduo;
 
 EventLoopThreadPool::EventLoopThreadPool(EventLoop*baseloop,const std::string&nameArg)
     :baseLoop_(baseloop),
@@ -23,7 +25,7 @@ void EventLoopThreadPool::start(const ThreadInitCallback&cb){
         snprintf(buf,sizeof buf,"%s%d",name_.c_str(),i);
         EventLoopThread*t=new EventLoopThread(cb,buf);
         threads_.push_back(std::unique_ptr<EventLoopThread>(t));
-        loops_.push_back(t->startloop());
+        loops_.push_back(t->startLoop());
     }
     if(numThreads_==0 && cb){
         cb(baseLoop_);

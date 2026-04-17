@@ -1,43 +1,67 @@
-#include <iostream>
+#include <muduo/Logger.h>
+#include <cstdio>
+#include <cstdlib>
 
-#include "Logger.h"
-#include "Timestamp.h"
-
-// 获取日志唯一的实例对象 单例
-Logger &Logger::instance()
+namespace muduo
 {
-    static Logger logger;
-    return logger;
+
+Logger& Logger::instance()
+{
+    static Logger inst;
+    return inst;
 }
 
-// 设置日志级别
 void Logger::setLogLevel(int level)
 {
     logLevel_ = level;
 }
 
-// 写日志 [级别信息] time : msg
-void Logger::log(std::string msg)
+void Logger::log(const std::string& msg)
 {
-    std::string pre = "";
     switch (logLevel_)
     {
-    case INFO:
-        pre = "[INFO]";
-        break;
-    case ERROR:
-        pre = "[ERROR]";
-        break;
-    case FATAL:
-        pre = "[FATAL]";
-        break;
-    case DEBUG:
-        pre = "[DEBUG]";
-        break;
-    default:
-        break;
+        case INFO:
+            printf("[INFO] %s\n", msg.c_str());
+            break;
+        case ERROR:
+            printf("[ERROR] %s\n", msg.c_str());
+            break;
+        case FATAL:
+            printf("[FATAL] %s\n", msg.c_str());
+            break;
+        case DEBUG:
+            printf("[DEBUG] %s\n", msg.c_str());
+            break;
+        case WARN:
+            printf("[WARN] %s\n", msg.c_str());
+            break;
+        default:
+            printf("[UNKNOWN] %s\n", msg.c_str());
+            break;
+    }
+}
+
+// ================= LogStream =================
+
+LogStream::LogStream(int level, bool shouldExit)
+    : level_(level), shouldExit_(shouldExit)
+{
+}
+
+LogStream::~LogStream()
+{
+    // 获取当前全局日志级别
+    int currentLevel = Logger::instance().getLogLevel();  // 需要添加 getLogLevel()
+    
+    // 只有当日志级别 >= 全局级别时才输出
+    if (level_ >= currentLevel)
+    {
+        Logger::instance().log(stream_.str());
     }
 
-    // 打印时间和msg
-    std::cout << pre + Timestamp::now().toString() << " : " << msg << std::endl;
+    if (shouldExit_)
+    {
+        std::abort();
+    }
 }
+} // namespace muduo

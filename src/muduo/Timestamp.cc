@@ -1,6 +1,8 @@
 #include <time.h>
 
-#include "Timestamp.h"
+#include <muduo/Timestamp.h>
+
+using namespace muduo;
 
 Timestamp::Timestamp() : microSecondsSinceEpoch_(0)
 {

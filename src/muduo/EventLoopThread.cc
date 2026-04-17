@@ -1,11 +1,13 @@
-#include "EventLoopThread.h"
-#include "EventLoop.h"
+#include <muduo/EventLoopThread.h>
+#include <muduo/EventLoop.h>
+
+using namespace muduo;
 
 EventLoopThread::EventLoopThread(const ThreadInitCallback &cb,const std::string &name)
     :loop_(nullptr),
     exiting_(false),
     thread_(std::bind(&EventLoopThread::threadFunc,this)),
-    muetex_(),
+    mutex_(),
     cond_(),
     callback_(cb)
 {}
@@ -18,12 +20,12 @@ EventLoopThread::~EventLoopThread(){
     }
 }
 
-EventLoop*EventLoopThread::startloop(){
+EventLoop*EventLoopThread::startLoop(){
     thread_.start();// 启用底层线程Thread类对象thread_中通过start()创建的线程
 
     EventLoop*loop=nullptr;
     {
-        std::unique_lock<std::mutex>lock(muetex_);
+        std::unique_lock<std::mutex>lock(mutex_);
         cond_.wait(lock,[this]{return loop_!=nullptr;});
         loop=loop_;
     }
@@ -39,11 +41,11 @@ void EventLoopThread::threadFunc(){
     }
 
     {
-        std::unique_lock<std::mutex> lock(muetex_);
+        std::unique_lock<std::mutex> lock(mutex_);
         loop_ = &loop;
         cond_.notify_one();
     }
     loop.loop();    // 执行EventLoop的loop() 开启了底层的Poller的poll()
-    std::unique_lock<std::mutex> lock(muetex_);
+    std::unique_lock<std::mutex> lock(mutex_);
     loop_ = nullptr;
 }

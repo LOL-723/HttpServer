@@ -1,9 +1,11 @@
 #include <functional>
 #include <string.h>
 
-#include "TcpServer.h"
-#include "Logger.h"
-#include "TcpConnection.h"
+#include <muduo/TcpServer.h>
+#include <muduo/Logger.h>
+#include <muduo/TcpConnection.h>
+
+using namespace muduo;
 
 static EventLoop* CheckLoopNotNull(EventLoop*loop){
     if(loop==nullptr){
@@ -36,9 +38,8 @@ TcpServer::~TcpServer(){
 }
 
 // 设置底层subloop的个数
-void TcpServer::setThreadNum(int threadnums){
-    numThreads_=threadnums;
-    threadPool_->setThreadnum(numThreads_);
+void TcpServer::setThreadNum(int numThreads){
+    threadPool_->setThreadNum(numThreads);
 }
 
 // 开启服务器监听

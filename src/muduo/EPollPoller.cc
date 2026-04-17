@@ -2,9 +2,11 @@
 #include <unistd.h>
 #include <string.h>
 
-#include "EPollPoller.h"
-#include "Logger.h"
-#include "Channel.h"
+#include <muduo/EPollPoller.h>
+#include <muduo/Logger.h>
+#include <muduo/Channel.h>
+
+using namespace muduo;
 
 const int kNew = -1;    // 某个channel还没添加至Poller          // channel的成员index_初始化为-1
 const int kAdded = 1;   // 某个channel已经添加至Poller

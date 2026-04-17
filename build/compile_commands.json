@@ -1,87 +1,137 @@
 [
 {
-  "directory": "/home/sorrow/Desktop/muduo/build/src",
-  "command": "/usr/bin/g++ -Dmuduo_core_EXPORTS -I/home/sorrow/Desktop/muduo/include -g -fPIC -std=gnu++11 -o CMakeFiles/muduo_core.dir/Acceptor.cc.o -c /home/sorrow/Desktop/muduo/src/Acceptor.cc",
-  "file": "/home/sorrow/Desktop/muduo/src/Acceptor.cc"
+  "directory": "/home/sorrow/Desktop/HttpServer/build",
+  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/simple_server.dir/example/main.cpp.o -c /home/sorrow/Desktop/HttpServer/example/main.cpp",
+  "file": "/home/sorrow/Desktop/HttpServer/example/main.cpp"
 },
 {
-  "directory": "/home/sorrow/Desktop/muduo/build/src",
-  "command": "/usr/bin/g++ -Dmuduo_core_EXPORTS -I/home/sorrow/Desktop/muduo/include -g -fPIC -std=gnu++11 -o CMakeFiles/muduo_core.dir/Buffer.cc.o -c /home/sorrow/Desktop/muduo/src/Buffer.cc",
-  "file": "/home/sorrow/Desktop/muduo/src/Buffer.cc"
+  "directory": "/home/sorrow/Desktop/HttpServer/build",
+  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/simple_server.dir/src/httpserver/http/HttpContext.cpp.o -c /home/sorrow/Desktop/HttpServer/src/httpserver/http/HttpContext.cpp",
+  "file": "/home/sorrow/Desktop/HttpServer/src/httpserver/http/HttpContext.cpp"
 },
 {
-  "directory": "/home/sorrow/Desktop/muduo/build/src",
-  "command": "/usr/bin/g++ -Dmuduo_core_EXPORTS -I/home/sorrow/Desktop/muduo/include -g -fPIC -std=gnu++11 -o CMakeFiles/muduo_core.dir/Channel.cc.o -c /home/sorrow/Desktop/muduo/src/Channel.cc",
-  "file": "/home/sorrow/Desktop/muduo/src/Channel.cc"
+  "directory": "/home/sorrow/Desktop/HttpServer/build",
+  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/simple_server.dir/src/httpserver/http/HttpRequest.cpp.o -c /home/sorrow/Desktop/HttpServer/src/httpserver/http/HttpRequest.cpp",
+  "file": "/home/sorrow/Desktop/HttpServer/src/httpserver/http/HttpRequest.cpp"
 },
 {
-  "directory": "/home/sorrow/Desktop/muduo/build/src",
-  "command": "/usr/bin/g++ -Dmuduo_core_EXPORTS -I/home/sorrow/Desktop/muduo/include -g -fPIC -std=gnu++11 -o CMakeFiles/muduo_core.dir/CurrentThread.cc.o -c /home/sorrow/Desktop/muduo/src/CurrentThread.cc",
-  "file": "/home/sorrow/Desktop/muduo/src/CurrentThread.cc"
+  "directory": "/home/sorrow/Desktop/HttpServer/build",
+  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/simple_server.dir/src/httpserver/http/HttpResponse.cpp.o -c /home/sorrow/Desktop/HttpServer/src/httpserver/http/HttpResponse.cpp",
+  "file": "/home/sorrow/Desktop/HttpServer/src/httpserver/http/HttpResponse.cpp"
 },
 {
-  "directory": "/home/sorrow/Desktop/muduo/build/src",
-  "command": "/usr/bin/g++ -Dmuduo_core_EXPORTS -I/home/sorrow/Desktop/muduo/include -g -fPIC -std=gnu++11 -o CMakeFiles/muduo_core.dir/EPollPoller.cc.o -c /home/sorrow/Desktop/muduo/src/EPollPoller.cc",
-  "file": "/home/sorrow/Desktop/muduo/src/EPollPoller.cc"
+  "directory": "/home/sorrow/Desktop/HttpServer/build",
+  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/simple_server.dir/src/httpserver/http/HttpServer.cpp.o -c /home/sorrow/Desktop/HttpServer/src/httpserver/http/HttpServer.cpp",
+  "file": "/home/sorrow/Desktop/HttpServer/src/httpserver/http/HttpServer.cpp"
 },
 {
-  "directory": "/home/sorrow/Desktop/muduo/build/src",
-  "command": "/usr/bin/g++ -Dmuduo_core_EXPORTS -I/home/sorrow/Desktop/muduo/include -g -fPIC -std=gnu++11 -o CMakeFiles/muduo_core.dir/EventLoop.cc.o -c /home/sorrow/Desktop/muduo/src/EventLoop.cc",
-  "file": "/home/sorrow/Desktop/muduo/src/EventLoop.cc"
+  "directory": "/home/sorrow/Desktop/HttpServer/build",
+  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/simple_server.dir/src/httpserver/middleware/MiddlewareChain.cc.o -c /home/sorrow/Desktop/HttpServer/src/httpserver/middleware/MiddlewareChain.cc",
+  "file": "/home/sorrow/Desktop/HttpServer/src/httpserver/middleware/MiddlewareChain.cc"
 },
 {
-  "directory": "/home/sorrow/Desktop/muduo/build/src",
-  "command": "/usr/bin/g++ -Dmuduo_core_EXPORTS -I/home/sorrow/Desktop/muduo/include -g -fPIC -std=gnu++11 -o CMakeFiles/muduo_core.dir/EventLoopThread.cc.o -c /home/sorrow/Desktop/muduo/src/EventLoopThread.cc",
-  "file": "/home/sorrow/Desktop/muduo/src/EventLoopThread.cc"
+  "directory": "/home/sorrow/Desktop/HttpServer/build",
+  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/simple_server.dir/src/httpserver/middleware/cors/CorsMiddleware.cc.o -c /home/sorrow/Desktop/HttpServer/src/httpserver/middleware/cors/CorsMiddleware.cc",
+  "file": "/home/sorrow/Desktop/HttpServer/src/httpserver/middleware/cors/CorsMiddleware.cc"
 },
 {
-  "directory": "/home/sorrow/Desktop/muduo/build/src",
-  "command": "/usr/bin/g++ -Dmuduo_core_EXPORTS -I/home/sorrow/Desktop/muduo/include -g -fPIC -std=gnu++11 -o CMakeFiles/muduo_core.dir/EventLoopThreadPool.cc.o -c /home/sorrow/Desktop/muduo/src/EventLoopThreadPool.cc",
-  "file": "/home/sorrow/Desktop/muduo/src/EventLoopThreadPool.cc"
+  "directory": "/home/sorrow/Desktop/HttpServer/build",
+  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/simple_server.dir/src/httpserver/router/Router.cc.o -c /home/sorrow/Desktop/HttpServer/src/httpserver/router/Router.cc",
+  "file": "/home/sorrow/Desktop/HttpServer/src/httpserver/router/Router.cc"
 },
 {
-  "directory": "/home/sorrow/Desktop/muduo/build/src",
-  "command": "/usr/bin/g++ -Dmuduo_core_EXPORTS -I/home/sorrow/Desktop/muduo/include -g -fPIC -std=gnu++11 -o CMakeFiles/muduo_core.dir/InetAddress.cc.o -c /home/sorrow/Desktop/muduo/src/InetAddress.cc",
-  "file": "/home/sorrow/Desktop/muduo/src/InetAddress.cc"
+  "directory": "/home/sorrow/Desktop/HttpServer/build",
+  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/simple_server.dir/src/httpserver/session/Session.cc.o -c /home/sorrow/Desktop/HttpServer/src/httpserver/session/Session.cc",
+  "file": "/home/sorrow/Desktop/HttpServer/src/httpserver/session/Session.cc"
 },
 {
-  "directory": "/home/sorrow/Desktop/muduo/build/src",
-  "command": "/usr/bin/g++ -Dmuduo_core_EXPORTS -I/home/sorrow/Desktop/muduo/include -g -fPIC -std=gnu++11 -o CMakeFiles/muduo_core.dir/Logger.cc.o -c /home/sorrow/Desktop/muduo/src/Logger.cc",
-  "file": "/home/sorrow/Desktop/muduo/src/Logger.cc"
+  "directory": "/home/sorrow/Desktop/HttpServer/build",
+  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/simple_server.dir/src/httpserver/session/SessionManager.cc.o -c /home/sorrow/Desktop/HttpServer/src/httpserver/session/SessionManager.cc",
+  "file": "/home/sorrow/Desktop/HttpServer/src/httpserver/session/SessionManager.cc"
 },
 {
-  "directory": "/home/sorrow/Desktop/muduo/build/src",
-  "command": "/usr/bin/g++ -Dmuduo_core_EXPORTS -I/home/sorrow/Desktop/muduo/include -g -fPIC -std=gnu++11 -o CMakeFiles/muduo_core.dir/Poller.cc.o -c /home/sorrow/Desktop/muduo/src/Poller.cc",
-  "file": "/home/sorrow/Desktop/muduo/src/Poller.cc"
+  "directory": "/home/sorrow/Desktop/HttpServer/build",
+  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/simple_server.dir/src/httpserver/session/SessionStorage.cc.o -c /home/sorrow/Desktop/HttpServer/src/httpserver/session/SessionStorage.cc",
+  "file": "/home/sorrow/Desktop/HttpServer/src/httpserver/session/SessionStorage.cc"
 },
 {
-  "directory": "/home/sorrow/Desktop/muduo/build/src",
-  "command": "/usr/bin/g++ -Dmuduo_core_EXPORTS -I/home/sorrow/Desktop/muduo/include -g -fPIC -std=gnu++11 -o CMakeFiles/muduo_core.dir/Socket.cc.o -c /home/sorrow/Desktop/muduo/src/Socket.cc",
-  "file": "/home/sorrow/Desktop/muduo/src/Socket.cc"
+  "directory": "/home/sorrow/Desktop/HttpServer/build",
+  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/simple_server.dir/src/muduo/Acceptor.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/Acceptor.cc",
+  "file": "/home/sorrow/Desktop/HttpServer/src/muduo/Acceptor.cc"
 },
 {
-  "directory": "/home/sorrow/Desktop/muduo/build/src",
-  "command": "/usr/bin/g++ -Dmuduo_core_EXPORTS -I/home/sorrow/Desktop/muduo/include -g -fPIC -std=gnu++11 -o CMakeFiles/muduo_core.dir/TcpConnection.cc.o -c /home/sorrow/Desktop/muduo/src/TcpConnection.cc",
-  "file": "/home/sorrow/Desktop/muduo/src/TcpConnection.cc"
+  "directory": "/home/sorrow/Desktop/HttpServer/build",
+  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/simple_server.dir/src/muduo/Buffer.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/Buffer.cc",
+  "file": "/home/sorrow/Desktop/HttpServer/src/muduo/Buffer.cc"
 },
 {
-  "directory": "/home/sorrow/Desktop/muduo/build/src",
-  "command": "/usr/bin/g++ -Dmuduo_core_EXPORTS -I/home/sorrow/Desktop/muduo/include -g -fPIC -std=gnu++11 -o CMakeFiles/muduo_core.dir/TcpServer.cc.o -c /home/sorrow/Desktop/muduo/src/TcpServer.cc",
-  "file": "/home/sorrow/Desktop/muduo/src/TcpServer.cc"
+  "directory": "/home/sorrow/Desktop/HttpServer/build",
+  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/simple_server.dir/src/muduo/Channel.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/Channel.cc",
+  "file": "/home/sorrow/Desktop/HttpServer/src/muduo/Channel.cc"
 },
 {
-  "directory": "/home/sorrow/Desktop/muduo/build/src",
-  "command": "/usr/bin/g++ -Dmuduo_core_EXPORTS -I/home/sorrow/Desktop/muduo/include -g -fPIC -std=gnu++11 -o CMakeFiles/muduo_core.dir/Thread.cc.o -c /home/sorrow/Desktop/muduo/src/Thread.cc",
-  "file": "/home/sorrow/Desktop/muduo/src/Thread.cc"
+  "directory": "/home/sorrow/Desktop/HttpServer/build",
+  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/simple_server.dir/src/muduo/CurrentThread.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/CurrentThread.cc",
+  "file": "/home/sorrow/Desktop/HttpServer/src/muduo/CurrentThread.cc"
 },
 {
-  "directory": "/home/sorrow/Desktop/muduo/build/src",
-  "command": "/usr/bin/g++ -Dmuduo_core_EXPORTS -I/home/sorrow/Desktop/muduo/include -g -fPIC -std=gnu++11 -o CMakeFiles/muduo_core.dir/Timestamp.cc.o -c /home/sorrow/Desktop/muduo/src/Timestamp.cc",
-  "file": "/home/sorrow/Desktop/muduo/src/Timestamp.cc"
+  "directory": "/home/sorrow/Desktop/HttpServer/build",
+  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/simple_server.dir/src/muduo/EPollPoller.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/EPollPoller.cc",
+  "file": "/home/sorrow/Desktop/HttpServer/src/muduo/EPollPoller.cc"
 },
 {
-  "directory": "/home/sorrow/Desktop/muduo/build/example",
-  "command": "/usr/bin/g++  -I/home/sorrow/Desktop/muduo/include -g -std=c++11 -Wall -std=gnu++11 -o CMakeFiles/testserver.dir/testserver.cc.o -c /home/sorrow/Desktop/muduo/example/testserver.cc",
-  "file": "/home/sorrow/Desktop/muduo/example/testserver.cc"
+  "directory": "/home/sorrow/Desktop/HttpServer/build",
+  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/simple_server.dir/src/muduo/EventLoop.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/EventLoop.cc",
+  "file": "/home/sorrow/Desktop/HttpServer/src/muduo/EventLoop.cc"
+},
+{
+  "directory": "/home/sorrow/Desktop/HttpServer/build",
+  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/simple_server.dir/src/muduo/EventLoopThread.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/EventLoopThread.cc",
+  "file": "/home/sorrow/Desktop/HttpServer/src/muduo/EventLoopThread.cc"
+},
+{
+  "directory": "/home/sorrow/Desktop/HttpServer/build",
+  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/simple_server.dir/src/muduo/EventLoopThreadPool.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/EventLoopThreadPool.cc",
+  "file": "/home/sorrow/Desktop/HttpServer/src/muduo/EventLoopThreadPool.cc"
+},
+{
+  "directory": "/home/sorrow/Desktop/HttpServer/build",
+  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/simple_server.dir/src/muduo/InetAddress.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/InetAddress.cc",
+  "file": "/home/sorrow/Desktop/HttpServer/src/muduo/InetAddress.cc"
+},
+{
+  "directory": "/home/sorrow/Desktop/HttpServer/build",
+  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/simple_server.dir/src/muduo/Logger.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/Logger.cc",
+  "file": "/home/sorrow/Desktop/HttpServer/src/muduo/Logger.cc"
+},
+{
+  "directory": "/home/sorrow/Desktop/HttpServer/build",
+  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/simple_server.dir/src/muduo/Poller.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/Poller.cc",
+  "file": "/home/sorrow/Desktop/HttpServer/src/muduo/Poller.cc"
+},
+{
+  "directory": "/home/sorrow/Desktop/HttpServer/build",
+  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/simple_server.dir/src/muduo/Socket.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/Socket.cc",
+  "file": "/home/sorrow/Desktop/HttpServer/src/muduo/Socket.cc"
+},
+{
+  "directory": "/home/sorrow/Desktop/HttpServer/build",
+  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/simple_server.dir/src/muduo/TcpConnection.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/TcpConnection.cc",
+  "file": "/home/sorrow/Desktop/HttpServer/src/muduo/TcpConnection.cc"
+},
+{
+  "directory": "/home/sorrow/Desktop/HttpServer/build",
+  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/simple_server.dir/src/muduo/TcpServer.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/TcpServer.cc",
+  "file": "/home/sorrow/Desktop/HttpServer/src/muduo/TcpServer.cc"
+},
+{
+  "directory": "/home/sorrow/Desktop/HttpServer/build",
+  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/simple_server.dir/src/muduo/Thread.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/Thread.cc",
+  "file": "/home/sorrow/Desktop/HttpServer/src/muduo/Thread.cc"
+},
+{
+  "directory": "/home/sorrow/Desktop/HttpServer/build",
+  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/simple_server.dir/src/muduo/Timestamp.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/Timestamp.cc",
+  "file": "/home/sorrow/Desktop/HttpServer/src/muduo/Timestamp.cc"
 }
 ]
