@@ -8,7 +8,7 @@ void GameBackendHandler::handle(const http::HttpRequest& req, http::HttpResponse
     FileUtil fileOperater(reqFile);
     if (!fileOperater.isValid())
     {
-        LOG_WARN << reqFile << "not exist.";
+        LOG_WARN ("%s not exist",reqFile.c_str());
         fileOperater.resetDefaultFile();
     }
 

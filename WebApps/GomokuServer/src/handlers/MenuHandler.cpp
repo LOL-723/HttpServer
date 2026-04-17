@@ -7,7 +7,7 @@ void MenuHandler::handle(const http::HttpRequest &req, http::HttpResponse *resp)
     {
         // 检查用户是否已登录
         auto session = server_->getSessionManager()->getSession(req, resp);
-        LOG_INFO << "session->getValue(\"isLoggedIn\") = " << session->getValue("isLoggedIn");
+        LOG_INFO ("session->getValue(\"isLoggedIn\") = %s",session->getValue("isLoggedIn").c_str());
         if (session->getValue("isLoggedIn") != "true")
         {
             // 用户未登录，返回未授权错误
@@ -30,7 +30,7 @@ void MenuHandler::handle(const http::HttpRequest &req, http::HttpResponse *resp)
         FileUtil fileOperater(reqFile);
         if (!fileOperater.isValid())
         {
-            LOG_WARN << reqFile << "not exist.";
+            LOG_WARN ("%s not exist",reqFile.c_str());
             fileOperater.resetDefaultFile();
         }
 

@@ -1,4 +1,5 @@
 #include "../include/handlers/AiGameStartHandler.h"
+#include <muduo/Logger.h>
 
 void AiGameStartHandler::handle(const http::HttpRequest &req, http::HttpResponse *resp)
 {
@@ -32,7 +33,7 @@ void AiGameStartHandler::handle(const http::HttpRequest &req, http::HttpResponse
     FileUtil fileOperater(reqFile);
     if (!fileOperater.isValid())
     {
-        LOG_WARN << reqFile << "not exist.";
+        LOG_WARN("File %s not exist.", reqFile.c_str());
         fileOperater.resetDefaultFile(); // FIXME:其实这里可能不必要，后续删了吧，不过其实也不会调用到毕竟详细地址是我服务端定义的
     }
 

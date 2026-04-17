@@ -8,7 +8,7 @@ void EntryHandler::handle(const http::HttpRequest& req, http::HttpResponse* resp
     FileUtil fileOperater(reqFile);
     if (!fileOperater.isValid())
     {
-        LOG_WARN << reqFile << " not exist";
+        LOG_WARN ("%s not exist",reqFile.c_str());
         fileOperater.resetDefaultFile(); // 404 NOT FOUND
     }
 
