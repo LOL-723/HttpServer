@@ -35,6 +35,8 @@ public:
     // 设置消息回调函数
     void setMessageCallback(const MessageCallback& cb) { messageCallback_ = cb; }
 private:
+    void flushWriteBio();
+    void drainApplicationData(const TcpConnectionPtr& conn, muduo::Timestamp time);
     void handleHandshake();
     void onEncrypted(const char* data, size_t len);
     void onDecrypted(const char* data, size_t len);

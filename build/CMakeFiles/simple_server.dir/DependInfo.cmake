@@ -13,8 +13,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/sorrow/Desktop/HttpServer/build/CMakeFiles/http_server.dir/DependInfo.cmake"
   "/home/sorrow/Desktop/HttpServer/build/CMakeFiles/gomoku_server.dir/DependInfo.cmake"
+  "/home/sorrow/Desktop/HttpServer/build/CMakeFiles/http_server.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -7,16 +7,41 @@
 #include "../include/handlers/AiGameMoveHandler.h"
 #include "../include/handlers/GameBackendHandler.h"
 #include "../include/GomokuServer.h"
+#include <cstdlib>
+#include <stdexcept>
 #include <httpserver/http/HttpRequest.h>
 #include <httpserver/http/HttpResponse.h>
 #include <httpserver/http/HttpServer.h>
 
 using namespace http;
 
+namespace {
+const char* getenvOr(const char* key, const char* fallback)
+{
+    const char* v = std::getenv(key);
+    return (v && *v) ? v : fallback;
+}
+
+unsigned long getenvOrUL(const char* key, unsigned long fallback)
+{
+    const char* v = std::getenv(key);
+    if (!v || !*v) return fallback;
+    try {
+        return std::stoul(std::string(v));
+    } catch (...) {
+        return fallback;
+    }
+}
+} // namespace
+
 GomokuServer::GomokuServer(int port,
                            const std::string &name,
                            muduo::TcpServer::Option option)
-    : httpServer_(port, name, option), maxOnline_(0)
+    // HttpServer 构造函数参数为 (port, name, useSSL, option)
+    // 这里必须显式传 useSSL，否则会把 option(枚举)误当成 bool，导致错误启用 SSL 并在未初始化 sslCtx_ 时崩溃
+    : httpServer_(port, name, false, option)
+    , projectRoot_(HTTP_SERVER_PROJECT_ROOT)
+    , maxOnline_(0)
 {
     initialize();
 }
@@ -31,10 +56,29 @@ void GomokuServer::start()
     httpServer_.start();
 }
 
+void GomokuServer::setSslConfig(const ssl::SslConfig& config)
+{
+    httpServer_.setSslConfig(config);
+}
+
+std::string GomokuServer::resourcePath(const std::string& relativePath) const
+{
+    return (projectRoot_ / "WebApps" / "GomokuServer" / "resource" / relativePath).string();
+}
+
 void GomokuServer::initialize()
 {
     // 初始化数据库连接池
-    http::MysqlUtil::init("tcp://127.0.0.1:3306", "root", "root", "Gomoku", 10);
+    const std::string dbUri = getenvOr("GOMOKU_DB_URI", "tcp://127.0.0.1:3306");
+    const std::string dbUser = getenvOr("GOMOKU_DB_USER", "root");
+    const std::string dbPass = getenvOr("GOMOKU_DB_PASS", "root");
+    const std::string dbName = getenvOr("GOMOKU_DB_NAME", "Gomoku");
+    const auto poolSize = getenvOrUL("GOMOKU_DB_POOLSIZE", 10);
+    try {
+        http::MysqlUtil::init(dbUri, dbUser, dbPass, dbName, poolSize);
+    } catch (const std::exception& e) {
+        throw std::runtime_error(std::string("DB init failed: ") + e.what());
+    }
     // 初始化会话
     initializeSession();
     // 初始化中间件
@@ -219,4 +263,3 @@ void GomokuServer::packageResp(const std::string &version,
         resp->setCloseConnection(true);
     }
 }
-

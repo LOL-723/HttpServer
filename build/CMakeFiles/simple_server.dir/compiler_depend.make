@@ -152,47 +152,75 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o: ../WebApps/Gom
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
-  /usr/include/c++/11/iostream \
-  /usr/include/c++/11/ostream \
-  /usr/include/c++/11/ios \
+  /usr/include/c++/11/filesystem \
+  /usr/include/c++/11/bits/fs_fwd.h \
+  /usr/include/c++/11/system_error \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
+  /usr/include/c++/11/stdexcept \
   /usr/include/c++/11/exception \
   /usr/include/c++/11/bits/exception_ptr.h \
   /usr/include/c++/11/bits/cxxabi_init_exception.h \
   /usr/include/c++/11/typeinfo \
   /usr/include/c++/11/bits/nested_exception.h \
-  /usr/include/c++/11/bits/ios_base.h \
+  /usr/include/c++/11/chrono \
+  /usr/include/c++/11/ratio \
+  /usr/include/c++/11/limits \
+  /usr/include/c++/11/ctime \
+  /usr/include/c++/11/bits/parse_numbers.h \
+  /usr/include/c++/11/bits/fs_path.h \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/locale \
   /usr/include/c++/11/bits/locale_classes.h \
   /usr/include/c++/11/bits/locale_classes.tcc \
-  /usr/include/c++/11/system_error \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
-  /usr/include/c++/11/stdexcept \
-  /usr/include/c++/11/streambuf \
-  /usr/include/c++/11/bits/streambuf.tcc \
-  /usr/include/c++/11/bits/basic_ios.h \
   /usr/include/c++/11/bits/locale_facets.h \
   /usr/include/c++/11/cwctype \
   /usr/include/wctype.h \
   /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
+  /usr/include/c++/11/bits/ios_base.h \
+  /usr/include/c++/11/streambuf \
+  /usr/include/c++/11/bits/streambuf.tcc \
   /usr/include/c++/11/bits/streambuf_iterator.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
   /usr/include/c++/11/bits/locale_facets.tcc \
-  /usr/include/c++/11/bits/basic_ios.tcc \
-  /usr/include/c++/11/bits/ostream.tcc \
-  /usr/include/c++/11/istream \
-  /usr/include/c++/11/bits/istream.tcc \
-  ../include/muduo/TcpServer.h \
-  /usr/include/c++/11/functional \
+  /usr/include/c++/11/bits/locale_facets_nonio.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
+  /usr/include/libintl.h \
+  /usr/include/c++/11/bits/codecvt.h \
+  /usr/include/c++/11/bits/locale_facets_nonio.tcc \
+  /usr/include/c++/11/bits/locale_conv.h \
+  /usr/include/c++/11/bits/unique_ptr.h \
   /usr/include/c++/11/tuple \
-  /usr/include/c++/11/utility \
-  /usr/include/c++/11/bits/stl_relops.h \
   /usr/include/c++/11/array \
   /usr/include/c++/11/bits/uses_allocator.h \
   /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/iomanip \
+  /usr/include/c++/11/bits/quoted_string.h \
+  /usr/include/c++/11/sstream \
+  /usr/include/c++/11/istream \
+  /usr/include/c++/11/ios \
+  /usr/include/c++/11/bits/basic_ios.h \
+  /usr/include/c++/11/bits/basic_ios.tcc \
+  /usr/include/c++/11/ostream \
+  /usr/include/c++/11/bits/ostream.tcc \
+  /usr/include/c++/11/bits/istream.tcc \
+  /usr/include/c++/11/bits/sstream.tcc \
+  /usr/include/c++/11/codecvt \
+  /usr/include/c++/11/ext/concurrence.h \
+  /usr/include/c++/11/bits/shared_ptr.h \
+  /usr/include/c++/11/bits/shared_ptr_base.h \
+  /usr/include/c++/11/bits/allocated_ptr.h \
   /usr/include/c++/11/bits/refwrap.h \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/bits/fs_dir.h \
+  /usr/include/c++/11/bits/fs_ops.h \
+  /usr/include/c++/11/iostream \
+  ../include/muduo/TcpServer.h \
+  /usr/include/c++/11/functional \
   /usr/include/c++/11/bits/std_function.h \
   /usr/include/c++/11/unordered_map \
-  /usr/include/c++/11/ext/aligned_buffer.h \
   /usr/include/c++/11/bits/hashtable.h \
   /usr/include/c++/11/bits/hashtable_policy.h \
   /usr/include/c++/11/bits/enable_special_members.h \
@@ -213,11 +241,6 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o: ../WebApps/Gom
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
   /usr/include/c++/11/bits/align.h \
   /usr/include/c++/11/bit \
-  /usr/include/c++/11/bits/unique_ptr.h \
-  /usr/include/c++/11/bits/shared_ptr.h \
-  /usr/include/c++/11/bits/shared_ptr_base.h \
-  /usr/include/c++/11/bits/allocated_ptr.h \
-  /usr/include/c++/11/ext/concurrence.h \
   /usr/include/c++/11/bits/shared_ptr_atomic.h \
   /usr/include/c++/11/bits/atomic_base.h \
   /usr/include/c++/11/bits/atomic_lockfree_defines.h \
@@ -231,11 +254,6 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o: ../WebApps/Gom
   /usr/include/c++/11/bits/stl_multimap.h \
   ../include/muduo/EventLoop.h \
   /usr/include/c++/11/mutex \
-  /usr/include/c++/11/chrono \
-  /usr/include/c++/11/ratio \
-  /usr/include/c++/11/limits \
-  /usr/include/c++/11/ctime \
-  /usr/include/c++/11/bits/parse_numbers.h \
   /usr/include/c++/11/bits/std_mutex.h \
   /usr/include/c++/11/bits/unique_lock.h \
   ../include/muduo/noncopyable.h \
@@ -257,8 +275,6 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o: ../WebApps/Gom
   ../include/muduo/Socket.h \
   ../include/muduo/Channel.h \
   ../include/muduo/Logger.h \
-  /usr/include/c++/11/sstream \
-  /usr/include/c++/11/bits/sstream.tcc \
   /usr/include/c++/11/cstdarg \
   ../include/muduo/InetAddress.h \
   /usr/include/arpa/inet.h \
@@ -313,14 +329,6 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o: ../WebApps/Gom
   /usr/include/c++/11/bitset \
   /usr/include/c++/11/iterator \
   /usr/include/c++/11/bits/stream_iterator.h \
-  /usr/include/c++/11/locale \
-  /usr/include/c++/11/bits/locale_facets_nonio.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
-  /usr/include/libintl.h \
-  /usr/include/c++/11/bits/codecvt.h \
-  /usr/include/c++/11/bits/locale_facets_nonio.tcc \
-  /usr/include/c++/11/bits/locale_conv.h \
   /usr/include/c++/11/stack \
   /usr/include/c++/11/deque \
   /usr/include/c++/11/bits/stl_deque.h \
@@ -566,14 +574,6 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o: ../WebApps/Gom
   /usr/include/nlohmann/detail/meta/call_std/begin.hpp \
   /usr/include/nlohmann/detail/meta/call_std/end.hpp \
   /usr/include/nlohmann/json_fwd.hpp \
-  /usr/include/c++/11/filesystem \
-  /usr/include/c++/11/bits/fs_fwd.h \
-  /usr/include/c++/11/bits/fs_path.h \
-  /usr/include/c++/11/iomanip \
-  /usr/include/c++/11/bits/quoted_string.h \
-  /usr/include/c++/11/codecvt \
-  /usr/include/c++/11/bits/fs_dir.h \
-  /usr/include/c++/11/bits/fs_ops.h \
   /usr/include/nlohmann/detail/conversions/to_json.hpp \
   /usr/include/nlohmann/detail/iterators/iteration_proxy.hpp \
   /usr/include/nlohmann/byte_container_with_subtype.hpp \
@@ -621,16 +621,6 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o: ../WebApps/Gom
 
 /usr/include/nlohmann/detail/hash.hpp:
 
-/usr/include/c++/11/bits/fs_ops.h:
-
-/usr/include/c++/11/bits/quoted_string.h:
-
-/usr/include/c++/11/bits/fs_path.h:
-
-/usr/include/c++/11/bits/fs_fwd.h:
-
-/usr/include/c++/11/filesystem:
-
 /usr/include/nlohmann/detail/meta/call_std/end.hpp:
 
 /usr/include/nlohmann/detail/meta/call_std/begin.hpp:
@@ -663,23 +653,21 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o: ../WebApps/Gom
 
 /usr/include/c++/11/bits/slice_array.h:
 
-/usr/include/c++/11/sstream:
+/usr/include/c++/11/bits/valarray_array.tcc:
 
-/usr/include/openssl/sslerr.h:
+/usr/include/c++/11/bits/valarray_array.h:
 
-../include/muduo/Logger.h:
+/usr/include/c++/11/valarray:
 
-/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
+/usr/include/c++/11/bits/forward_list.tcc:
 
-/usr/include/time.h:
+/usr/include/c++/11/bits/forward_list.h:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
+/usr/include/c++/11/forward_list:
 
-/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
+/usr/include/nlohmann/detail/conversions/from_json.hpp:
 
-../include/muduo/TcpConnection.h:
-
-/usr/include/mysql_driver.h:
+/usr/include/nlohmann/adl_serializer.hpp:
 
 /usr/include/c++/11/clocale:
 
@@ -691,31 +679,9 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o: ../WebApps/Gom
 
 /usr/include/c++/11/bits/uses_allocator.h:
 
-/usr/include/c++/11/limits:
-
-/usr/include/nlohmann/detail/input/lexer.hpp:
-
-/usr/include/c++/11/ratio:
-
-/usr/include/c++/11/condition_variable:
-
-/usr/include/c++/11/thread:
-
 /usr/include/c++/11/bits/stl_map.h:
 
-/usr/include/c++/11/bits/parse_numbers.h:
-
-/usr/include/c++/11/bits/shared_ptr_atomic.h:
-
-/usr/include/c++/11/bits/regex.h:
-
-/usr/include/c++/11/queue:
-
 /usr/include/c++/11/bits/stl_raw_storage_iter.h:
-
-../WebApps/GomokuServer/include/AiGame.h:
-
-../include/httpserver/middleware/cors/CorsConfig.h:
 
 /usr/include/c++/11/memory:
 
@@ -733,11 +699,11 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o: ../WebApps/Gom
 
 /usr/include/c++/11/bits/stl_bvector.h:
 
+/usr/include/c++/11/bits/fs_fwd.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
-
-/usr/include/nlohmann/detail/conversions/from_json.hpp:
 
 /usr/include/c++/11/bits/align.h:
 
@@ -755,29 +721,57 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o: ../WebApps/Gom
 
 /usr/include/c++/11/bits/hashtable_policy.h:
 
+/usr/include/c++/11/bits/fs_ops.h:
+
 /usr/include/c++/11/bits/refwrap.h:
 
 /usr/include/linux/stddef.h:
 
 ../WebApps/GomokuServer/include/GomokuServer.h:
 
-/usr/include/c++/11/array:
-
-/usr/include/c++/11/tr1/beta_function.tcc:
-
-/usr/include/c++/11/bits/stl_relops.h:
-
-/usr/include/c++/11/bits/regex_compiler.tcc:
-
-/usr/include/limits.h:
-
 /usr/include/c++/11/bits/istream.tcc:
 
 /usr/include/c++/11/bits/regex_scanner.h:
 
+/usr/include/c++/11/bits/uniform_int_dist.h:
+
 /usr/include/c++/11/istream:
 
 ../include/httpserver/router/Router.h:
+
+/usr/include/c++/11/sstream:
+
+/usr/include/openssl/sslerr.h:
+
+/usr/include/c++/11/bits/quoted_string.h:
+
+/usr/include/c++/11/array:
+
+/usr/include/c++/11/tr1/beta_function.tcc:
+
+/usr/include/c++/11/ostream:
+
+/usr/include/c++/11/bits/unique_ptr.h:
+
+/usr/include/c++/11/any:
+
+/usr/include/c++/11/bits/locale_conv.h:
+
+/usr/include/boost/config/platform/linux.hpp:
+
+/usr/include/mysql/mysql/psi/psi_memory.h:
+
+/usr/include/c++/11/bits/basic_ios.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h:
+
+../include/muduo/EventLoop.h:
+
+/usr/include/c++/11/bits/locale_facets_nonio.h:
+
+/usr/include/openssl/prov_ssl.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
@@ -789,6 +783,14 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o: ../WebApps/Gom
 
 /usr/include/c++/11/bits/streambuf_iterator.h:
 
+/usr/include/c++/11/bits/atomic_lockfree_defines.h:
+
+/usr/include/string.h:
+
+/usr/include/c++/11/bits/ios_base.h:
+
+/usr/include/openssl/sha.h:
+
 /usr/include/c++/11/cwctype:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h:
@@ -799,13 +801,35 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o: ../WebApps/Gom
 
 ../include/httpserver/middleware/cors/CorsMiddleware.h:
 
-/usr/include/c++/11/bits/uniform_int_dist.h:
+/usr/include/boost/config/detail/suffix.hpp:
 
-/usr/include/c++/11/bits/atomic_lockfree_defines.h:
+/usr/include/c++/11/bits/locale_classes.h:
 
-/usr/include/c++/11/bits/valarray_array.tcc:
+/usr/include/c++/11/bits/stl_relops.h:
 
-/usr/include/string.h:
+/usr/include/c++/11/bits/regex_compiler.tcc:
+
+/usr/include/limits.h:
+
+/usr/include/c++/11/bits/shared_ptr_atomic.h:
+
+/usr/include/c++/11/bits/regex.h:
+
+/usr/include/c++/11/queue:
+
+/usr/include/c++/11/bits/parse_numbers.h:
+
+/usr/include/c++/11/limits:
+
+/usr/include/nlohmann/detail/input/lexer.hpp:
+
+/usr/include/c++/11/ratio:
+
+/usr/include/c++/11/condition_variable:
+
+/usr/include/c++/11/thread:
+
+/usr/include/c++/11/exception:
 
 /usr/include/c++/11/utility:
 
@@ -815,21 +839,7 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o: ../WebApps/Gom
 
 /usr/include/c++/11/cstddef:
 
-/usr/include/boost/config/detail/suffix.hpp:
-
-/usr/include/c++/11/bits/locale_classes.h:
-
-/usr/include/c++/11/bits/ios_base.h:
-
-/usr/include/openssl/sha.h:
-
-/usr/include/c++/11/exception:
-
-/usr/include/c++/11/bits/unique_ptr.h:
-
-/usr/include/c++/11/any:
-
-/usr/include/c++/11/ostream:
+/usr/include/c++/11/filesystem:
 
 /usr/include/c++/11/bits/basic_string.tcc:
 
@@ -857,12 +867,6 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o: ../WebApps/Gom
 
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 
-/usr/include/c++/11/pstl/glue_algorithm_defs.h:
-
-../include/muduo/Channel.h:
-
-/usr/include/x86_64-linux-gnu/bits/timesize.h:
-
 /usr/include/c++/11/cerrno:
 
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
@@ -873,8 +877,6 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o: ../WebApps/Gom
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
-/usr/include/c++/11/bits/forward_list.tcc:
-
 ../include/muduo/Timestamp.h:
 
 /usr/include/c++/11/cstdio:
@@ -882,6 +884,8 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o: ../WebApps/Gom
 /usr/include/alloca.h:
 
 /usr/include/openssl/pkcs7err.h:
+
+/usr/include/c++/11/bits/fs_path.h:
 
 /usr/include/openssl/opensslv.h:
 
@@ -975,6 +979,12 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o: ../WebApps/Gom
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
 
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
+
+/usr/include/c++/11/pstl/glue_algorithm_defs.h:
+
+../include/muduo/Channel.h:
+
 /usr/include/c++/11/bits/invoke.h:
 
 /usr/include/x86_64-linux-gnu/bits/timex.h:
@@ -986,6 +996,10 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o: ../WebApps/Gom
 /usr/include/c++/11/debug/debug.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h:
+
+/usr/include/c++/11/locale:
+
+/usr/include/ctype.h:
 
 /usr/include/c++/11/functional:
 
@@ -1002,12 +1016,6 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o: ../WebApps/Gom
 /usr/include/features-time64.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
-
-/usr/include/unistd.h:
-
-/usr/include/c++/11/bits/stl_algobase.h:
-
-/usr/include/x86_64-linux-gnu/bits/statx.h:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
@@ -1032,8 +1040,6 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o: ../WebApps/Gom
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
 /usr/include/c++/11/tr1/gamma.tcc:
-
-/usr/include/x86_64-linux-gnu/bits/confname.h:
 
 /usr/include/c++/11/bits/ostream_insert.h:
 
@@ -1101,7 +1107,7 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o: ../WebApps/Gom
 
 /usr/include/c++/11/type_traits:
 
-/usr/include/c++/11/forward_list:
+/usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
 
 ../include/httpserver/utils/db/DbConnection.h:
 
@@ -1121,7 +1127,11 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o: ../WebApps/Gom
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
 
-/usr/include/c++/11/bits/forward_list.h:
+/usr/include/c++/11/bits/stl_algobase.h:
+
+/usr/include/unistd.h:
+
+/usr/include/x86_64-linux-gnu/bits/statx.h:
 
 /usr/include/linux/errno.h:
 
@@ -1130,10 +1140,6 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o: ../WebApps/Gom
 /usr/include/c++/11/bits/regex.tcc:
 
 /usr/include/c++/11/streambuf:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
-
-/usr/include/c++/11/bits/functexcept.h:
 
 /usr/include/mysql/typelib.h:
 
@@ -1163,10 +1169,6 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o: ../WebApps/Gom
 
 /usr/include/c++/11/ext/alloc_traits.h:
 
-../include/muduo/EventLoop.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h:
-
 /usr/include/c++/11/bits/unordered_map.h:
 
 /usr/include/c++/11/bits/streambuf.tcc:
@@ -1178,10 +1180,6 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o: ../WebApps/Gom
 /usr/include/c++/11/bits/cpp_type_traits.h:
 
 /usr/include/c++/11/bits/std_thread.h:
-
-/usr/include/ctype.h:
-
-/usr/include/c++/11/locale:
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
@@ -1199,12 +1197,6 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o: ../WebApps/Gom
 
 /usr/include/mysql/my_list.h:
 
-/usr/include/nlohmann/detail/iterators/iter_impl.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/setjmp.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
-
 /usr/include/nlohmann/detail/meta/is_sax.hpp:
 
 /usr/include/c++/11/pstl/glue_numeric_defs.h:
@@ -1212,12 +1204,6 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o: ../WebApps/Gom
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
 /usr/include/openssl/ocsp.h:
-
-/usr/include/x86_64-linux-gnu/sys/syscall.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h:
-
-/usr/include/openssl/srtp.h:
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
 
@@ -1251,6 +1237,18 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o: ../WebApps/Gom
 
 /usr/include/x86_64-linux-gnu/asm/posix_types_64.h:
 
+/usr/include/time.h:
+
+/usr/include/nlohmann/detail/iterators/iter_impl.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+
+/usr/include/x86_64-linux-gnu/bits/setjmp.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
+
+/usr/include/c++/11/bits/locale_facets_nonio.tcc:
+
 /usr/include/c++/11/bits/stl_pair.h:
 
 /usr/include/c++/11/ext/atomicity.h:
@@ -1275,17 +1273,17 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o: ../WebApps/Gom
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
-../include/muduo/CurrentThread.h:
-
-/usr/include/nlohmann/detail/json_pointer.hpp:
-
-/usr/include/x86_64-linux-gnu/sys/stat.h:
-
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
 /usr/include/openssl/pkcs7.h:
 
 /usr/include/c++/11/ext/new_allocator.h:
+
+/usr/include/c++/11/bits/char_traits.h:
+
+/usr/include/libintl.h:
+
+/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
 /usr/include/c++/11/bit:
 
@@ -1305,10 +1303,6 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o: ../WebApps/Gom
 
 /usr/include/c++/11/bits/cxxabi_forced.h:
 
-/usr/include/x86_64-linux-gnu/sys/socket.h:
-
-../include/muduo/Acceptor.h:
-
 /usr/include/c++/11/bits/functional_hash.h:
 
 /usr/include/openssl/bnerr.h:
@@ -1316,6 +1310,40 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o: ../WebApps/Gom
 /usr/include/c++/11/bits/string_view.tcc:
 
 /usr/include/stdlib.h:
+
+../include/muduo/CurrentThread.h:
+
+/usr/include/nlohmann/detail/json_pointer.hpp:
+
+/usr/include/x86_64-linux-gnu/sys/stat.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
+
+../include/muduo/TcpConnection.h:
+
+/usr/include/mysql_driver.h:
+
+/usr/include/x86_64-linux-gnu/bits/confname.h:
+
+/usr/include/c++/11/bits/functexcept.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
+
+/usr/include/x86_64-linux-gnu/sys/syscall.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h:
+
+/usr/include/openssl/srtp.h:
+
+../WebApps/GomokuServer/include/AiGame.h:
+
+../include/httpserver/middleware/cors/CorsConfig.h:
+
+/usr/include/x86_64-linux-gnu/sys/socket.h:
+
+../include/muduo/Acceptor.h:
+
+../include/muduo/Logger.h:
 
 /usr/include/c++/11/stdexcept:
 
@@ -1405,28 +1433,6 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o: ../WebApps/Gom
 
 /usr/include/c++/11/bitset:
 
-/usr/include/c++/11/bits/locale_facets_nonio.h:
-
-/usr/include/openssl/prov_ssl.h:
-
-/usr/include/c++/11/bits/basic_ios.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h:
-
-/usr/include/c++/11/bits/char_traits.h:
-
-/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
-
-/usr/include/libintl.h:
-
-/usr/include/c++/11/bits/locale_facets_nonio.tcc:
-
-/usr/include/c++/11/bits/locale_conv.h:
-
-/usr/include/boost/config/platform/linux.hpp:
-
-/usr/include/mysql/mysql/psi/psi_memory.h:
-
 /usr/include/openssl/cryptoerr_legacy.h:
 
 /usr/include/c++/11/bits/deque.tcc:
@@ -1466,8 +1472,6 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o: ../WebApps/Gom
 /usr/include/boost/assert.hpp:
 
 ../include/httpserver/session/Session.h:
-
-/usr/include/c++/11/bits/valarray_array.h:
 
 /usr/include/c++/11/random:
 
@@ -1657,9 +1661,9 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o: ../WebApps/Gom
 
 /usr/include/openssl/dh.h:
 
-/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
-
 /usr/include/openssl/crypto.h:
+
+/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
 /usr/include/cppconn/driver.h:
 
@@ -1677,9 +1681,9 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o: ../WebApps/Gom
 
 /usr/include/openssl/conf.h:
 
-/usr/include/x86_64-linux-gnu/bits/environments.h:
-
 /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h:
+
+/usr/include/x86_64-linux-gnu/bits/environments.h:
 
 /usr/include/openssl/conferr.h:
 
@@ -1694,8 +1698,6 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o: ../WebApps/Gom
 /usr/include/openssl/pemerr.h:
 
 /usr/include/openssl/hmac.h:
-
-/usr/include/nlohmann/adl_serializer.hpp:
 
 /usr/include/boost/config/workaround.hpp:
 
@@ -1784,5 +1786,3 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o: ../WebApps/Gom
 ../include/httpserver/utils/JsonUtil.h:
 
 /usr/include/nlohmann/json.hpp:
-
-/usr/include/c++/11/valarray:

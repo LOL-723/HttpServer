@@ -8,6 +8,7 @@
 #include <iostream>
 #include <map>
 #include <memory>
+#include <mutex>
 #include <unordered_map>
 
 #include <muduo/TcpServer.h>
@@ -120,6 +121,7 @@ public:
 
 private:
     void initialize();
+    std::shared_ptr<ssl::SslConnection> findSslConnection(const muduo::TcpConnectionPtr& conn);
 
     void onConnection(const muduo::TcpConnectionPtr& conn);
     void onMessage(const muduo::TcpConnectionPtr& conn,
@@ -130,9 +132,9 @@ private:
     void handleRequest(const HttpRequest& req, HttpResponse* resp);
     
 private:
+    muduo::EventLoop                        mainLoop_; // 主循环
     muduo::InetAddress                      listenAddr_; // 监听地址
     muduo::TcpServer                        server_; 
-    muduo::EventLoop                        mainLoop_; // 主循环
     HttpCallback                                 httpCallback_; // 回调函数
     router::Router                               router_; // 路由
     std::unique_ptr<session::SessionManager>     sessionManager_; // 会话管理器
@@ -140,7 +142,8 @@ private:
     std::unique_ptr<ssl::SslContext>             sslCtx_; // SSL 上下文
     bool                                         useSSL_; // 是否使用 SSL   
     // TcpConnectionPtr -> SslConnectionPtr 
-    std::map<muduo::TcpConnectionPtr, std::unique_ptr<ssl::SslConnection>> sslConns_;
+    std::mutex                                   sslConnsMutex_;
+    std::map<muduo::TcpConnectionPtr, std::shared_ptr<ssl::SslConnection>> sslConns_;
 }; 
 
 } // namespace http

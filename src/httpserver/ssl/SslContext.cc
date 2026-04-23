@@ -61,6 +61,7 @@ bool SslContext::initialize()
 
 bool SslContext::loadCertificates()
 {
+    LOG_INFO("Loading server certificate from %s", config_.getCertificateFile().c_str());
     // 加载证书
     if (SSL_CTX_use_certificate_file(ctx_,
      config_.getCertificateFile().c_str(), SSL_FILETYPE_PEM) <= 0)
@@ -69,6 +70,7 @@ bool SslContext::loadCertificates()
         return false;
     }
 
+    LOG_INFO("Loading private key from %s", config_.getPrivateKeyFile().c_str());
     // 加载私钥
     if (SSL_CTX_use_PrivateKey_file(ctx_, 
         config_.getPrivateKeyFile().c_str(), SSL_FILETYPE_PEM) <= 0)

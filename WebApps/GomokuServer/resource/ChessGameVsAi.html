@@ -179,6 +179,8 @@
     </div>
 
     <script>
+        let suppressLogoutOnUnload = false;
+
         // 将所有变量声明在一个对象中管理
         const gameState = {
             boardSize: 15,
@@ -311,6 +313,15 @@
                     aiCell.classList.add('white'); // 添加白色棋子类
                     gameState.boardState[aiMove.x][aiMove.y] = 'white'; // 更新游戏状态
                     gameState.currentPlayer = 'black'; // 切换回人类玩家
+                })
+                .catch(error => {
+                    console.error('Move request failed:', error);
+                    isThinking = false;
+                    hideThinkingMessage();
+                    cell.classList.remove('black');
+                    gameState.boardState[x][y] = 'empty';
+                    gameState.currentPlayer = 'black';
+                    alert('AI 对战请求失败，请重试。');
                 });
         }
 
@@ -356,61 +367,11 @@
 
         // 添加返回菜单函数
         function returnToMenu() {
+            suppressLogoutOnUnload = true;
             isGameOver = false; // 重置游戏结束标志
             isThinking = false; // 重置 AI 思考状态标志
-            // 显示加载状态
-            document.body.innerHTML = `
-                <div id="loading-container">
-                    <div id="loading-title">卡码五子棋</div>
-                    <div class="progress-bar">
-                        <div class="progress"></div>
-                    </div>
-                    <div id="loading-text">加载中...</div>
-                </div>
-            `;
-
-            // 清理游戏状态
             gameState.reset();
-
-            fetch('/menu', {
-                method: 'GET',
-                headers: {
-                    'Accept': 'text/html'
-                }
-            })
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('返回菜单失败');
-                    }
-                    return response.text();
-                })
-                .then(html => {
-                    // 使用 document.open/write/close 完全重置页面
-                    document.open();
-                    document.write(html);
-                    document.close();
-
-                    // 确保在页面加载完成后重新绑定事件
-                    if (document.readyState === 'loading') {
-                        document.addEventListener('DOMContentLoaded', function () {
-                            const playAiButton = document.getElementById('play-ai');
-                            if (playAiButton) {
-                                playAiButton.addEventListener('click', startAiGame);
-                            }
-                        });
-                    } else {
-                        const playAiButton = document.getElementById('play-ai');
-                        if (playAiButton) {
-                            playAiButton.addEventListener('click', startAiGame);
-                        }
-                    }
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                    alert('返回菜单失败，请重试！');
-                    // 恢复游戏界面
-                    location.reload();
-                });
+            window.location.href = '/menu';
         }
 
         // 添加必要的加载状态样式
@@ -475,6 +436,9 @@
 
         // 添加页面刷新/关闭时的处理
         window.addEventListener('beforeunload', function (e) {
+            if (suppressLogoutOnUnload) {
+                return;
+            }
             const userId = sessionStorage.getItem('userId');
             if (userId) {
                 // 创建 Blob 对象，指定 content-type

@@ -85,12 +85,12 @@ clean: CMakeFiles/simple_server.dir/clean
 CMakeFiles/http_server.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33 "Built target http_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44 "Built target http_server"
 .PHONY : CMakeFiles/http_server.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/http_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sorrow/Desktop/HttpServer/build/CMakeFiles 21
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sorrow/Desktop/HttpServer/build/CMakeFiles 32
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/http_server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sorrow/Desktop/HttpServer/build/CMakeFiles 0
 .PHONY : CMakeFiles/http_server.dir/rule
@@ -134,16 +134,16 @@ CMakeFiles/gomoku_server.dir/clean:
 # Target rules for target CMakeFiles/simple_server.dir
 
 # All Build rule for target.
-CMakeFiles/simple_server.dir/all: CMakeFiles/http_server.dir/all
 CMakeFiles/simple_server.dir/all: CMakeFiles/gomoku_server.dir/all
+CMakeFiles/simple_server.dir/all: CMakeFiles/http_server.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=34,35 "Built target simple_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=45,46 "Built target simple_server"
 .PHONY : CMakeFiles/simple_server.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/simple_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sorrow/Desktop/HttpServer/build/CMakeFiles 35
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sorrow/Desktop/HttpServer/build/CMakeFiles 46
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/simple_server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sorrow/Desktop/HttpServer/build/CMakeFiles 0
 .PHONY : CMakeFiles/simple_server.dir/rule

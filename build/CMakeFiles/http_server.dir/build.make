@@ -69,10 +69,38 @@ include CMakeFiles/http_server.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/http_server.dir/flags.make
 
+CMakeFiles/http_server.dir/src/httpserver/Utils/db/DbConnection.cc.o: CMakeFiles/http_server.dir/flags.make
+CMakeFiles/http_server.dir/src/httpserver/Utils/db/DbConnection.cc.o: ../src/httpserver/Utils/db/DbConnection.cc
+CMakeFiles/http_server.dir/src/httpserver/Utils/db/DbConnection.cc.o: CMakeFiles/http_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/http_server.dir/src/httpserver/Utils/db/DbConnection.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/http_server.dir/src/httpserver/Utils/db/DbConnection.cc.o -MF CMakeFiles/http_server.dir/src/httpserver/Utils/db/DbConnection.cc.o.d -o CMakeFiles/http_server.dir/src/httpserver/Utils/db/DbConnection.cc.o -c /home/sorrow/Desktop/HttpServer/src/httpserver/Utils/db/DbConnection.cc
+
+CMakeFiles/http_server.dir/src/httpserver/Utils/db/DbConnection.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/http_server.dir/src/httpserver/Utils/db/DbConnection.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sorrow/Desktop/HttpServer/src/httpserver/Utils/db/DbConnection.cc > CMakeFiles/http_server.dir/src/httpserver/Utils/db/DbConnection.cc.i
+
+CMakeFiles/http_server.dir/src/httpserver/Utils/db/DbConnection.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/http_server.dir/src/httpserver/Utils/db/DbConnection.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sorrow/Desktop/HttpServer/src/httpserver/Utils/db/DbConnection.cc -o CMakeFiles/http_server.dir/src/httpserver/Utils/db/DbConnection.cc.s
+
+CMakeFiles/http_server.dir/src/httpserver/Utils/db/DbConnectionPool.cc.o: CMakeFiles/http_server.dir/flags.make
+CMakeFiles/http_server.dir/src/httpserver/Utils/db/DbConnectionPool.cc.o: ../src/httpserver/Utils/db/DbConnectionPool.cc
+CMakeFiles/http_server.dir/src/httpserver/Utils/db/DbConnectionPool.cc.o: CMakeFiles/http_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/http_server.dir/src/httpserver/Utils/db/DbConnectionPool.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/http_server.dir/src/httpserver/Utils/db/DbConnectionPool.cc.o -MF CMakeFiles/http_server.dir/src/httpserver/Utils/db/DbConnectionPool.cc.o.d -o CMakeFiles/http_server.dir/src/httpserver/Utils/db/DbConnectionPool.cc.o -c /home/sorrow/Desktop/HttpServer/src/httpserver/Utils/db/DbConnectionPool.cc
+
+CMakeFiles/http_server.dir/src/httpserver/Utils/db/DbConnectionPool.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/http_server.dir/src/httpserver/Utils/db/DbConnectionPool.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sorrow/Desktop/HttpServer/src/httpserver/Utils/db/DbConnectionPool.cc > CMakeFiles/http_server.dir/src/httpserver/Utils/db/DbConnectionPool.cc.i
+
+CMakeFiles/http_server.dir/src/httpserver/Utils/db/DbConnectionPool.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/http_server.dir/src/httpserver/Utils/db/DbConnectionPool.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sorrow/Desktop/HttpServer/src/httpserver/Utils/db/DbConnectionPool.cc -o CMakeFiles/http_server.dir/src/httpserver/Utils/db/DbConnectionPool.cc.s
+
 CMakeFiles/http_server.dir/src/httpserver/http/HttpContext.cpp.o: CMakeFiles/http_server.dir/flags.make
 CMakeFiles/http_server.dir/src/httpserver/http/HttpContext.cpp.o: ../src/httpserver/http/HttpContext.cpp
 CMakeFiles/http_server.dir/src/httpserver/http/HttpContext.cpp.o: CMakeFiles/http_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/http_server.dir/src/httpserver/http/HttpContext.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/http_server.dir/src/httpserver/http/HttpContext.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/http_server.dir/src/httpserver/http/HttpContext.cpp.o -MF CMakeFiles/http_server.dir/src/httpserver/http/HttpContext.cpp.o.d -o CMakeFiles/http_server.dir/src/httpserver/http/HttpContext.cpp.o -c /home/sorrow/Desktop/HttpServer/src/httpserver/http/HttpContext.cpp
 
 CMakeFiles/http_server.dir/src/httpserver/http/HttpContext.cpp.i: cmake_force
@@ -86,7 +114,7 @@ CMakeFiles/http_server.dir/src/httpserver/http/HttpContext.cpp.s: cmake_force
 CMakeFiles/http_server.dir/src/httpserver/http/HttpRequest.cpp.o: CMakeFiles/http_server.dir/flags.make
 CMakeFiles/http_server.dir/src/httpserver/http/HttpRequest.cpp.o: ../src/httpserver/http/HttpRequest.cpp
 CMakeFiles/http_server.dir/src/httpserver/http/HttpRequest.cpp.o: CMakeFiles/http_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/http_server.dir/src/httpserver/http/HttpRequest.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/http_server.dir/src/httpserver/http/HttpRequest.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/http_server.dir/src/httpserver/http/HttpRequest.cpp.o -MF CMakeFiles/http_server.dir/src/httpserver/http/HttpRequest.cpp.o.d -o CMakeFiles/http_server.dir/src/httpserver/http/HttpRequest.cpp.o -c /home/sorrow/Desktop/HttpServer/src/httpserver/http/HttpRequest.cpp
 
 CMakeFiles/http_server.dir/src/httpserver/http/HttpRequest.cpp.i: cmake_force
@@ -100,7 +128,7 @@ CMakeFiles/http_server.dir/src/httpserver/http/HttpRequest.cpp.s: cmake_force
 CMakeFiles/http_server.dir/src/httpserver/http/HttpResponse.cpp.o: CMakeFiles/http_server.dir/flags.make
 CMakeFiles/http_server.dir/src/httpserver/http/HttpResponse.cpp.o: ../src/httpserver/http/HttpResponse.cpp
 CMakeFiles/http_server.dir/src/httpserver/http/HttpResponse.cpp.o: CMakeFiles/http_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/http_server.dir/src/httpserver/http/HttpResponse.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/http_server.dir/src/httpserver/http/HttpResponse.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/http_server.dir/src/httpserver/http/HttpResponse.cpp.o -MF CMakeFiles/http_server.dir/src/httpserver/http/HttpResponse.cpp.o.d -o CMakeFiles/http_server.dir/src/httpserver/http/HttpResponse.cpp.o -c /home/sorrow/Desktop/HttpServer/src/httpserver/http/HttpResponse.cpp
 
 CMakeFiles/http_server.dir/src/httpserver/http/HttpResponse.cpp.i: cmake_force
@@ -114,7 +142,7 @@ CMakeFiles/http_server.dir/src/httpserver/http/HttpResponse.cpp.s: cmake_force
 CMakeFiles/http_server.dir/src/httpserver/http/HttpServer.cpp.o: CMakeFiles/http_server.dir/flags.make
 CMakeFiles/http_server.dir/src/httpserver/http/HttpServer.cpp.o: ../src/httpserver/http/HttpServer.cpp
 CMakeFiles/http_server.dir/src/httpserver/http/HttpServer.cpp.o: CMakeFiles/http_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/http_server.dir/src/httpserver/http/HttpServer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/http_server.dir/src/httpserver/http/HttpServer.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/http_server.dir/src/httpserver/http/HttpServer.cpp.o -MF CMakeFiles/http_server.dir/src/httpserver/http/HttpServer.cpp.o.d -o CMakeFiles/http_server.dir/src/httpserver/http/HttpServer.cpp.o -c /home/sorrow/Desktop/HttpServer/src/httpserver/http/HttpServer.cpp
 
 CMakeFiles/http_server.dir/src/httpserver/http/HttpServer.cpp.i: cmake_force
@@ -125,10 +153,136 @@ CMakeFiles/http_server.dir/src/httpserver/http/HttpServer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/http_server.dir/src/httpserver/http/HttpServer.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sorrow/Desktop/HttpServer/src/httpserver/http/HttpServer.cpp -o CMakeFiles/http_server.dir/src/httpserver/http/HttpServer.cpp.s
 
+CMakeFiles/http_server.dir/src/httpserver/middleware/MiddlewareChain.cc.o: CMakeFiles/http_server.dir/flags.make
+CMakeFiles/http_server.dir/src/httpserver/middleware/MiddlewareChain.cc.o: ../src/httpserver/middleware/MiddlewareChain.cc
+CMakeFiles/http_server.dir/src/httpserver/middleware/MiddlewareChain.cc.o: CMakeFiles/http_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/http_server.dir/src/httpserver/middleware/MiddlewareChain.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/http_server.dir/src/httpserver/middleware/MiddlewareChain.cc.o -MF CMakeFiles/http_server.dir/src/httpserver/middleware/MiddlewareChain.cc.o.d -o CMakeFiles/http_server.dir/src/httpserver/middleware/MiddlewareChain.cc.o -c /home/sorrow/Desktop/HttpServer/src/httpserver/middleware/MiddlewareChain.cc
+
+CMakeFiles/http_server.dir/src/httpserver/middleware/MiddlewareChain.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/http_server.dir/src/httpserver/middleware/MiddlewareChain.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sorrow/Desktop/HttpServer/src/httpserver/middleware/MiddlewareChain.cc > CMakeFiles/http_server.dir/src/httpserver/middleware/MiddlewareChain.cc.i
+
+CMakeFiles/http_server.dir/src/httpserver/middleware/MiddlewareChain.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/http_server.dir/src/httpserver/middleware/MiddlewareChain.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sorrow/Desktop/HttpServer/src/httpserver/middleware/MiddlewareChain.cc -o CMakeFiles/http_server.dir/src/httpserver/middleware/MiddlewareChain.cc.s
+
+CMakeFiles/http_server.dir/src/httpserver/middleware/cors/CorsMiddleware.cc.o: CMakeFiles/http_server.dir/flags.make
+CMakeFiles/http_server.dir/src/httpserver/middleware/cors/CorsMiddleware.cc.o: ../src/httpserver/middleware/cors/CorsMiddleware.cc
+CMakeFiles/http_server.dir/src/httpserver/middleware/cors/CorsMiddleware.cc.o: CMakeFiles/http_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/http_server.dir/src/httpserver/middleware/cors/CorsMiddleware.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/http_server.dir/src/httpserver/middleware/cors/CorsMiddleware.cc.o -MF CMakeFiles/http_server.dir/src/httpserver/middleware/cors/CorsMiddleware.cc.o.d -o CMakeFiles/http_server.dir/src/httpserver/middleware/cors/CorsMiddleware.cc.o -c /home/sorrow/Desktop/HttpServer/src/httpserver/middleware/cors/CorsMiddleware.cc
+
+CMakeFiles/http_server.dir/src/httpserver/middleware/cors/CorsMiddleware.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/http_server.dir/src/httpserver/middleware/cors/CorsMiddleware.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sorrow/Desktop/HttpServer/src/httpserver/middleware/cors/CorsMiddleware.cc > CMakeFiles/http_server.dir/src/httpserver/middleware/cors/CorsMiddleware.cc.i
+
+CMakeFiles/http_server.dir/src/httpserver/middleware/cors/CorsMiddleware.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/http_server.dir/src/httpserver/middleware/cors/CorsMiddleware.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sorrow/Desktop/HttpServer/src/httpserver/middleware/cors/CorsMiddleware.cc -o CMakeFiles/http_server.dir/src/httpserver/middleware/cors/CorsMiddleware.cc.s
+
+CMakeFiles/http_server.dir/src/httpserver/router/Router.cc.o: CMakeFiles/http_server.dir/flags.make
+CMakeFiles/http_server.dir/src/httpserver/router/Router.cc.o: ../src/httpserver/router/Router.cc
+CMakeFiles/http_server.dir/src/httpserver/router/Router.cc.o: CMakeFiles/http_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/http_server.dir/src/httpserver/router/Router.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/http_server.dir/src/httpserver/router/Router.cc.o -MF CMakeFiles/http_server.dir/src/httpserver/router/Router.cc.o.d -o CMakeFiles/http_server.dir/src/httpserver/router/Router.cc.o -c /home/sorrow/Desktop/HttpServer/src/httpserver/router/Router.cc
+
+CMakeFiles/http_server.dir/src/httpserver/router/Router.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/http_server.dir/src/httpserver/router/Router.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sorrow/Desktop/HttpServer/src/httpserver/router/Router.cc > CMakeFiles/http_server.dir/src/httpserver/router/Router.cc.i
+
+CMakeFiles/http_server.dir/src/httpserver/router/Router.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/http_server.dir/src/httpserver/router/Router.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sorrow/Desktop/HttpServer/src/httpserver/router/Router.cc -o CMakeFiles/http_server.dir/src/httpserver/router/Router.cc.s
+
+CMakeFiles/http_server.dir/src/httpserver/session/Session.cc.o: CMakeFiles/http_server.dir/flags.make
+CMakeFiles/http_server.dir/src/httpserver/session/Session.cc.o: ../src/httpserver/session/Session.cc
+CMakeFiles/http_server.dir/src/httpserver/session/Session.cc.o: CMakeFiles/http_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/http_server.dir/src/httpserver/session/Session.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/http_server.dir/src/httpserver/session/Session.cc.o -MF CMakeFiles/http_server.dir/src/httpserver/session/Session.cc.o.d -o CMakeFiles/http_server.dir/src/httpserver/session/Session.cc.o -c /home/sorrow/Desktop/HttpServer/src/httpserver/session/Session.cc
+
+CMakeFiles/http_server.dir/src/httpserver/session/Session.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/http_server.dir/src/httpserver/session/Session.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sorrow/Desktop/HttpServer/src/httpserver/session/Session.cc > CMakeFiles/http_server.dir/src/httpserver/session/Session.cc.i
+
+CMakeFiles/http_server.dir/src/httpserver/session/Session.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/http_server.dir/src/httpserver/session/Session.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sorrow/Desktop/HttpServer/src/httpserver/session/Session.cc -o CMakeFiles/http_server.dir/src/httpserver/session/Session.cc.s
+
+CMakeFiles/http_server.dir/src/httpserver/session/SessionManager.cc.o: CMakeFiles/http_server.dir/flags.make
+CMakeFiles/http_server.dir/src/httpserver/session/SessionManager.cc.o: ../src/httpserver/session/SessionManager.cc
+CMakeFiles/http_server.dir/src/httpserver/session/SessionManager.cc.o: CMakeFiles/http_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/http_server.dir/src/httpserver/session/SessionManager.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/http_server.dir/src/httpserver/session/SessionManager.cc.o -MF CMakeFiles/http_server.dir/src/httpserver/session/SessionManager.cc.o.d -o CMakeFiles/http_server.dir/src/httpserver/session/SessionManager.cc.o -c /home/sorrow/Desktop/HttpServer/src/httpserver/session/SessionManager.cc
+
+CMakeFiles/http_server.dir/src/httpserver/session/SessionManager.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/http_server.dir/src/httpserver/session/SessionManager.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sorrow/Desktop/HttpServer/src/httpserver/session/SessionManager.cc > CMakeFiles/http_server.dir/src/httpserver/session/SessionManager.cc.i
+
+CMakeFiles/http_server.dir/src/httpserver/session/SessionManager.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/http_server.dir/src/httpserver/session/SessionManager.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sorrow/Desktop/HttpServer/src/httpserver/session/SessionManager.cc -o CMakeFiles/http_server.dir/src/httpserver/session/SessionManager.cc.s
+
+CMakeFiles/http_server.dir/src/httpserver/session/SessionStorage.cc.o: CMakeFiles/http_server.dir/flags.make
+CMakeFiles/http_server.dir/src/httpserver/session/SessionStorage.cc.o: ../src/httpserver/session/SessionStorage.cc
+CMakeFiles/http_server.dir/src/httpserver/session/SessionStorage.cc.o: CMakeFiles/http_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/http_server.dir/src/httpserver/session/SessionStorage.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/http_server.dir/src/httpserver/session/SessionStorage.cc.o -MF CMakeFiles/http_server.dir/src/httpserver/session/SessionStorage.cc.o.d -o CMakeFiles/http_server.dir/src/httpserver/session/SessionStorage.cc.o -c /home/sorrow/Desktop/HttpServer/src/httpserver/session/SessionStorage.cc
+
+CMakeFiles/http_server.dir/src/httpserver/session/SessionStorage.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/http_server.dir/src/httpserver/session/SessionStorage.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sorrow/Desktop/HttpServer/src/httpserver/session/SessionStorage.cc > CMakeFiles/http_server.dir/src/httpserver/session/SessionStorage.cc.i
+
+CMakeFiles/http_server.dir/src/httpserver/session/SessionStorage.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/http_server.dir/src/httpserver/session/SessionStorage.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sorrow/Desktop/HttpServer/src/httpserver/session/SessionStorage.cc -o CMakeFiles/http_server.dir/src/httpserver/session/SessionStorage.cc.s
+
+CMakeFiles/http_server.dir/src/httpserver/ssl/SslConfig.cc.o: CMakeFiles/http_server.dir/flags.make
+CMakeFiles/http_server.dir/src/httpserver/ssl/SslConfig.cc.o: ../src/httpserver/ssl/SslConfig.cc
+CMakeFiles/http_server.dir/src/httpserver/ssl/SslConfig.cc.o: CMakeFiles/http_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/http_server.dir/src/httpserver/ssl/SslConfig.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/http_server.dir/src/httpserver/ssl/SslConfig.cc.o -MF CMakeFiles/http_server.dir/src/httpserver/ssl/SslConfig.cc.o.d -o CMakeFiles/http_server.dir/src/httpserver/ssl/SslConfig.cc.o -c /home/sorrow/Desktop/HttpServer/src/httpserver/ssl/SslConfig.cc
+
+CMakeFiles/http_server.dir/src/httpserver/ssl/SslConfig.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/http_server.dir/src/httpserver/ssl/SslConfig.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sorrow/Desktop/HttpServer/src/httpserver/ssl/SslConfig.cc > CMakeFiles/http_server.dir/src/httpserver/ssl/SslConfig.cc.i
+
+CMakeFiles/http_server.dir/src/httpserver/ssl/SslConfig.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/http_server.dir/src/httpserver/ssl/SslConfig.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sorrow/Desktop/HttpServer/src/httpserver/ssl/SslConfig.cc -o CMakeFiles/http_server.dir/src/httpserver/ssl/SslConfig.cc.s
+
+CMakeFiles/http_server.dir/src/httpserver/ssl/SslConnection.cc.o: CMakeFiles/http_server.dir/flags.make
+CMakeFiles/http_server.dir/src/httpserver/ssl/SslConnection.cc.o: ../src/httpserver/ssl/SslConnection.cc
+CMakeFiles/http_server.dir/src/httpserver/ssl/SslConnection.cc.o: CMakeFiles/http_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/http_server.dir/src/httpserver/ssl/SslConnection.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/http_server.dir/src/httpserver/ssl/SslConnection.cc.o -MF CMakeFiles/http_server.dir/src/httpserver/ssl/SslConnection.cc.o.d -o CMakeFiles/http_server.dir/src/httpserver/ssl/SslConnection.cc.o -c /home/sorrow/Desktop/HttpServer/src/httpserver/ssl/SslConnection.cc
+
+CMakeFiles/http_server.dir/src/httpserver/ssl/SslConnection.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/http_server.dir/src/httpserver/ssl/SslConnection.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sorrow/Desktop/HttpServer/src/httpserver/ssl/SslConnection.cc > CMakeFiles/http_server.dir/src/httpserver/ssl/SslConnection.cc.i
+
+CMakeFiles/http_server.dir/src/httpserver/ssl/SslConnection.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/http_server.dir/src/httpserver/ssl/SslConnection.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sorrow/Desktop/HttpServer/src/httpserver/ssl/SslConnection.cc -o CMakeFiles/http_server.dir/src/httpserver/ssl/SslConnection.cc.s
+
+CMakeFiles/http_server.dir/src/httpserver/ssl/SslContext.cc.o: CMakeFiles/http_server.dir/flags.make
+CMakeFiles/http_server.dir/src/httpserver/ssl/SslContext.cc.o: ../src/httpserver/ssl/SslContext.cc
+CMakeFiles/http_server.dir/src/httpserver/ssl/SslContext.cc.o: CMakeFiles/http_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/http_server.dir/src/httpserver/ssl/SslContext.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/http_server.dir/src/httpserver/ssl/SslContext.cc.o -MF CMakeFiles/http_server.dir/src/httpserver/ssl/SslContext.cc.o.d -o CMakeFiles/http_server.dir/src/httpserver/ssl/SslContext.cc.o -c /home/sorrow/Desktop/HttpServer/src/httpserver/ssl/SslContext.cc
+
+CMakeFiles/http_server.dir/src/httpserver/ssl/SslContext.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/http_server.dir/src/httpserver/ssl/SslContext.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sorrow/Desktop/HttpServer/src/httpserver/ssl/SslContext.cc > CMakeFiles/http_server.dir/src/httpserver/ssl/SslContext.cc.i
+
+CMakeFiles/http_server.dir/src/httpserver/ssl/SslContext.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/http_server.dir/src/httpserver/ssl/SslContext.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sorrow/Desktop/HttpServer/src/httpserver/ssl/SslContext.cc -o CMakeFiles/http_server.dir/src/httpserver/ssl/SslContext.cc.s
+
 CMakeFiles/http_server.dir/src/muduo/Acceptor.cc.o: CMakeFiles/http_server.dir/flags.make
 CMakeFiles/http_server.dir/src/muduo/Acceptor.cc.o: ../src/muduo/Acceptor.cc
 CMakeFiles/http_server.dir/src/muduo/Acceptor.cc.o: CMakeFiles/http_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/http_server.dir/src/muduo/Acceptor.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/http_server.dir/src/muduo/Acceptor.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/http_server.dir/src/muduo/Acceptor.cc.o -MF CMakeFiles/http_server.dir/src/muduo/Acceptor.cc.o.d -o CMakeFiles/http_server.dir/src/muduo/Acceptor.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/Acceptor.cc
 
 CMakeFiles/http_server.dir/src/muduo/Acceptor.cc.i: cmake_force
@@ -142,7 +296,7 @@ CMakeFiles/http_server.dir/src/muduo/Acceptor.cc.s: cmake_force
 CMakeFiles/http_server.dir/src/muduo/Buffer.cc.o: CMakeFiles/http_server.dir/flags.make
 CMakeFiles/http_server.dir/src/muduo/Buffer.cc.o: ../src/muduo/Buffer.cc
 CMakeFiles/http_server.dir/src/muduo/Buffer.cc.o: CMakeFiles/http_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/http_server.dir/src/muduo/Buffer.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/http_server.dir/src/muduo/Buffer.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/http_server.dir/src/muduo/Buffer.cc.o -MF CMakeFiles/http_server.dir/src/muduo/Buffer.cc.o.d -o CMakeFiles/http_server.dir/src/muduo/Buffer.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/Buffer.cc
 
 CMakeFiles/http_server.dir/src/muduo/Buffer.cc.i: cmake_force
@@ -156,7 +310,7 @@ CMakeFiles/http_server.dir/src/muduo/Buffer.cc.s: cmake_force
 CMakeFiles/http_server.dir/src/muduo/Channel.cc.o: CMakeFiles/http_server.dir/flags.make
 CMakeFiles/http_server.dir/src/muduo/Channel.cc.o: ../src/muduo/Channel.cc
 CMakeFiles/http_server.dir/src/muduo/Channel.cc.o: CMakeFiles/http_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/http_server.dir/src/muduo/Channel.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/http_server.dir/src/muduo/Channel.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/http_server.dir/src/muduo/Channel.cc.o -MF CMakeFiles/http_server.dir/src/muduo/Channel.cc.o.d -o CMakeFiles/http_server.dir/src/muduo/Channel.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/Channel.cc
 
 CMakeFiles/http_server.dir/src/muduo/Channel.cc.i: cmake_force
@@ -170,7 +324,7 @@ CMakeFiles/http_server.dir/src/muduo/Channel.cc.s: cmake_force
 CMakeFiles/http_server.dir/src/muduo/CurrentThread.cc.o: CMakeFiles/http_server.dir/flags.make
 CMakeFiles/http_server.dir/src/muduo/CurrentThread.cc.o: ../src/muduo/CurrentThread.cc
 CMakeFiles/http_server.dir/src/muduo/CurrentThread.cc.o: CMakeFiles/http_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/http_server.dir/src/muduo/CurrentThread.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/http_server.dir/src/muduo/CurrentThread.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/http_server.dir/src/muduo/CurrentThread.cc.o -MF CMakeFiles/http_server.dir/src/muduo/CurrentThread.cc.o.d -o CMakeFiles/http_server.dir/src/muduo/CurrentThread.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/CurrentThread.cc
 
 CMakeFiles/http_server.dir/src/muduo/CurrentThread.cc.i: cmake_force
@@ -184,7 +338,7 @@ CMakeFiles/http_server.dir/src/muduo/CurrentThread.cc.s: cmake_force
 CMakeFiles/http_server.dir/src/muduo/EPollPoller.cc.o: CMakeFiles/http_server.dir/flags.make
 CMakeFiles/http_server.dir/src/muduo/EPollPoller.cc.o: ../src/muduo/EPollPoller.cc
 CMakeFiles/http_server.dir/src/muduo/EPollPoller.cc.o: CMakeFiles/http_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/http_server.dir/src/muduo/EPollPoller.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/http_server.dir/src/muduo/EPollPoller.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/http_server.dir/src/muduo/EPollPoller.cc.o -MF CMakeFiles/http_server.dir/src/muduo/EPollPoller.cc.o.d -o CMakeFiles/http_server.dir/src/muduo/EPollPoller.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/EPollPoller.cc
 
 CMakeFiles/http_server.dir/src/muduo/EPollPoller.cc.i: cmake_force
@@ -198,7 +352,7 @@ CMakeFiles/http_server.dir/src/muduo/EPollPoller.cc.s: cmake_force
 CMakeFiles/http_server.dir/src/muduo/EventLoop.cc.o: CMakeFiles/http_server.dir/flags.make
 CMakeFiles/http_server.dir/src/muduo/EventLoop.cc.o: ../src/muduo/EventLoop.cc
 CMakeFiles/http_server.dir/src/muduo/EventLoop.cc.o: CMakeFiles/http_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/http_server.dir/src/muduo/EventLoop.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/http_server.dir/src/muduo/EventLoop.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/http_server.dir/src/muduo/EventLoop.cc.o -MF CMakeFiles/http_server.dir/src/muduo/EventLoop.cc.o.d -o CMakeFiles/http_server.dir/src/muduo/EventLoop.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/EventLoop.cc
 
 CMakeFiles/http_server.dir/src/muduo/EventLoop.cc.i: cmake_force
@@ -212,7 +366,7 @@ CMakeFiles/http_server.dir/src/muduo/EventLoop.cc.s: cmake_force
 CMakeFiles/http_server.dir/src/muduo/EventLoopThread.cc.o: CMakeFiles/http_server.dir/flags.make
 CMakeFiles/http_server.dir/src/muduo/EventLoopThread.cc.o: ../src/muduo/EventLoopThread.cc
 CMakeFiles/http_server.dir/src/muduo/EventLoopThread.cc.o: CMakeFiles/http_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/http_server.dir/src/muduo/EventLoopThread.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/http_server.dir/src/muduo/EventLoopThread.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/http_server.dir/src/muduo/EventLoopThread.cc.o -MF CMakeFiles/http_server.dir/src/muduo/EventLoopThread.cc.o.d -o CMakeFiles/http_server.dir/src/muduo/EventLoopThread.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/EventLoopThread.cc
 
 CMakeFiles/http_server.dir/src/muduo/EventLoopThread.cc.i: cmake_force
@@ -226,7 +380,7 @@ CMakeFiles/http_server.dir/src/muduo/EventLoopThread.cc.s: cmake_force
 CMakeFiles/http_server.dir/src/muduo/EventLoopThreadPool.cc.o: CMakeFiles/http_server.dir/flags.make
 CMakeFiles/http_server.dir/src/muduo/EventLoopThreadPool.cc.o: ../src/muduo/EventLoopThreadPool.cc
 CMakeFiles/http_server.dir/src/muduo/EventLoopThreadPool.cc.o: CMakeFiles/http_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/http_server.dir/src/muduo/EventLoopThreadPool.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/http_server.dir/src/muduo/EventLoopThreadPool.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/http_server.dir/src/muduo/EventLoopThreadPool.cc.o -MF CMakeFiles/http_server.dir/src/muduo/EventLoopThreadPool.cc.o.d -o CMakeFiles/http_server.dir/src/muduo/EventLoopThreadPool.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/EventLoopThreadPool.cc
 
 CMakeFiles/http_server.dir/src/muduo/EventLoopThreadPool.cc.i: cmake_force
@@ -240,7 +394,7 @@ CMakeFiles/http_server.dir/src/muduo/EventLoopThreadPool.cc.s: cmake_force
 CMakeFiles/http_server.dir/src/muduo/InetAddress.cc.o: CMakeFiles/http_server.dir/flags.make
 CMakeFiles/http_server.dir/src/muduo/InetAddress.cc.o: ../src/muduo/InetAddress.cc
 CMakeFiles/http_server.dir/src/muduo/InetAddress.cc.o: CMakeFiles/http_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/http_server.dir/src/muduo/InetAddress.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/http_server.dir/src/muduo/InetAddress.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/http_server.dir/src/muduo/InetAddress.cc.o -MF CMakeFiles/http_server.dir/src/muduo/InetAddress.cc.o.d -o CMakeFiles/http_server.dir/src/muduo/InetAddress.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/InetAddress.cc
 
 CMakeFiles/http_server.dir/src/muduo/InetAddress.cc.i: cmake_force
@@ -254,7 +408,7 @@ CMakeFiles/http_server.dir/src/muduo/InetAddress.cc.s: cmake_force
 CMakeFiles/http_server.dir/src/muduo/Logger.cc.o: CMakeFiles/http_server.dir/flags.make
 CMakeFiles/http_server.dir/src/muduo/Logger.cc.o: ../src/muduo/Logger.cc
 CMakeFiles/http_server.dir/src/muduo/Logger.cc.o: CMakeFiles/http_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/http_server.dir/src/muduo/Logger.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/http_server.dir/src/muduo/Logger.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/http_server.dir/src/muduo/Logger.cc.o -MF CMakeFiles/http_server.dir/src/muduo/Logger.cc.o.d -o CMakeFiles/http_server.dir/src/muduo/Logger.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/Logger.cc
 
 CMakeFiles/http_server.dir/src/muduo/Logger.cc.i: cmake_force
@@ -268,7 +422,7 @@ CMakeFiles/http_server.dir/src/muduo/Logger.cc.s: cmake_force
 CMakeFiles/http_server.dir/src/muduo/Poller.cc.o: CMakeFiles/http_server.dir/flags.make
 CMakeFiles/http_server.dir/src/muduo/Poller.cc.o: ../src/muduo/Poller.cc
 CMakeFiles/http_server.dir/src/muduo/Poller.cc.o: CMakeFiles/http_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/http_server.dir/src/muduo/Poller.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/http_server.dir/src/muduo/Poller.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/http_server.dir/src/muduo/Poller.cc.o -MF CMakeFiles/http_server.dir/src/muduo/Poller.cc.o.d -o CMakeFiles/http_server.dir/src/muduo/Poller.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/Poller.cc
 
 CMakeFiles/http_server.dir/src/muduo/Poller.cc.i: cmake_force
@@ -282,7 +436,7 @@ CMakeFiles/http_server.dir/src/muduo/Poller.cc.s: cmake_force
 CMakeFiles/http_server.dir/src/muduo/Socket.cc.o: CMakeFiles/http_server.dir/flags.make
 CMakeFiles/http_server.dir/src/muduo/Socket.cc.o: ../src/muduo/Socket.cc
 CMakeFiles/http_server.dir/src/muduo/Socket.cc.o: CMakeFiles/http_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/http_server.dir/src/muduo/Socket.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/http_server.dir/src/muduo/Socket.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/http_server.dir/src/muduo/Socket.cc.o -MF CMakeFiles/http_server.dir/src/muduo/Socket.cc.o.d -o CMakeFiles/http_server.dir/src/muduo/Socket.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/Socket.cc
 
 CMakeFiles/http_server.dir/src/muduo/Socket.cc.i: cmake_force
@@ -296,7 +450,7 @@ CMakeFiles/http_server.dir/src/muduo/Socket.cc.s: cmake_force
 CMakeFiles/http_server.dir/src/muduo/TcpConnection.cc.o: CMakeFiles/http_server.dir/flags.make
 CMakeFiles/http_server.dir/src/muduo/TcpConnection.cc.o: ../src/muduo/TcpConnection.cc
 CMakeFiles/http_server.dir/src/muduo/TcpConnection.cc.o: CMakeFiles/http_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/http_server.dir/src/muduo/TcpConnection.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/http_server.dir/src/muduo/TcpConnection.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/http_server.dir/src/muduo/TcpConnection.cc.o -MF CMakeFiles/http_server.dir/src/muduo/TcpConnection.cc.o.d -o CMakeFiles/http_server.dir/src/muduo/TcpConnection.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/TcpConnection.cc
 
 CMakeFiles/http_server.dir/src/muduo/TcpConnection.cc.i: cmake_force
@@ -310,7 +464,7 @@ CMakeFiles/http_server.dir/src/muduo/TcpConnection.cc.s: cmake_force
 CMakeFiles/http_server.dir/src/muduo/TcpServer.cc.o: CMakeFiles/http_server.dir/flags.make
 CMakeFiles/http_server.dir/src/muduo/TcpServer.cc.o: ../src/muduo/TcpServer.cc
 CMakeFiles/http_server.dir/src/muduo/TcpServer.cc.o: CMakeFiles/http_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/http_server.dir/src/muduo/TcpServer.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/http_server.dir/src/muduo/TcpServer.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/http_server.dir/src/muduo/TcpServer.cc.o -MF CMakeFiles/http_server.dir/src/muduo/TcpServer.cc.o.d -o CMakeFiles/http_server.dir/src/muduo/TcpServer.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/TcpServer.cc
 
 CMakeFiles/http_server.dir/src/muduo/TcpServer.cc.i: cmake_force
@@ -324,7 +478,7 @@ CMakeFiles/http_server.dir/src/muduo/TcpServer.cc.s: cmake_force
 CMakeFiles/http_server.dir/src/muduo/Thread.cc.o: CMakeFiles/http_server.dir/flags.make
 CMakeFiles/http_server.dir/src/muduo/Thread.cc.o: ../src/muduo/Thread.cc
 CMakeFiles/http_server.dir/src/muduo/Thread.cc.o: CMakeFiles/http_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/http_server.dir/src/muduo/Thread.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/http_server.dir/src/muduo/Thread.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/http_server.dir/src/muduo/Thread.cc.o -MF CMakeFiles/http_server.dir/src/muduo/Thread.cc.o.d -o CMakeFiles/http_server.dir/src/muduo/Thread.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/Thread.cc
 
 CMakeFiles/http_server.dir/src/muduo/Thread.cc.i: cmake_force
@@ -338,7 +492,7 @@ CMakeFiles/http_server.dir/src/muduo/Thread.cc.s: cmake_force
 CMakeFiles/http_server.dir/src/muduo/Timestamp.cc.o: CMakeFiles/http_server.dir/flags.make
 CMakeFiles/http_server.dir/src/muduo/Timestamp.cc.o: ../src/muduo/Timestamp.cc
 CMakeFiles/http_server.dir/src/muduo/Timestamp.cc.o: CMakeFiles/http_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/http_server.dir/src/muduo/Timestamp.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/http_server.dir/src/muduo/Timestamp.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/http_server.dir/src/muduo/Timestamp.cc.o -MF CMakeFiles/http_server.dir/src/muduo/Timestamp.cc.o.d -o CMakeFiles/http_server.dir/src/muduo/Timestamp.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/Timestamp.cc
 
 CMakeFiles/http_server.dir/src/muduo/Timestamp.cc.i: cmake_force
@@ -351,10 +505,21 @@ CMakeFiles/http_server.dir/src/muduo/Timestamp.cc.s: cmake_force
 
 # Object files for target http_server
 http_server_OBJECTS = \
+"CMakeFiles/http_server.dir/src/httpserver/Utils/db/DbConnection.cc.o" \
+"CMakeFiles/http_server.dir/src/httpserver/Utils/db/DbConnectionPool.cc.o" \
 "CMakeFiles/http_server.dir/src/httpserver/http/HttpContext.cpp.o" \
 "CMakeFiles/http_server.dir/src/httpserver/http/HttpRequest.cpp.o" \
 "CMakeFiles/http_server.dir/src/httpserver/http/HttpResponse.cpp.o" \
 "CMakeFiles/http_server.dir/src/httpserver/http/HttpServer.cpp.o" \
+"CMakeFiles/http_server.dir/src/httpserver/middleware/MiddlewareChain.cc.o" \
+"CMakeFiles/http_server.dir/src/httpserver/middleware/cors/CorsMiddleware.cc.o" \
+"CMakeFiles/http_server.dir/src/httpserver/router/Router.cc.o" \
+"CMakeFiles/http_server.dir/src/httpserver/session/Session.cc.o" \
+"CMakeFiles/http_server.dir/src/httpserver/session/SessionManager.cc.o" \
+"CMakeFiles/http_server.dir/src/httpserver/session/SessionStorage.cc.o" \
+"CMakeFiles/http_server.dir/src/httpserver/ssl/SslConfig.cc.o" \
+"CMakeFiles/http_server.dir/src/httpserver/ssl/SslConnection.cc.o" \
+"CMakeFiles/http_server.dir/src/httpserver/ssl/SslContext.cc.o" \
 "CMakeFiles/http_server.dir/src/muduo/Acceptor.cc.o" \
 "CMakeFiles/http_server.dir/src/muduo/Buffer.cc.o" \
 "CMakeFiles/http_server.dir/src/muduo/Channel.cc.o" \
@@ -375,10 +540,21 @@ http_server_OBJECTS = \
 # External object files for target http_server
 http_server_EXTERNAL_OBJECTS =
 
+libhttp_server.a: CMakeFiles/http_server.dir/src/httpserver/Utils/db/DbConnection.cc.o
+libhttp_server.a: CMakeFiles/http_server.dir/src/httpserver/Utils/db/DbConnectionPool.cc.o
 libhttp_server.a: CMakeFiles/http_server.dir/src/httpserver/http/HttpContext.cpp.o
 libhttp_server.a: CMakeFiles/http_server.dir/src/httpserver/http/HttpRequest.cpp.o
 libhttp_server.a: CMakeFiles/http_server.dir/src/httpserver/http/HttpResponse.cpp.o
 libhttp_server.a: CMakeFiles/http_server.dir/src/httpserver/http/HttpServer.cpp.o
+libhttp_server.a: CMakeFiles/http_server.dir/src/httpserver/middleware/MiddlewareChain.cc.o
+libhttp_server.a: CMakeFiles/http_server.dir/src/httpserver/middleware/cors/CorsMiddleware.cc.o
+libhttp_server.a: CMakeFiles/http_server.dir/src/httpserver/router/Router.cc.o
+libhttp_server.a: CMakeFiles/http_server.dir/src/httpserver/session/Session.cc.o
+libhttp_server.a: CMakeFiles/http_server.dir/src/httpserver/session/SessionManager.cc.o
+libhttp_server.a: CMakeFiles/http_server.dir/src/httpserver/session/SessionStorage.cc.o
+libhttp_server.a: CMakeFiles/http_server.dir/src/httpserver/ssl/SslConfig.cc.o
+libhttp_server.a: CMakeFiles/http_server.dir/src/httpserver/ssl/SslConnection.cc.o
+libhttp_server.a: CMakeFiles/http_server.dir/src/httpserver/ssl/SslContext.cc.o
 libhttp_server.a: CMakeFiles/http_server.dir/src/muduo/Acceptor.cc.o
 libhttp_server.a: CMakeFiles/http_server.dir/src/muduo/Buffer.cc.o
 libhttp_server.a: CMakeFiles/http_server.dir/src/muduo/Channel.cc.o
@@ -397,7 +573,7 @@ libhttp_server.a: CMakeFiles/http_server.dir/src/muduo/Thread.cc.o
 libhttp_server.a: CMakeFiles/http_server.dir/src/muduo/Timestamp.cc.o
 libhttp_server.a: CMakeFiles/http_server.dir/build.make
 libhttp_server.a: CMakeFiles/http_server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX static library libhttp_server.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Linking CXX static library libhttp_server.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/http_server.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/http_server.dir/link.txt --verbose=$(VERBOSE)
 

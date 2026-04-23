@@ -46,9 +46,6 @@ SslConnection::SslConnection(const TcpConnectionPtr& conn, SslContext* ctx)
     // 设置 SSL 选项
     SSL_set_mode(ssl_, SSL_MODE_ACCEPT_MOVING_WRITE_BUFFER);
     SSL_set_mode(ssl_,SSL_MODE_ENABLE_PARTIAL_WRITE);
-    
-    // 设置连接回调
-    conn_->setMessageCallback(std::bind(&SslConnection::onRead,this,std::placeholders::_1,std::placeholders::_2,std::placeholders::_3));
 }
 
 SslConnection::~SslConnection() 
@@ -63,6 +60,43 @@ void SslConnection::startHandshake()
 {
     SSL_set_accept_state(ssl_);
     handleHandshake();
+}
+
+void SslConnection::flushWriteBio()
+{
+    if (!writeBio_) {
+        return;
+    }
+
+    char buf[4096];
+    int pending = 0;
+    while ((pending = BIO_pending(writeBio_)) > 0) {
+        int bytes = BIO_read(writeBio_, buf, std::min(pending, static_cast<int>(sizeof(buf))));
+        if (bytes <= 0) {
+            break;
+        }
+        conn_->send(std::string(buf, bytes));
+    }
+}
+
+void SslConnection::drainApplicationData(const TcpConnectionPtr& conn, muduo::Timestamp time)
+{
+    char decryptedData[4096];
+    int ret = 0;
+
+    decryptedBuffer_.retrieveAll();
+    while ((ret = SSL_read(ssl_, decryptedData, sizeof(decryptedData))) > 0) {
+        decryptedBuffer_.append(decryptedData, ret);
+    }
+
+    if (decryptedBuffer_.readableBytes() > 0 && messageCallback_) {
+        messageCallback_(conn, &decryptedBuffer_, time);
+    }
+
+    int err = SSL_get_error(ssl_, ret);
+    if (err != SSL_ERROR_WANT_READ && err != SSL_ERROR_WANT_WRITE && err != SSL_ERROR_ZERO_RETURN) {
+        LOG_ERROR("SSL_read error: %d", err);
+    }
 }
 /*        TCP socket (muduo)
 *                ↓
@@ -99,14 +133,7 @@ void SslConnection::send(const void* data, size_t len)
         return;
     }
 
-    char buf[4096];
-    int pending;
-    while((pending=BIO_pending(writeBio_))>0){
-        int bytes=BIO_read(writeBio_, buf, std::min(pending,static_cast<int>(sizeof(buf))));
-        if(bytes>0){
-            conn_->send(std::string(buf, bytes),bytes);
-        }
-    }
+    flushWriteBio();
 }
 
 /*握手阶段
@@ -154,6 +181,9 @@ void SslConnection::onRead(const TcpConnectionPtr& conn, BufferPtr buf,
         }
         //完成握手
         handleHandshake();
+        if (state_ == SSLState::ESTABLISHED) {
+            drainApplicationData(conn, time);
+        }
         return;
     }else if(state_==SSLState::ESTABLISHED){
         //完成握手已经建立连接后，将要解密的数据放到缓冲区中（此时数据处于加密状态）
@@ -161,33 +191,14 @@ void SslConnection::onRead(const TcpConnectionPtr& conn, BufferPtr buf,
         if(written>0){
             buf->retrieve(written);
         }
-        char decryptedData[4096];
-        int ret;
-        muduo::Buffer decryptedBuffer;
-        //分片+流式输出，循环解密直至全部解密完成
-        while((ret=SSL_read(ssl_, decryptedData, sizeof(decryptedData)))>0){
-            decryptedBuffer.append(decryptedData,ret);
-            /*//消息回调上层，decryptedBuffer只负责解密过程，解密完把明文封装成Buffer传给上层执行业务逻辑
-            if(messageCallback_){
-                messageCallback_(conn,&decryptedBuffer,time);
-            }*/
-        }
-        //消息回调上层，decryptedBuffer只负责解密过程，解密完把明文封装成Buffer传给上层执行业务逻辑
-        // 将完整解密后的明文交给上层处理，避免碎片数据
-        if (decryptedBuffer.readableBytes() > 0 && messageCallback_) {
-            messageCallback_(conn, &decryptedBuffer, time);
-        }
-        // 处理 SSL 状态
-        int err = SSL_get_error(ssl_, ret);
-        if (err != SSL_ERROR_WANT_READ && err != SSL_ERROR_WANT_WRITE) {
-            LOG_ERROR("SSL_read error: %d", err);
-        }
+        drainApplicationData(conn, time);
     }
 }
 
 void SslConnection::handleHandshake() 
 {
     int ret = SSL_do_handshake(ssl_);
+    flushWriteBio();
     
     if (ret == 1) {
         state_ = SSLState::ESTABLISHED;

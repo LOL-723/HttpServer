@@ -3,7 +3,7 @@
 namespace ssl
 {
 SslConfig::SslConfig()
-    // TLS 1.3 cipher suites（建议补充）
+    // TLS 1.3 cipher suites
     : cipherSuites_("TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384")
 
     , verifyMode_(VerifyMode::NONE)
@@ -11,7 +11,7 @@ SslConfig::SslConfig()
 
     , sessionTimeout_(300)
 
-    // 单位：bytes（建议明确）
+    // 单位：bytes
     , sessionCacheSize_(20 * 1024)
 {
 }

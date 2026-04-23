@@ -1,6 +1,7 @@
 #pragma once
 
 #include <atomic>
+#include <filesystem>
 #include <memory>
 #include <tuple>
 #include <unordered_map>
@@ -9,6 +10,7 @@
 
 #include "AiGame.h"
 #include <httpserver/http/HttpServer.h>
+#include <httpserver/ssl/SslConfig.h>
 #include <httpserver/utils/MysqlUtil.h>
 #include <httpserver/utils/FileUtils.h>
 #include <httpserver/utils/JsonUtil.h>
@@ -36,7 +38,9 @@ public:
                  muduo::TcpServer::Option option = muduo::TcpServer::kNoReusePort);
 
     void setThreadNum(int numThreads);
+    void setSslConfig(const ssl::SslConfig& config);
     void start();
+    std::string resourcePath(const std::string& relativePath) const;
 private:
     void initialize();
     void initializeSession();
@@ -91,6 +95,7 @@ private:
     }
     
 private:
+    std::filesystem::path                          projectRoot_;
     friend class EntryHandler;
     friend class LoginHandler;
     friend class RegisterHandler;

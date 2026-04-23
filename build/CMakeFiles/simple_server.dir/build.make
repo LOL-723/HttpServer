@@ -92,10 +92,11 @@ simple_server_EXTERNAL_OBJECTS =
 
 simple_server: CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o
 simple_server: CMakeFiles/simple_server.dir/build.make
-simple_server: libhttp_server.a
 simple_server: libgomoku_server.a
+simple_server: libhttp_server.a
 simple_server: /usr/lib/x86_64-linux-gnu/libssl.so
 simple_server: /usr/lib/x86_64-linux-gnu/libcrypto.so
+simple_server: /usr/lib/x86_64-linux-gnu/libmysqlcppconn.so
 simple_server: CMakeFiles/simple_server.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sorrow/Desktop/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable simple_server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/simple_server.dir/link.txt --verbose=$(VERBOSE)

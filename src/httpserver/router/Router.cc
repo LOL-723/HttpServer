@@ -21,6 +21,7 @@ bool Router::route(const HttpRequest &req, HttpResponse *resp){
     auto handlerIt=handlers_.find(key);
     if(handlerIt!=handlers_.end()){
         handlerIt->second->handle(req, resp);
+        return true;
     }
 
     // 查找回调函数
@@ -59,7 +60,7 @@ bool Router::route(const HttpRequest &req, HttpResponse *resp){
             HttpRequest newReq(req); // 因为这里需要用这一次所以是可以改的
             extractPathParameters(match, newReq);
 
-            callback(req, resp);
+            callback(newReq, resp);
             return true;
         }
     }

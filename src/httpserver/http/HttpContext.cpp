@@ -29,40 +29,41 @@ bool HttpContext::parseRequest(Buffer *buf, Timestamp receiveTime){
                 const char*colon=std::find(buf->peek(),crlf,':');
                 if(colon<crlf){
                     request_.addHeader(buf->peek(), colon, crlf);
-                }else{ if(buf->peek()==crlf){
-                    // 空行，结束Header
-                    // 根据请求方法和Content-Length判断是否需要继续读取body
-                    if(request_.method()==HttpRequest::kPost || request_.method()==HttpRequest::kPut){
-                        std::string contentLength=request_.getHeader("Content-Length");
+                    buf->retrieveUntil(crlf + 2); // 进入下一行 Header
+                }else{
+                    if(buf->peek()==crlf){
+                        // 空行，结束Header
+                        // 根据请求方法和Content-Length判断是否需要继续读取body
+                        if(request_.method()==HttpRequest::kPost || request_.method()==HttpRequest::kPut){
+                            std::string contentLength=request_.getHeader("Content-Length");
 
-                        if(!contentLength.empty()){
-                            request_.setContentLength(std::stoi(contentLength));
+                            if(!contentLength.empty()){
+                                request_.setContentLength(std::stoi(contentLength));
 
-                            if(request_.contentLength()>0){
-                                state_=kExpectBody;
+                                if(request_.contentLength()>0){
+                                    state_=kExpectBody;
+                                }else{
+                                    state_=kGotAll;
+                                    hasMore=false;
+                                }
+
                             }else{
-                                state_=kGotAll;
-                                hasMore=false;
+                                // POST/PUT 请求没有 Content-Length，是HTTP语法错误
+                                ok = false;
+                                hasMore = false;
                             }
 
                         }else{
-                            // POST/PUT 请求没有 Content-Length，是HTTP语法错误
-                            ok = false;
+                            // GET/HEAD/DELETE 等方法直接完成（没有请求体）
+                            state_ = kGotAll; 
                             hasMore = false;
                         }
 
                     }else{
-                        // GET/HEAD/DELETE 等方法直接完成（没有请求体）
-                        state_ = kGotAll; 
-                        hasMore = false;
-                    }
-
-                }else{
                         ok = false; // Header行格式错误
                         hasMore = false;
                     }
-
-                buf->retrieveUntil(crlf + 2); // 开始读指针指向下一行数据
+                    buf->retrieveUntil(crlf + 2); // 开始读指针指向下一行数据
                 }
             }else{
                 hasMore = false;

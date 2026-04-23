@@ -1,162 +1,217 @@
 [
 {
   "directory": "/home/sorrow/Desktop/HttpServer/build",
-  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/http_server.dir/src/httpserver/http/HttpContext.cpp.o -c /home/sorrow/Desktop/HttpServer/src/httpserver/http/HttpContext.cpp",
+  "command": "/usr/bin/c++ -DHTTP_SERVER_PROJECT_ROOT=\\\"/home/sorrow/Desktop/HttpServer\\\" -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/http_server.dir/src/httpserver/Utils/db/DbConnection.cc.o -c /home/sorrow/Desktop/HttpServer/src/httpserver/Utils/db/DbConnection.cc",
+  "file": "/home/sorrow/Desktop/HttpServer/src/httpserver/Utils/db/DbConnection.cc"
+},
+{
+  "directory": "/home/sorrow/Desktop/HttpServer/build",
+  "command": "/usr/bin/c++ -DHTTP_SERVER_PROJECT_ROOT=\\\"/home/sorrow/Desktop/HttpServer\\\" -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/http_server.dir/src/httpserver/Utils/db/DbConnectionPool.cc.o -c /home/sorrow/Desktop/HttpServer/src/httpserver/Utils/db/DbConnectionPool.cc",
+  "file": "/home/sorrow/Desktop/HttpServer/src/httpserver/Utils/db/DbConnectionPool.cc"
+},
+{
+  "directory": "/home/sorrow/Desktop/HttpServer/build",
+  "command": "/usr/bin/c++ -DHTTP_SERVER_PROJECT_ROOT=\\\"/home/sorrow/Desktop/HttpServer\\\" -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/http_server.dir/src/httpserver/http/HttpContext.cpp.o -c /home/sorrow/Desktop/HttpServer/src/httpserver/http/HttpContext.cpp",
   "file": "/home/sorrow/Desktop/HttpServer/src/httpserver/http/HttpContext.cpp"
 },
 {
   "directory": "/home/sorrow/Desktop/HttpServer/build",
-  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/http_server.dir/src/httpserver/http/HttpRequest.cpp.o -c /home/sorrow/Desktop/HttpServer/src/httpserver/http/HttpRequest.cpp",
+  "command": "/usr/bin/c++ -DHTTP_SERVER_PROJECT_ROOT=\\\"/home/sorrow/Desktop/HttpServer\\\" -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/http_server.dir/src/httpserver/http/HttpRequest.cpp.o -c /home/sorrow/Desktop/HttpServer/src/httpserver/http/HttpRequest.cpp",
   "file": "/home/sorrow/Desktop/HttpServer/src/httpserver/http/HttpRequest.cpp"
 },
 {
   "directory": "/home/sorrow/Desktop/HttpServer/build",
-  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/http_server.dir/src/httpserver/http/HttpResponse.cpp.o -c /home/sorrow/Desktop/HttpServer/src/httpserver/http/HttpResponse.cpp",
+  "command": "/usr/bin/c++ -DHTTP_SERVER_PROJECT_ROOT=\\\"/home/sorrow/Desktop/HttpServer\\\" -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/http_server.dir/src/httpserver/http/HttpResponse.cpp.o -c /home/sorrow/Desktop/HttpServer/src/httpserver/http/HttpResponse.cpp",
   "file": "/home/sorrow/Desktop/HttpServer/src/httpserver/http/HttpResponse.cpp"
 },
 {
   "directory": "/home/sorrow/Desktop/HttpServer/build",
-  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/http_server.dir/src/httpserver/http/HttpServer.cpp.o -c /home/sorrow/Desktop/HttpServer/src/httpserver/http/HttpServer.cpp",
+  "command": "/usr/bin/c++ -DHTTP_SERVER_PROJECT_ROOT=\\\"/home/sorrow/Desktop/HttpServer\\\" -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/http_server.dir/src/httpserver/http/HttpServer.cpp.o -c /home/sorrow/Desktop/HttpServer/src/httpserver/http/HttpServer.cpp",
   "file": "/home/sorrow/Desktop/HttpServer/src/httpserver/http/HttpServer.cpp"
 },
 {
   "directory": "/home/sorrow/Desktop/HttpServer/build",
-  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/http_server.dir/src/muduo/Acceptor.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/Acceptor.cc",
+  "command": "/usr/bin/c++ -DHTTP_SERVER_PROJECT_ROOT=\\\"/home/sorrow/Desktop/HttpServer\\\" -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/http_server.dir/src/httpserver/middleware/MiddlewareChain.cc.o -c /home/sorrow/Desktop/HttpServer/src/httpserver/middleware/MiddlewareChain.cc",
+  "file": "/home/sorrow/Desktop/HttpServer/src/httpserver/middleware/MiddlewareChain.cc"
+},
+{
+  "directory": "/home/sorrow/Desktop/HttpServer/build",
+  "command": "/usr/bin/c++ -DHTTP_SERVER_PROJECT_ROOT=\\\"/home/sorrow/Desktop/HttpServer\\\" -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/http_server.dir/src/httpserver/middleware/cors/CorsMiddleware.cc.o -c /home/sorrow/Desktop/HttpServer/src/httpserver/middleware/cors/CorsMiddleware.cc",
+  "file": "/home/sorrow/Desktop/HttpServer/src/httpserver/middleware/cors/CorsMiddleware.cc"
+},
+{
+  "directory": "/home/sorrow/Desktop/HttpServer/build",
+  "command": "/usr/bin/c++ -DHTTP_SERVER_PROJECT_ROOT=\\\"/home/sorrow/Desktop/HttpServer\\\" -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/http_server.dir/src/httpserver/router/Router.cc.o -c /home/sorrow/Desktop/HttpServer/src/httpserver/router/Router.cc",
+  "file": "/home/sorrow/Desktop/HttpServer/src/httpserver/router/Router.cc"
+},
+{
+  "directory": "/home/sorrow/Desktop/HttpServer/build",
+  "command": "/usr/bin/c++ -DHTTP_SERVER_PROJECT_ROOT=\\\"/home/sorrow/Desktop/HttpServer\\\" -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/http_server.dir/src/httpserver/session/Session.cc.o -c /home/sorrow/Desktop/HttpServer/src/httpserver/session/Session.cc",
+  "file": "/home/sorrow/Desktop/HttpServer/src/httpserver/session/Session.cc"
+},
+{
+  "directory": "/home/sorrow/Desktop/HttpServer/build",
+  "command": "/usr/bin/c++ -DHTTP_SERVER_PROJECT_ROOT=\\\"/home/sorrow/Desktop/HttpServer\\\" -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/http_server.dir/src/httpserver/session/SessionManager.cc.o -c /home/sorrow/Desktop/HttpServer/src/httpserver/session/SessionManager.cc",
+  "file": "/home/sorrow/Desktop/HttpServer/src/httpserver/session/SessionManager.cc"
+},
+{
+  "directory": "/home/sorrow/Desktop/HttpServer/build",
+  "command": "/usr/bin/c++ -DHTTP_SERVER_PROJECT_ROOT=\\\"/home/sorrow/Desktop/HttpServer\\\" -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/http_server.dir/src/httpserver/session/SessionStorage.cc.o -c /home/sorrow/Desktop/HttpServer/src/httpserver/session/SessionStorage.cc",
+  "file": "/home/sorrow/Desktop/HttpServer/src/httpserver/session/SessionStorage.cc"
+},
+{
+  "directory": "/home/sorrow/Desktop/HttpServer/build",
+  "command": "/usr/bin/c++ -DHTTP_SERVER_PROJECT_ROOT=\\\"/home/sorrow/Desktop/HttpServer\\\" -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/http_server.dir/src/httpserver/ssl/SslConfig.cc.o -c /home/sorrow/Desktop/HttpServer/src/httpserver/ssl/SslConfig.cc",
+  "file": "/home/sorrow/Desktop/HttpServer/src/httpserver/ssl/SslConfig.cc"
+},
+{
+  "directory": "/home/sorrow/Desktop/HttpServer/build",
+  "command": "/usr/bin/c++ -DHTTP_SERVER_PROJECT_ROOT=\\\"/home/sorrow/Desktop/HttpServer\\\" -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/http_server.dir/src/httpserver/ssl/SslConnection.cc.o -c /home/sorrow/Desktop/HttpServer/src/httpserver/ssl/SslConnection.cc",
+  "file": "/home/sorrow/Desktop/HttpServer/src/httpserver/ssl/SslConnection.cc"
+},
+{
+  "directory": "/home/sorrow/Desktop/HttpServer/build",
+  "command": "/usr/bin/c++ -DHTTP_SERVER_PROJECT_ROOT=\\\"/home/sorrow/Desktop/HttpServer\\\" -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/http_server.dir/src/httpserver/ssl/SslContext.cc.o -c /home/sorrow/Desktop/HttpServer/src/httpserver/ssl/SslContext.cc",
+  "file": "/home/sorrow/Desktop/HttpServer/src/httpserver/ssl/SslContext.cc"
+},
+{
+  "directory": "/home/sorrow/Desktop/HttpServer/build",
+  "command": "/usr/bin/c++ -DHTTP_SERVER_PROJECT_ROOT=\\\"/home/sorrow/Desktop/HttpServer\\\" -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/http_server.dir/src/muduo/Acceptor.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/Acceptor.cc",
   "file": "/home/sorrow/Desktop/HttpServer/src/muduo/Acceptor.cc"
 },
 {
   "directory": "/home/sorrow/Desktop/HttpServer/build",
-  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/http_server.dir/src/muduo/Buffer.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/Buffer.cc",
+  "command": "/usr/bin/c++ -DHTTP_SERVER_PROJECT_ROOT=\\\"/home/sorrow/Desktop/HttpServer\\\" -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/http_server.dir/src/muduo/Buffer.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/Buffer.cc",
   "file": "/home/sorrow/Desktop/HttpServer/src/muduo/Buffer.cc"
 },
 {
   "directory": "/home/sorrow/Desktop/HttpServer/build",
-  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/http_server.dir/src/muduo/Channel.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/Channel.cc",
+  "command": "/usr/bin/c++ -DHTTP_SERVER_PROJECT_ROOT=\\\"/home/sorrow/Desktop/HttpServer\\\" -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/http_server.dir/src/muduo/Channel.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/Channel.cc",
   "file": "/home/sorrow/Desktop/HttpServer/src/muduo/Channel.cc"
 },
 {
   "directory": "/home/sorrow/Desktop/HttpServer/build",
-  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/http_server.dir/src/muduo/CurrentThread.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/CurrentThread.cc",
+  "command": "/usr/bin/c++ -DHTTP_SERVER_PROJECT_ROOT=\\\"/home/sorrow/Desktop/HttpServer\\\" -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/http_server.dir/src/muduo/CurrentThread.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/CurrentThread.cc",
   "file": "/home/sorrow/Desktop/HttpServer/src/muduo/CurrentThread.cc"
 },
 {
   "directory": "/home/sorrow/Desktop/HttpServer/build",
-  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/http_server.dir/src/muduo/EPollPoller.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/EPollPoller.cc",
+  "command": "/usr/bin/c++ -DHTTP_SERVER_PROJECT_ROOT=\\\"/home/sorrow/Desktop/HttpServer\\\" -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/http_server.dir/src/muduo/EPollPoller.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/EPollPoller.cc",
   "file": "/home/sorrow/Desktop/HttpServer/src/muduo/EPollPoller.cc"
 },
 {
   "directory": "/home/sorrow/Desktop/HttpServer/build",
-  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/http_server.dir/src/muduo/EventLoop.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/EventLoop.cc",
+  "command": "/usr/bin/c++ -DHTTP_SERVER_PROJECT_ROOT=\\\"/home/sorrow/Desktop/HttpServer\\\" -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/http_server.dir/src/muduo/EventLoop.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/EventLoop.cc",
   "file": "/home/sorrow/Desktop/HttpServer/src/muduo/EventLoop.cc"
 },
 {
   "directory": "/home/sorrow/Desktop/HttpServer/build",
-  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/http_server.dir/src/muduo/EventLoopThread.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/EventLoopThread.cc",
+  "command": "/usr/bin/c++ -DHTTP_SERVER_PROJECT_ROOT=\\\"/home/sorrow/Desktop/HttpServer\\\" -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/http_server.dir/src/muduo/EventLoopThread.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/EventLoopThread.cc",
   "file": "/home/sorrow/Desktop/HttpServer/src/muduo/EventLoopThread.cc"
 },
 {
   "directory": "/home/sorrow/Desktop/HttpServer/build",
-  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/http_server.dir/src/muduo/EventLoopThreadPool.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/EventLoopThreadPool.cc",
+  "command": "/usr/bin/c++ -DHTTP_SERVER_PROJECT_ROOT=\\\"/home/sorrow/Desktop/HttpServer\\\" -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/http_server.dir/src/muduo/EventLoopThreadPool.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/EventLoopThreadPool.cc",
   "file": "/home/sorrow/Desktop/HttpServer/src/muduo/EventLoopThreadPool.cc"
 },
 {
   "directory": "/home/sorrow/Desktop/HttpServer/build",
-  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/http_server.dir/src/muduo/InetAddress.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/InetAddress.cc",
+  "command": "/usr/bin/c++ -DHTTP_SERVER_PROJECT_ROOT=\\\"/home/sorrow/Desktop/HttpServer\\\" -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/http_server.dir/src/muduo/InetAddress.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/InetAddress.cc",
   "file": "/home/sorrow/Desktop/HttpServer/src/muduo/InetAddress.cc"
 },
 {
   "directory": "/home/sorrow/Desktop/HttpServer/build",
-  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/http_server.dir/src/muduo/Logger.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/Logger.cc",
+  "command": "/usr/bin/c++ -DHTTP_SERVER_PROJECT_ROOT=\\\"/home/sorrow/Desktop/HttpServer\\\" -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/http_server.dir/src/muduo/Logger.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/Logger.cc",
   "file": "/home/sorrow/Desktop/HttpServer/src/muduo/Logger.cc"
 },
 {
   "directory": "/home/sorrow/Desktop/HttpServer/build",
-  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/http_server.dir/src/muduo/Poller.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/Poller.cc",
+  "command": "/usr/bin/c++ -DHTTP_SERVER_PROJECT_ROOT=\\\"/home/sorrow/Desktop/HttpServer\\\" -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/http_server.dir/src/muduo/Poller.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/Poller.cc",
   "file": "/home/sorrow/Desktop/HttpServer/src/muduo/Poller.cc"
 },
 {
   "directory": "/home/sorrow/Desktop/HttpServer/build",
-  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/http_server.dir/src/muduo/Socket.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/Socket.cc",
+  "command": "/usr/bin/c++ -DHTTP_SERVER_PROJECT_ROOT=\\\"/home/sorrow/Desktop/HttpServer\\\" -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/http_server.dir/src/muduo/Socket.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/Socket.cc",
   "file": "/home/sorrow/Desktop/HttpServer/src/muduo/Socket.cc"
 },
 {
   "directory": "/home/sorrow/Desktop/HttpServer/build",
-  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/http_server.dir/src/muduo/TcpConnection.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/TcpConnection.cc",
+  "command": "/usr/bin/c++ -DHTTP_SERVER_PROJECT_ROOT=\\\"/home/sorrow/Desktop/HttpServer\\\" -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/http_server.dir/src/muduo/TcpConnection.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/TcpConnection.cc",
   "file": "/home/sorrow/Desktop/HttpServer/src/muduo/TcpConnection.cc"
 },
 {
   "directory": "/home/sorrow/Desktop/HttpServer/build",
-  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/http_server.dir/src/muduo/TcpServer.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/TcpServer.cc",
+  "command": "/usr/bin/c++ -DHTTP_SERVER_PROJECT_ROOT=\\\"/home/sorrow/Desktop/HttpServer\\\" -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/http_server.dir/src/muduo/TcpServer.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/TcpServer.cc",
   "file": "/home/sorrow/Desktop/HttpServer/src/muduo/TcpServer.cc"
 },
 {
   "directory": "/home/sorrow/Desktop/HttpServer/build",
-  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/http_server.dir/src/muduo/Thread.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/Thread.cc",
+  "command": "/usr/bin/c++ -DHTTP_SERVER_PROJECT_ROOT=\\\"/home/sorrow/Desktop/HttpServer\\\" -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/http_server.dir/src/muduo/Thread.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/Thread.cc",
   "file": "/home/sorrow/Desktop/HttpServer/src/muduo/Thread.cc"
 },
 {
   "directory": "/home/sorrow/Desktop/HttpServer/build",
-  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/http_server.dir/src/muduo/Timestamp.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/Timestamp.cc",
+  "command": "/usr/bin/c++ -DHTTP_SERVER_PROJECT_ROOT=\\\"/home/sorrow/Desktop/HttpServer\\\" -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/http_server.dir/src/muduo/Timestamp.cc.o -c /home/sorrow/Desktop/HttpServer/src/muduo/Timestamp.cc",
   "file": "/home/sorrow/Desktop/HttpServer/src/muduo/Timestamp.cc"
 },
 {
   "directory": "/home/sorrow/Desktop/HttpServer/build",
-  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/gomoku_server.dir/WebApps/GomokuServer/src/AiGame.cpp.o -c /home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/src/AiGame.cpp",
+  "command": "/usr/bin/c++ -DHTTP_SERVER_PROJECT_ROOT=\\\"/home/sorrow/Desktop/HttpServer\\\" -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/gomoku_server.dir/WebApps/GomokuServer/src/AiGame.cpp.o -c /home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/src/AiGame.cpp",
   "file": "/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/src/AiGame.cpp"
 },
 {
   "directory": "/home/sorrow/Desktop/HttpServer/build",
-  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/gomoku_server.dir/WebApps/GomokuServer/src/GomokuServer.cpp.o -c /home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/src/GomokuServer.cpp",
+  "command": "/usr/bin/c++ -DHTTP_SERVER_PROJECT_ROOT=\\\"/home/sorrow/Desktop/HttpServer\\\" -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/gomoku_server.dir/WebApps/GomokuServer/src/GomokuServer.cpp.o -c /home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/src/GomokuServer.cpp",
   "file": "/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/src/GomokuServer.cpp"
 },
 {
   "directory": "/home/sorrow/Desktop/HttpServer/build",
-  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/gomoku_server.dir/WebApps/GomokuServer/src/handlers/AiGameMoveHandler.cpp.o -c /home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/src/handlers/AiGameMoveHandler.cpp",
+  "command": "/usr/bin/c++ -DHTTP_SERVER_PROJECT_ROOT=\\\"/home/sorrow/Desktop/HttpServer\\\" -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/gomoku_server.dir/WebApps/GomokuServer/src/handlers/AiGameMoveHandler.cpp.o -c /home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/src/handlers/AiGameMoveHandler.cpp",
   "file": "/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/src/handlers/AiGameMoveHandler.cpp"
 },
 {
   "directory": "/home/sorrow/Desktop/HttpServer/build",
-  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/gomoku_server.dir/WebApps/GomokuServer/src/handlers/AiGameStartHandler.cpp.o -c /home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/src/handlers/AiGameStartHandler.cpp",
+  "command": "/usr/bin/c++ -DHTTP_SERVER_PROJECT_ROOT=\\\"/home/sorrow/Desktop/HttpServer\\\" -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/gomoku_server.dir/WebApps/GomokuServer/src/handlers/AiGameStartHandler.cpp.o -c /home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/src/handlers/AiGameStartHandler.cpp",
   "file": "/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/src/handlers/AiGameStartHandler.cpp"
 },
 {
   "directory": "/home/sorrow/Desktop/HttpServer/build",
-  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/gomoku_server.dir/WebApps/GomokuServer/src/handlers/EntryHandler.cpp.o -c /home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/src/handlers/EntryHandler.cpp",
+  "command": "/usr/bin/c++ -DHTTP_SERVER_PROJECT_ROOT=\\\"/home/sorrow/Desktop/HttpServer\\\" -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/gomoku_server.dir/WebApps/GomokuServer/src/handlers/EntryHandler.cpp.o -c /home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/src/handlers/EntryHandler.cpp",
   "file": "/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/src/handlers/EntryHandler.cpp"
 },
 {
   "directory": "/home/sorrow/Desktop/HttpServer/build",
-  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/gomoku_server.dir/WebApps/GomokuServer/src/handlers/GameBackendHandler.cpp.o -c /home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/src/handlers/GameBackendHandler.cpp",
+  "command": "/usr/bin/c++ -DHTTP_SERVER_PROJECT_ROOT=\\\"/home/sorrow/Desktop/HttpServer\\\" -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/gomoku_server.dir/WebApps/GomokuServer/src/handlers/GameBackendHandler.cpp.o -c /home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/src/handlers/GameBackendHandler.cpp",
   "file": "/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/src/handlers/GameBackendHandler.cpp"
 },
 {
   "directory": "/home/sorrow/Desktop/HttpServer/build",
-  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/gomoku_server.dir/WebApps/GomokuServer/src/handlers/LoginHandler.cpp.o -c /home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/src/handlers/LoginHandler.cpp",
+  "command": "/usr/bin/c++ -DHTTP_SERVER_PROJECT_ROOT=\\\"/home/sorrow/Desktop/HttpServer\\\" -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/gomoku_server.dir/WebApps/GomokuServer/src/handlers/LoginHandler.cpp.o -c /home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/src/handlers/LoginHandler.cpp",
   "file": "/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/src/handlers/LoginHandler.cpp"
 },
 {
   "directory": "/home/sorrow/Desktop/HttpServer/build",
-  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/gomoku_server.dir/WebApps/GomokuServer/src/handlers/Loginout.cpp.o -c /home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/src/handlers/Loginout.cpp",
+  "command": "/usr/bin/c++ -DHTTP_SERVER_PROJECT_ROOT=\\\"/home/sorrow/Desktop/HttpServer\\\" -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/gomoku_server.dir/WebApps/GomokuServer/src/handlers/Loginout.cpp.o -c /home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/src/handlers/Loginout.cpp",
   "file": "/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/src/handlers/Loginout.cpp"
 },
 {
   "directory": "/home/sorrow/Desktop/HttpServer/build",
-  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/gomoku_server.dir/WebApps/GomokuServer/src/handlers/MenuHandler.cpp.o -c /home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/src/handlers/MenuHandler.cpp",
+  "command": "/usr/bin/c++ -DHTTP_SERVER_PROJECT_ROOT=\\\"/home/sorrow/Desktop/HttpServer\\\" -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/gomoku_server.dir/WebApps/GomokuServer/src/handlers/MenuHandler.cpp.o -c /home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/src/handlers/MenuHandler.cpp",
   "file": "/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/src/handlers/MenuHandler.cpp"
 },
 {
   "directory": "/home/sorrow/Desktop/HttpServer/build",
-  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/gomoku_server.dir/WebApps/GomokuServer/src/handlers/RegisterHandler.cpp.o -c /home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/src/handlers/RegisterHandler.cpp",
+  "command": "/usr/bin/c++ -DHTTP_SERVER_PROJECT_ROOT=\\\"/home/sorrow/Desktop/HttpServer\\\" -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/gomoku_server.dir/WebApps/GomokuServer/src/handlers/RegisterHandler.cpp.o -c /home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/src/handlers/RegisterHandler.cpp",
   "file": "/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/src/handlers/RegisterHandler.cpp"
 },
 {
   "directory": "/home/sorrow/Desktop/HttpServer/build",
-  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/gomoku_server.dir/WebApps/GomokuServer/src/main.cpp.o -c /home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/src/main.cpp",
+  "command": "/usr/bin/c++ -DHTTP_SERVER_PROJECT_ROOT=\\\"/home/sorrow/Desktop/HttpServer\\\" -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/gomoku_server.dir/WebApps/GomokuServer/src/main.cpp.o -c /home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/src/main.cpp",
   "file": "/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/src/main.cpp"
 },
 {
   "directory": "/home/sorrow/Desktop/HttpServer/build",
-  "command": "/usr/bin/c++  -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -std=gnu++17 -o CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o -c /home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/src/main.cpp",
+  "command": "/usr/bin/c++ -DHTTP_SERVER_PROJECT_ROOT=\\\"/home/sorrow/Desktop/HttpServer\\\" -I/home/sorrow/Desktop/HttpServer -I/home/sorrow/Desktop/HttpServer/include -I/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/include -I/usr/include/mysql-cppconn-8 -I/usr/include/mysql -g -std=gnu++17 -o CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o -c /home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/src/main.cpp",
   "file": "/home/sorrow/Desktop/HttpServer/WebApps/GomokuServer/src/main.cpp"
 }
 ]

@@ -27,7 +27,7 @@ public:
     void resetDefaultFile()
     {
         file_.close();
-        file_.open("/Gomoku/GomokuServer/resource/NotFound.html", std::ios::binary);
+        file_.open(std::string(HTTP_SERVER_PROJECT_ROOT) + "/WebApps/GomokuServer/resource/NotFound.html", std::ios::binary);
     }
 
     uint64_t size()

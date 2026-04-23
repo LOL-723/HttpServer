@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o -o simple_server  libhttp_server.a libgomoku_server.a -lpthread /usr/lib/x86_64-linux-gnu/libssl.so /usr/lib/x86_64-linux-gnu/libcrypto.so 
+/usr/bin/c++ -g CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o -o simple_server  libgomoku_server.a libhttp_server.a -lpthread /usr/lib/x86_64-linux-gnu/libssl.so /usr/lib/x86_64-linux-gnu/libcrypto.so /usr/lib/x86_64-linux-gnu/libmysqlcppconn.so 

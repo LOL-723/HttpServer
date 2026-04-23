@@ -422,6 +422,54 @@ WebApps/GomokuServer/src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.s
 .PHONY : WebApps/GomokuServer/src/main.cpp.s
 
+src/httpserver/Utils/db/DbConnection.o: src/httpserver/Utils/db/DbConnection.cc.o
+.PHONY : src/httpserver/Utils/db/DbConnection.o
+
+# target to build an object file
+src/httpserver/Utils/db/DbConnection.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/src/httpserver/Utils/db/DbConnection.cc.o
+.PHONY : src/httpserver/Utils/db/DbConnection.cc.o
+
+src/httpserver/Utils/db/DbConnection.i: src/httpserver/Utils/db/DbConnection.cc.i
+.PHONY : src/httpserver/Utils/db/DbConnection.i
+
+# target to preprocess a source file
+src/httpserver/Utils/db/DbConnection.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/src/httpserver/Utils/db/DbConnection.cc.i
+.PHONY : src/httpserver/Utils/db/DbConnection.cc.i
+
+src/httpserver/Utils/db/DbConnection.s: src/httpserver/Utils/db/DbConnection.cc.s
+.PHONY : src/httpserver/Utils/db/DbConnection.s
+
+# target to generate assembly for a file
+src/httpserver/Utils/db/DbConnection.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/src/httpserver/Utils/db/DbConnection.cc.s
+.PHONY : src/httpserver/Utils/db/DbConnection.cc.s
+
+src/httpserver/Utils/db/DbConnectionPool.o: src/httpserver/Utils/db/DbConnectionPool.cc.o
+.PHONY : src/httpserver/Utils/db/DbConnectionPool.o
+
+# target to build an object file
+src/httpserver/Utils/db/DbConnectionPool.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/src/httpserver/Utils/db/DbConnectionPool.cc.o
+.PHONY : src/httpserver/Utils/db/DbConnectionPool.cc.o
+
+src/httpserver/Utils/db/DbConnectionPool.i: src/httpserver/Utils/db/DbConnectionPool.cc.i
+.PHONY : src/httpserver/Utils/db/DbConnectionPool.i
+
+# target to preprocess a source file
+src/httpserver/Utils/db/DbConnectionPool.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/src/httpserver/Utils/db/DbConnectionPool.cc.i
+.PHONY : src/httpserver/Utils/db/DbConnectionPool.cc.i
+
+src/httpserver/Utils/db/DbConnectionPool.s: src/httpserver/Utils/db/DbConnectionPool.cc.s
+.PHONY : src/httpserver/Utils/db/DbConnectionPool.s
+
+# target to generate assembly for a file
+src/httpserver/Utils/db/DbConnectionPool.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/src/httpserver/Utils/db/DbConnectionPool.cc.s
+.PHONY : src/httpserver/Utils/db/DbConnectionPool.cc.s
+
 src/httpserver/http/HttpContext.o: src/httpserver/http/HttpContext.cpp.o
 .PHONY : src/httpserver/http/HttpContext.o
 
@@ -517,6 +565,222 @@ src/httpserver/http/HttpServer.s: src/httpserver/http/HttpServer.cpp.s
 src/httpserver/http/HttpServer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/src/httpserver/http/HttpServer.cpp.s
 .PHONY : src/httpserver/http/HttpServer.cpp.s
+
+src/httpserver/middleware/MiddlewareChain.o: src/httpserver/middleware/MiddlewareChain.cc.o
+.PHONY : src/httpserver/middleware/MiddlewareChain.o
+
+# target to build an object file
+src/httpserver/middleware/MiddlewareChain.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/src/httpserver/middleware/MiddlewareChain.cc.o
+.PHONY : src/httpserver/middleware/MiddlewareChain.cc.o
+
+src/httpserver/middleware/MiddlewareChain.i: src/httpserver/middleware/MiddlewareChain.cc.i
+.PHONY : src/httpserver/middleware/MiddlewareChain.i
+
+# target to preprocess a source file
+src/httpserver/middleware/MiddlewareChain.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/src/httpserver/middleware/MiddlewareChain.cc.i
+.PHONY : src/httpserver/middleware/MiddlewareChain.cc.i
+
+src/httpserver/middleware/MiddlewareChain.s: src/httpserver/middleware/MiddlewareChain.cc.s
+.PHONY : src/httpserver/middleware/MiddlewareChain.s
+
+# target to generate assembly for a file
+src/httpserver/middleware/MiddlewareChain.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/src/httpserver/middleware/MiddlewareChain.cc.s
+.PHONY : src/httpserver/middleware/MiddlewareChain.cc.s
+
+src/httpserver/middleware/cors/CorsMiddleware.o: src/httpserver/middleware/cors/CorsMiddleware.cc.o
+.PHONY : src/httpserver/middleware/cors/CorsMiddleware.o
+
+# target to build an object file
+src/httpserver/middleware/cors/CorsMiddleware.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/src/httpserver/middleware/cors/CorsMiddleware.cc.o
+.PHONY : src/httpserver/middleware/cors/CorsMiddleware.cc.o
+
+src/httpserver/middleware/cors/CorsMiddleware.i: src/httpserver/middleware/cors/CorsMiddleware.cc.i
+.PHONY : src/httpserver/middleware/cors/CorsMiddleware.i
+
+# target to preprocess a source file
+src/httpserver/middleware/cors/CorsMiddleware.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/src/httpserver/middleware/cors/CorsMiddleware.cc.i
+.PHONY : src/httpserver/middleware/cors/CorsMiddleware.cc.i
+
+src/httpserver/middleware/cors/CorsMiddleware.s: src/httpserver/middleware/cors/CorsMiddleware.cc.s
+.PHONY : src/httpserver/middleware/cors/CorsMiddleware.s
+
+# target to generate assembly for a file
+src/httpserver/middleware/cors/CorsMiddleware.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/src/httpserver/middleware/cors/CorsMiddleware.cc.s
+.PHONY : src/httpserver/middleware/cors/CorsMiddleware.cc.s
+
+src/httpserver/router/Router.o: src/httpserver/router/Router.cc.o
+.PHONY : src/httpserver/router/Router.o
+
+# target to build an object file
+src/httpserver/router/Router.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/src/httpserver/router/Router.cc.o
+.PHONY : src/httpserver/router/Router.cc.o
+
+src/httpserver/router/Router.i: src/httpserver/router/Router.cc.i
+.PHONY : src/httpserver/router/Router.i
+
+# target to preprocess a source file
+src/httpserver/router/Router.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/src/httpserver/router/Router.cc.i
+.PHONY : src/httpserver/router/Router.cc.i
+
+src/httpserver/router/Router.s: src/httpserver/router/Router.cc.s
+.PHONY : src/httpserver/router/Router.s
+
+# target to generate assembly for a file
+src/httpserver/router/Router.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/src/httpserver/router/Router.cc.s
+.PHONY : src/httpserver/router/Router.cc.s
+
+src/httpserver/session/Session.o: src/httpserver/session/Session.cc.o
+.PHONY : src/httpserver/session/Session.o
+
+# target to build an object file
+src/httpserver/session/Session.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/src/httpserver/session/Session.cc.o
+.PHONY : src/httpserver/session/Session.cc.o
+
+src/httpserver/session/Session.i: src/httpserver/session/Session.cc.i
+.PHONY : src/httpserver/session/Session.i
+
+# target to preprocess a source file
+src/httpserver/session/Session.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/src/httpserver/session/Session.cc.i
+.PHONY : src/httpserver/session/Session.cc.i
+
+src/httpserver/session/Session.s: src/httpserver/session/Session.cc.s
+.PHONY : src/httpserver/session/Session.s
+
+# target to generate assembly for a file
+src/httpserver/session/Session.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/src/httpserver/session/Session.cc.s
+.PHONY : src/httpserver/session/Session.cc.s
+
+src/httpserver/session/SessionManager.o: src/httpserver/session/SessionManager.cc.o
+.PHONY : src/httpserver/session/SessionManager.o
+
+# target to build an object file
+src/httpserver/session/SessionManager.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/src/httpserver/session/SessionManager.cc.o
+.PHONY : src/httpserver/session/SessionManager.cc.o
+
+src/httpserver/session/SessionManager.i: src/httpserver/session/SessionManager.cc.i
+.PHONY : src/httpserver/session/SessionManager.i
+
+# target to preprocess a source file
+src/httpserver/session/SessionManager.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/src/httpserver/session/SessionManager.cc.i
+.PHONY : src/httpserver/session/SessionManager.cc.i
+
+src/httpserver/session/SessionManager.s: src/httpserver/session/SessionManager.cc.s
+.PHONY : src/httpserver/session/SessionManager.s
+
+# target to generate assembly for a file
+src/httpserver/session/SessionManager.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/src/httpserver/session/SessionManager.cc.s
+.PHONY : src/httpserver/session/SessionManager.cc.s
+
+src/httpserver/session/SessionStorage.o: src/httpserver/session/SessionStorage.cc.o
+.PHONY : src/httpserver/session/SessionStorage.o
+
+# target to build an object file
+src/httpserver/session/SessionStorage.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/src/httpserver/session/SessionStorage.cc.o
+.PHONY : src/httpserver/session/SessionStorage.cc.o
+
+src/httpserver/session/SessionStorage.i: src/httpserver/session/SessionStorage.cc.i
+.PHONY : src/httpserver/session/SessionStorage.i
+
+# target to preprocess a source file
+src/httpserver/session/SessionStorage.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/src/httpserver/session/SessionStorage.cc.i
+.PHONY : src/httpserver/session/SessionStorage.cc.i
+
+src/httpserver/session/SessionStorage.s: src/httpserver/session/SessionStorage.cc.s
+.PHONY : src/httpserver/session/SessionStorage.s
+
+# target to generate assembly for a file
+src/httpserver/session/SessionStorage.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/src/httpserver/session/SessionStorage.cc.s
+.PHONY : src/httpserver/session/SessionStorage.cc.s
+
+src/httpserver/ssl/SslConfig.o: src/httpserver/ssl/SslConfig.cc.o
+.PHONY : src/httpserver/ssl/SslConfig.o
+
+# target to build an object file
+src/httpserver/ssl/SslConfig.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/src/httpserver/ssl/SslConfig.cc.o
+.PHONY : src/httpserver/ssl/SslConfig.cc.o
+
+src/httpserver/ssl/SslConfig.i: src/httpserver/ssl/SslConfig.cc.i
+.PHONY : src/httpserver/ssl/SslConfig.i
+
+# target to preprocess a source file
+src/httpserver/ssl/SslConfig.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/src/httpserver/ssl/SslConfig.cc.i
+.PHONY : src/httpserver/ssl/SslConfig.cc.i
+
+src/httpserver/ssl/SslConfig.s: src/httpserver/ssl/SslConfig.cc.s
+.PHONY : src/httpserver/ssl/SslConfig.s
+
+# target to generate assembly for a file
+src/httpserver/ssl/SslConfig.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/src/httpserver/ssl/SslConfig.cc.s
+.PHONY : src/httpserver/ssl/SslConfig.cc.s
+
+src/httpserver/ssl/SslConnection.o: src/httpserver/ssl/SslConnection.cc.o
+.PHONY : src/httpserver/ssl/SslConnection.o
+
+# target to build an object file
+src/httpserver/ssl/SslConnection.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/src/httpserver/ssl/SslConnection.cc.o
+.PHONY : src/httpserver/ssl/SslConnection.cc.o
+
+src/httpserver/ssl/SslConnection.i: src/httpserver/ssl/SslConnection.cc.i
+.PHONY : src/httpserver/ssl/SslConnection.i
+
+# target to preprocess a source file
+src/httpserver/ssl/SslConnection.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/src/httpserver/ssl/SslConnection.cc.i
+.PHONY : src/httpserver/ssl/SslConnection.cc.i
+
+src/httpserver/ssl/SslConnection.s: src/httpserver/ssl/SslConnection.cc.s
+.PHONY : src/httpserver/ssl/SslConnection.s
+
+# target to generate assembly for a file
+src/httpserver/ssl/SslConnection.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/src/httpserver/ssl/SslConnection.cc.s
+.PHONY : src/httpserver/ssl/SslConnection.cc.s
+
+src/httpserver/ssl/SslContext.o: src/httpserver/ssl/SslContext.cc.o
+.PHONY : src/httpserver/ssl/SslContext.o
+
+# target to build an object file
+src/httpserver/ssl/SslContext.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/src/httpserver/ssl/SslContext.cc.o
+.PHONY : src/httpserver/ssl/SslContext.cc.o
+
+src/httpserver/ssl/SslContext.i: src/httpserver/ssl/SslContext.cc.i
+.PHONY : src/httpserver/ssl/SslContext.i
+
+# target to preprocess a source file
+src/httpserver/ssl/SslContext.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/src/httpserver/ssl/SslContext.cc.i
+.PHONY : src/httpserver/ssl/SslContext.cc.i
+
+src/httpserver/ssl/SslContext.s: src/httpserver/ssl/SslContext.cc.s
+.PHONY : src/httpserver/ssl/SslContext.s
+
+# target to generate assembly for a file
+src/httpserver/ssl/SslContext.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/http_server.dir/build.make CMakeFiles/http_server.dir/src/httpserver/ssl/SslContext.cc.s
+.PHONY : src/httpserver/ssl/SslContext.cc.s
 
 src/muduo/Acceptor.o: src/muduo/Acceptor.cc.o
 .PHONY : src/muduo/Acceptor.o
@@ -946,6 +1210,12 @@ help:
 	@echo "... WebApps/GomokuServer/src/main.o"
 	@echo "... WebApps/GomokuServer/src/main.i"
 	@echo "... WebApps/GomokuServer/src/main.s"
+	@echo "... src/httpserver/Utils/db/DbConnection.o"
+	@echo "... src/httpserver/Utils/db/DbConnection.i"
+	@echo "... src/httpserver/Utils/db/DbConnection.s"
+	@echo "... src/httpserver/Utils/db/DbConnectionPool.o"
+	@echo "... src/httpserver/Utils/db/DbConnectionPool.i"
+	@echo "... src/httpserver/Utils/db/DbConnectionPool.s"
 	@echo "... src/httpserver/http/HttpContext.o"
 	@echo "... src/httpserver/http/HttpContext.i"
 	@echo "... src/httpserver/http/HttpContext.s"
@@ -958,6 +1228,33 @@ help:
 	@echo "... src/httpserver/http/HttpServer.o"
 	@echo "... src/httpserver/http/HttpServer.i"
 	@echo "... src/httpserver/http/HttpServer.s"
+	@echo "... src/httpserver/middleware/MiddlewareChain.o"
+	@echo "... src/httpserver/middleware/MiddlewareChain.i"
+	@echo "... src/httpserver/middleware/MiddlewareChain.s"
+	@echo "... src/httpserver/middleware/cors/CorsMiddleware.o"
+	@echo "... src/httpserver/middleware/cors/CorsMiddleware.i"
+	@echo "... src/httpserver/middleware/cors/CorsMiddleware.s"
+	@echo "... src/httpserver/router/Router.o"
+	@echo "... src/httpserver/router/Router.i"
+	@echo "... src/httpserver/router/Router.s"
+	@echo "... src/httpserver/session/Session.o"
+	@echo "... src/httpserver/session/Session.i"
+	@echo "... src/httpserver/session/Session.s"
+	@echo "... src/httpserver/session/SessionManager.o"
+	@echo "... src/httpserver/session/SessionManager.i"
+	@echo "... src/httpserver/session/SessionManager.s"
+	@echo "... src/httpserver/session/SessionStorage.o"
+	@echo "... src/httpserver/session/SessionStorage.i"
+	@echo "... src/httpserver/session/SessionStorage.s"
+	@echo "... src/httpserver/ssl/SslConfig.o"
+	@echo "... src/httpserver/ssl/SslConfig.i"
+	@echo "... src/httpserver/ssl/SslConfig.s"
+	@echo "... src/httpserver/ssl/SslConnection.o"
+	@echo "... src/httpserver/ssl/SslConnection.i"
+	@echo "... src/httpserver/ssl/SslConnection.s"
+	@echo "... src/httpserver/ssl/SslContext.o"
+	@echo "... src/httpserver/ssl/SslContext.i"
+	@echo "... src/httpserver/ssl/SslContext.s"
 	@echo "... src/muduo/Acceptor.o"
 	@echo "... src/muduo/Acceptor.i"
 	@echo "... src/muduo/Acceptor.s"

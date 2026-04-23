@@ -60,24 +60,6 @@ TcpConnection::~TcpConnection()
     LOG_INFO("TcpConnection::dtor[%s] at fd=%d state=%d\n", name_.c_str(), channel_->fd(), (int)state_);
 }
 
-/*void TcpConnection::send(Buffer* buf)
-{
-    if (state_ == kConnected)
-    {
-        if (loop_->isInLoopThread())
-        {
-            sendInLoop(buf->peek(), buf->readableBytes());
-            buf->retrieveAll(); // 清空缓冲区
-        }
-        else
-        {
-            loop_->runInLoop(
-                std::bind(&TcpConnection::sendInLoop, this, buf->peek(), buf->readableBytes()));
-            // 注意：这里没有清空 buf，因为 sendInLoop 是异步执行的
-            // 可以在 sendInLoop 中添加一个回调来清空 buf
-        }
-    }
-}*/
 
 void TcpConnection::send(const std::string& data)
 {
@@ -92,7 +74,7 @@ void TcpConnection::send(const std::string& data)
     }
 }
 
-void TcpConnection::send(const std::string &buf,size_t bytes)
+void TcpConnection::send(const std::string& buf,size_t bytes)
 {
     if (state_ == kConnected)
     {

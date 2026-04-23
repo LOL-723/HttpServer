@@ -29,7 +29,7 @@ void AiGameStartHandler::handle(const http::HttpRequest &req, http::HttpResponse
     }
 
     // 创建一个ai机器人，它就while不断地执行下棋逻辑
-    std::string reqFile("../WebApps/GomokuServer/resource/ChessGameVsAi.html");
+    std::string reqFile = server_->resourcePath("ChessGameVsAi.html");
     FileUtil fileOperater(reqFile);
     if (!fileOperater.isValid())
     {

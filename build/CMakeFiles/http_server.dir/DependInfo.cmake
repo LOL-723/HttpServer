@@ -8,10 +8,21 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/sorrow/Desktop/HttpServer/src/httpserver/Utils/db/DbConnection.cc" "CMakeFiles/http_server.dir/src/httpserver/Utils/db/DbConnection.cc.o" "gcc" "CMakeFiles/http_server.dir/src/httpserver/Utils/db/DbConnection.cc.o.d"
+  "/home/sorrow/Desktop/HttpServer/src/httpserver/Utils/db/DbConnectionPool.cc" "CMakeFiles/http_server.dir/src/httpserver/Utils/db/DbConnectionPool.cc.o" "gcc" "CMakeFiles/http_server.dir/src/httpserver/Utils/db/DbConnectionPool.cc.o.d"
   "/home/sorrow/Desktop/HttpServer/src/httpserver/http/HttpContext.cpp" "CMakeFiles/http_server.dir/src/httpserver/http/HttpContext.cpp.o" "gcc" "CMakeFiles/http_server.dir/src/httpserver/http/HttpContext.cpp.o.d"
   "/home/sorrow/Desktop/HttpServer/src/httpserver/http/HttpRequest.cpp" "CMakeFiles/http_server.dir/src/httpserver/http/HttpRequest.cpp.o" "gcc" "CMakeFiles/http_server.dir/src/httpserver/http/HttpRequest.cpp.o.d"
   "/home/sorrow/Desktop/HttpServer/src/httpserver/http/HttpResponse.cpp" "CMakeFiles/http_server.dir/src/httpserver/http/HttpResponse.cpp.o" "gcc" "CMakeFiles/http_server.dir/src/httpserver/http/HttpResponse.cpp.o.d"
   "/home/sorrow/Desktop/HttpServer/src/httpserver/http/HttpServer.cpp" "CMakeFiles/http_server.dir/src/httpserver/http/HttpServer.cpp.o" "gcc" "CMakeFiles/http_server.dir/src/httpserver/http/HttpServer.cpp.o.d"
+  "/home/sorrow/Desktop/HttpServer/src/httpserver/middleware/MiddlewareChain.cc" "CMakeFiles/http_server.dir/src/httpserver/middleware/MiddlewareChain.cc.o" "gcc" "CMakeFiles/http_server.dir/src/httpserver/middleware/MiddlewareChain.cc.o.d"
+  "/home/sorrow/Desktop/HttpServer/src/httpserver/middleware/cors/CorsMiddleware.cc" "CMakeFiles/http_server.dir/src/httpserver/middleware/cors/CorsMiddleware.cc.o" "gcc" "CMakeFiles/http_server.dir/src/httpserver/middleware/cors/CorsMiddleware.cc.o.d"
+  "/home/sorrow/Desktop/HttpServer/src/httpserver/router/Router.cc" "CMakeFiles/http_server.dir/src/httpserver/router/Router.cc.o" "gcc" "CMakeFiles/http_server.dir/src/httpserver/router/Router.cc.o.d"
+  "/home/sorrow/Desktop/HttpServer/src/httpserver/session/Session.cc" "CMakeFiles/http_server.dir/src/httpserver/session/Session.cc.o" "gcc" "CMakeFiles/http_server.dir/src/httpserver/session/Session.cc.o.d"
+  "/home/sorrow/Desktop/HttpServer/src/httpserver/session/SessionManager.cc" "CMakeFiles/http_server.dir/src/httpserver/session/SessionManager.cc.o" "gcc" "CMakeFiles/http_server.dir/src/httpserver/session/SessionManager.cc.o.d"
+  "/home/sorrow/Desktop/HttpServer/src/httpserver/session/SessionStorage.cc" "CMakeFiles/http_server.dir/src/httpserver/session/SessionStorage.cc.o" "gcc" "CMakeFiles/http_server.dir/src/httpserver/session/SessionStorage.cc.o.d"
+  "/home/sorrow/Desktop/HttpServer/src/httpserver/ssl/SslConfig.cc" "CMakeFiles/http_server.dir/src/httpserver/ssl/SslConfig.cc.o" "gcc" "CMakeFiles/http_server.dir/src/httpserver/ssl/SslConfig.cc.o.d"
+  "/home/sorrow/Desktop/HttpServer/src/httpserver/ssl/SslConnection.cc" "CMakeFiles/http_server.dir/src/httpserver/ssl/SslConnection.cc.o" "gcc" "CMakeFiles/http_server.dir/src/httpserver/ssl/SslConnection.cc.o.d"
+  "/home/sorrow/Desktop/HttpServer/src/httpserver/ssl/SslContext.cc" "CMakeFiles/http_server.dir/src/httpserver/ssl/SslContext.cc.o" "gcc" "CMakeFiles/http_server.dir/src/httpserver/ssl/SslContext.cc.o.d"
   "/home/sorrow/Desktop/HttpServer/src/muduo/Acceptor.cc" "CMakeFiles/http_server.dir/src/muduo/Acceptor.cc.o" "gcc" "CMakeFiles/http_server.dir/src/muduo/Acceptor.cc.o.d"
   "/home/sorrow/Desktop/HttpServer/src/muduo/Buffer.cc" "CMakeFiles/http_server.dir/src/muduo/Buffer.cc.o" "gcc" "CMakeFiles/http_server.dir/src/muduo/Buffer.cc.o.d"
   "/home/sorrow/Desktop/HttpServer/src/muduo/Channel.cc" "CMakeFiles/http_server.dir/src/muduo/Channel.cc.o" "gcc" "CMakeFiles/http_server.dir/src/muduo/Channel.cc.o.d"

@@ -1,9 +1,32 @@
 #include "../../../include/httpserver/http/HttpRequest.h"
 
+#include <algorithm>
 #include <cassert>
+#include <cctype>
 
 namespace http
 {
+    namespace
+    {
+        std::string normalizeHeaderKey(const char* start, const char* end)
+        {
+            std::string key(start, end);
+            std::transform(key.begin(), key.end(), key.begin(), [](unsigned char ch) {
+                return static_cast<char>(std::tolower(ch));
+            });
+            return key;
+        }
+
+        std::string normalizeHeaderKey(const std::string& key)
+        {
+            std::string normalized = key;
+            std::transform(normalized.begin(), normalized.end(), normalized.begin(), [](unsigned char ch) {
+                return static_cast<char>(std::tolower(ch));
+            });
+            return normalized;
+        }
+    }
+
 
     void HttpRequest::setReceiveTime(muduo::Timestamp t)
     {
@@ -107,7 +130,7 @@ namespace http
     */
 
     void HttpRequest::addHeader(const char* start, const char* colon, const char* end){
-        std::string key(start,colon);
+        std::string key = normalizeHeaderKey(start, colon);
         colon++;
         while(colon<end && isspace(*colon)){
             ++colon;
@@ -122,7 +145,7 @@ namespace http
     std::string HttpRequest::getHeader(const std::string &field) const
     {
         std::string result;
-        auto it = headers_.find(field);
+        auto it = headers_.find(normalizeHeaderKey(field));
         if (it != headers_.end())
         {
             result = it->second;
