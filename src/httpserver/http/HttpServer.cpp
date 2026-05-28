@@ -208,6 +208,9 @@ void HttpServer::onRequest(const muduo::TcpConnectionPtr&conn,const HttpRequest 
 
     // 根据请求报文信息来封装响应报文对象
     httpCallback_(req,&response); // 执行onHttpCallback函数
+    if (close) {
+        response.setCloseConnection(true);
+    }
     // 可以给response设置一个成员，判断是否请求的是文件，如果是文件设置为true，并且存在文件位置在这里send出去。
     muduo::Buffer buf;
     response.appendToBuffer(&buf);

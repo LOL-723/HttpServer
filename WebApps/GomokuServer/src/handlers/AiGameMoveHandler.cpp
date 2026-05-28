@@ -25,13 +25,16 @@ void AiGameMoveHandler::handle(const http::HttpRequest &req, http::HttpResponse 
         int x = request["x"];
         int y = request["y"];
 
-        // 获取或创建游戏实例
-        if (server_->aiGames_.find(userId) == server_->aiGames_.end())
+        std::shared_ptr<AiGame> game;
         {
             std::lock_guard<std::mutex> lock(server_->mutexForAiGames_);
-            server_->aiGames_[userId] = std::make_shared<AiGame>(userId);
+            auto it = server_->aiGames_.find(userId);
+            if (it == server_->aiGames_.end())
+            {
+                it = server_->aiGames_.emplace(userId, std::make_shared<AiGame>(userId)).first;
+            }
+            game = it->second;
         }
-        auto &game = server_->aiGames_[userId];
 
         // 处理人类玩家移动
         if (!game->humanMove(x, y))

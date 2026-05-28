@@ -36,15 +36,23 @@ void LoginHandler::handle(const http::HttpRequest &req, http::HttpResponse *resp
             session->setValue("userId", std::to_string(userId));
             session->setValue("username", username);
             session->setValue("isLoggedIn", "true");
-            if (server_->onlineUsers_.find(userId) == server_->onlineUsers_.end() || server_->onlineUsers_[userId] == false)
+            bool canLogin = false;
+            size_t onlineCount = 0;
             {
+                std::lock_guard<std::mutex> lock(server_->mutexForOnlineUsers_);
+                auto it = server_->onlineUsers_.find(userId);
+                canLogin = it == server_->onlineUsers_.end() || it->second == false;
+                if (canLogin)
                 {
-                    std::lock_guard<std::mutex> lock(server_->mutexForOnlineUsers_);
                     server_->onlineUsers_[userId] = true;
+                    onlineCount = server_->onlineUsers_.size();
                 }
-                
+            }
+
+            if (canLogin)
+            {
                 // 更新历史最高在线人数
-                server_->updateMaxOnline(server_->onlineUsers_.size());
+                server_->updateMaxOnline(static_cast<int>(onlineCount));
                 // 用户存在登录成功
                 // 封装json 数据。
                 json successResp;
@@ -124,4 +132,3 @@ int LoginHandler::queryUserId(const std::string &username, const std::string &pa
     // 如果查询结果为空，则返回-1
     return -1;
 }
-

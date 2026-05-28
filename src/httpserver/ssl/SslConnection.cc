@@ -125,15 +125,26 @@ void SslConnection::send(const void* data, size_t len)
         LOG_ERROR("Cannot send data before SSL handshake is complete");
         return;
     }
-    
-    int writen=SSL_write(ssl_, data, len);
-    if(writen<=0){
-        int err=SSL_get_error(ssl_, writen);
-        LOG_ERROR("SSL_write failed: %s", ERR_error_string(err, nullptr));
-        return;
-    }
 
-    flushWriteBio();
+    const char* current = static_cast<const char*>(data);
+    size_t remaining = len;
+    while (remaining > 0) {
+        int writen = SSL_write(ssl_, current, remaining);
+        if (writen <= 0) {
+            int err = SSL_get_error(ssl_, writen);
+            if (err == SSL_ERROR_WANT_READ || err == SSL_ERROR_WANT_WRITE) {
+                flushWriteBio();
+                continue;
+            }
+            unsigned long errCode = ERR_get_error();
+            LOG_ERROR("SSL_write failed: %s", ERR_error_string(errCode, nullptr));
+            return;
+        }
+
+        current += writen;
+        remaining -= writen;
+        flushWriteBio();
+    }
 }
 
 /*握手阶段

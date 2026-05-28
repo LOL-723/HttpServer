@@ -40,7 +40,7 @@ public:
     }
 
      // 获取当前棋盘状态
-    const std::vector<std::vector<std::string>>& getBoard() const 
+    std::vector<std::vector<std::string>> getBoard() const
     { 
         std::lock_guard<std::mutex> lock(mutex_);
         return board_; 
