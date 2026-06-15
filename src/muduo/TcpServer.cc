@@ -71,7 +71,7 @@ void TcpServer::newConnection(int sockfd,const InetAddress &peerAddr){
     }
 
     InetAddress localaddr(localsock);
-    TcpConnectionPtr conn(new TcpConnection(loop_,name_,sockfd,localaddr,peerAddr));
+    TcpConnectionPtr conn(new TcpConnection(ioloop,connName,sockfd,localaddr,peerAddr));
     connections_[connName]=conn;
 
     // 下面的回调都是用户设置给TcpServer => TcpConnection的，至于Channel绑定的则是TcpConnection设置的四个，handleRead,handleWrite... 这下面的回调用于handlexxx函数中

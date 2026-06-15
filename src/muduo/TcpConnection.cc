@@ -210,7 +210,7 @@ void TcpConnection::handleRead(Timestamp receivetime){
 void TcpConnection::handleWrite(){
     if(channel_->isWriting()){
         int savedErrno=0;
-        ssize_t n=outputBuffer_.readFd(channel_->fd(),&savedErrno);
+        ssize_t n=outputBuffer_.writeFd(channel_->fd(),&savedErrno);
         if(n>0){
             outputBuffer_.retrieve(n);//从缓冲区读取reable区域的数据移动readindex下标
             if(outputBuffer_.readableBytes()==0){

@@ -1,5 +1,0 @@
-/home/sorrow/Desktop/HttpServer/build/CMakeFiles/http_server.dir
-/home/sorrow/Desktop/HttpServer/build/CMakeFiles/gomoku_server.dir
-/home/sorrow/Desktop/HttpServer/build/CMakeFiles/simple_server.dir
-/home/sorrow/Desktop/HttpServer/build/CMakeFiles/edit_cache.dir
-/home/sorrow/Desktop/HttpServer/build/CMakeFiles/rebuild_cache.dir
