@@ -76,7 +76,6 @@ void EventLoop::loop(){
     looping_=true;
     quit_=false;
 
-    LOG_INFO("EventLoop %p start looping\n", this);
     ////////////////////////////////IMPORTANT/////////////////////////////
     while(!quit_){
         activeChannels_.clear();
@@ -94,7 +93,6 @@ void EventLoop::loop(){
         doPendingFunctors();
     }
     ////////////////////////////////IMPORTANT/////////////////////////////
-    LOG_INFO("EventLoop %p stop looping.\n", this);
     looping_ = false;
 }
 

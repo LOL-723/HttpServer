@@ -16,9 +16,9 @@ void Logger::setLogLevel(int level)
     logLevel_ = level;
 }
 
-void Logger::log(const std::string& msg)
+void Logger::log(int level, const std::string& msg)
 {
-    switch (logLevel_)
+    switch (level)
     {
         case INFO:
             printf("[INFO] %s\n", msg.c_str());
@@ -56,7 +56,7 @@ LogStream::~LogStream()
     // 只有当日志级别 >= 全局级别时才输出
     if (level_ >= currentLevel)
     {
-        Logger::instance().log(stream_.str());
+        Logger::instance().log(level_, stream_.str());
     }
 
     if (shouldExit_)

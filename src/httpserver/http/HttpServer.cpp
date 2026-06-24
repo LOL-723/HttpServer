@@ -10,6 +10,17 @@ namespace http
 {
 namespace
 {
+struct ConnectionContext
+{
+    HttpContext http;
+    std::shared_ptr<ssl::SslConnection> ssl;
+};
+
+ConnectionContext* getConnectionContext(const muduo::TcpConnectionPtr& conn)
+{
+    return std::any_cast<ConnectionContext>(conn->getMutableContext());
+}
+
 std::string toLowerCopy(const std::string& value)
 {
     std::string lowered = value;
@@ -109,31 +120,27 @@ void HttpServer::setSslConfig(const ssl::SslConfig &config){
 
 std::shared_ptr<ssl::SslConnection> HttpServer::findSslConnection(const muduo::TcpConnectionPtr& conn)
 {
-    std::lock_guard<std::mutex> lock(sslConnsMutex_);
-    auto it = sslConns_.find(conn);
-    if (it == sslConns_.end()) {
+    auto* context = getConnectionContext(conn);
+    if (!context) {
         return nullptr;
     }
-    return it->second;
+    return context->ssl;
 }
 
 void HttpServer::onConnection(const muduo::TcpConnectionPtr&conn){
     if(conn->connected()){
-        conn->setContext(std::any(HttpContext()));
+        ConnectionContext context;
         if(useSSL_){
-            auto sslconn = std::make_shared<ssl::SslConnection>(conn, sslCtx_.get());
-            sslconn->setMessageCallback(std::bind(&HttpServer::onMessage,this,std::placeholders::_1,std::placeholders::_2,std::placeholders::_3));
-            {
-                std::lock_guard<std::mutex> lock(sslConnsMutex_);
-                sslConns_[conn] = sslconn;
-            }
-            sslconn->startHandshake();
+            context.ssl = std::make_shared<ssl::SslConnection>(conn, sslCtx_.get());
         }
-        
+        conn->setContext(context);
+        if (context.ssl) {
+            context.ssl->startHandshake();
+        }
     }else{
-        if(useSSL_){
-            std::lock_guard<std::mutex> lock(sslConnsMutex_);
-            sslConns_.erase(conn);
+        auto* context = getConnectionContext(conn);
+        if (context) {
+            context->ssl.reset();
         }
     }
 }
@@ -142,18 +149,24 @@ void HttpServer::onMessage(const muduo::TcpConnectionPtr &conn,muduo::Buffer *bu
     try
     {
         // 这层判断只是代表是否支持ssl
+        auto* connectionContext = getConnectionContext(conn);
+        if (!connectionContext)
+        {
+            LOG_ERROR ("Bad connection context type");
+            conn->shutdown();
+            return;
+        }
         if(useSSL_){
-            LOG_INFO ("onMessage useSSL_ is true") ;
-            auto sslConn = findSslConnection(conn);
+            LOG_DEBUG ("onMessage useSSL_ is true") ;
+            auto sslConn = connectionContext->ssl;
             if(sslConn){
-                LOG_INFO ("onMessage sslConns_ is not empty");
+                LOG_DEBUG ("onMessage ssl connection is ready");
                 muduo::Buffer* decryptedBuf = sslConn->getDecryptedBuffer();
                 if (buf != decryptedBuf) {
                     // 2. SSL连接处理数据
                     sslConn->onRead(conn,buf, receiveTime);
                     // 3. 如果 SSL 握手还未完成，直接返回
                     if(!sslConn->isHandshakeCompleted()){
-                        LOG_INFO ("onMessage sslConns_ is not empty");
                         return;
                     }
 
@@ -163,11 +176,10 @@ void HttpServer::onMessage(const muduo::TcpConnectionPtr &conn,muduo::Buffer *bu
                     }
                     // 5. 使用解密后的数据进行HTTP 处理
                     buf=decryptedBuf;// 将 buf 指向解密后的数据
-                    LOG_INFO ("onMessage decryptedBuf is not empty");
                 }
             }
         }
-        HttpContext *context = std::any_cast<HttpContext>(conn->getMutableContext()); 
+        HttpContext *context = &connectionContext->http; 
         if (!context)
         {
             LOG_ERROR ("Bad context type");
@@ -178,7 +190,7 @@ void HttpServer::onMessage(const muduo::TcpConnectionPtr &conn,muduo::Buffer *bu
         {
             // 如果解析http报文过程中出错
             LOG_ERROR("Failed to parse HTTP request");
-            conn->send("HTTP/1.1 400 Bad Request\r\n\r\n");
+            sendResponseData(conn, "HTTP/1.1 400 Bad Request\r\n\r\n");
             conn->shutdown();
             return;
         }
@@ -192,7 +204,7 @@ void HttpServer::onMessage(const muduo::TcpConnectionPtr &conn,muduo::Buffer *bu
     catch (const std::exception &e){
         // 捕获异常，返回错误信息
         LOG_ERROR ("Exception in onMessage: %s",e.what());
-        conn->send("HTTP/1.1 400 Bad Request\r\n\r\n");
+        sendResponseData(conn, "HTTP/1.1 400 Bad Request\r\n\r\n");
         conn->shutdown();
     }
 }
@@ -216,24 +228,33 @@ void HttpServer::onRequest(const muduo::TcpConnectionPtr&conn,const HttpRequest 
     response.appendToBuffer(&buf);
     std::string responseData = buf.retrieveAllAsString();
     // 打印完整的响应内容用于调试
-    LOG_INFO ("Sending response:\n%s", responseData.c_str());
-    if (useSSL_) {
-        auto sslConn = findSslConnection(conn);
-        if (sslConn && sslConn->isHandshakeCompleted()) {
-            sslConn->send(responseData.data(), responseData.size());
-        } else {
-            LOG_ERROR("SSL connection is not ready for sending response");
-            conn->shutdown();
-            return;
-        }
-    } else {
-        conn->send(responseData);
-    }
+
+
+    /*LOG_INFO ("Sending response:\n%s", responseData.c_str());*/
+
+
+    sendResponseData(conn, responseData);
     // 如果是短连接的话，返回响应报文后就断开连接
     if (response.closeConnection())
     {
         conn->shutdown();
     }
+}
+
+void HttpServer::sendResponseData(const muduo::TcpConnectionPtr& conn, const std::string& responseData)
+{
+    if (useSSL_) {
+        auto sslConn = findSslConnection(conn);
+        if (sslConn && sslConn->isHandshakeCompleted()) {
+            sslConn->send(responseData.data(), responseData.size());
+            return;
+        }
+        LOG_ERROR("SSL connection is not ready for sending response");
+        conn->shutdown();
+        return;
+    }
+
+    conn->send(responseData);
 }
 
 // 执行请求对应的路由处理函数

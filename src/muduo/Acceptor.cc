@@ -51,14 +51,28 @@ void Acceptor::listen(){
 
 // listenfd有事件发生了，就是有新用户连接了
 void Acceptor::handleRead(){
-    InetAddress perraddr;
-    int connfd=acceptSocket_.accept(&perraddr);
-    if(connfd>=0){
-        if(NewConnectionCallBack_){
-            NewConnectionCallBack_(connfd,perraddr);
+    while (true) {
+        InetAddress perraddr;
+        int connfd=acceptSocket_.accept(&perraddr);
+        if(connfd>=0){
+            if(NewConnectionCallBack_){
+                NewConnectionCallBack_(connfd,perraddr);
+            }else{
+                ::close(connfd);
+            }
+            continue;
         }
-    }else{
-        ::close(connfd);
+
+        int savedErrno = errno;
+        if (savedErrno == EAGAIN || savedErrno == EWOULDBLOCK) {
+            break;
+        }
+        if (savedErrno == EINTR) {
+            continue;
+        }
+
+        LOG_ERROR("Acceptor::handleRead accept error:%d\n", savedErrno);
+        break;
     }
 }
 /*

@@ -17,7 +17,7 @@ const char Buffer::kCRLF[] = "\r\n";
  * 方式追加入buffer_。既考虑了避免系统调用带来开销，又不影响数据的接收。
  **/
 
- ssize_t Buffer::readFd(int fd,int *saveErrno){
+ssize_t Buffer::readFd(int fd,int *saveErrno){
     // 栈额外空间，用于从套接字往出读时，当buffer_暂时不够用时暂存数据，待buffer_重新分配足够空间后，在把数据交换给buffer_。
     char extrabuf[65536]={0};// 栈上内存空间 65536/1024 = 64KB
 
@@ -56,7 +56,7 @@ const char Buffer::kCRLF[] = "\r\n";
     }
 
     return n;
- }
+}
 
 // inputBuffer_.readFd表示将对端数据读到inputBuffer_中，移动writerIndex_指针
 // outputBuffer_.writeFd标示将数据写入到outputBuffer_中，从readerIndex_开始，可以写readableBytes()个字节

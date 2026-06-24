@@ -6,10 +6,7 @@
 
 #include <functional>
 #include <iostream>
-#include <map>
 #include <memory>
-#include <mutex>
-#include <unordered_map>
 
 #include <muduo/TcpServer.h>
 #include <muduo/EventLoop.h>
@@ -128,6 +125,7 @@ private:
                    muduo::Buffer* buf,
                    muduo::Timestamp receiveTime);
     void onRequest(const muduo::TcpConnectionPtr&, const HttpRequest&);
+    void sendResponseData(const muduo::TcpConnectionPtr& conn, const std::string& responseData);
 
     void handleRequest(const HttpRequest& req, HttpResponse* resp);
     
@@ -141,9 +139,6 @@ private:
     middleware::MiddlewareChain                  middlewareChain_; // 中间件链
     std::unique_ptr<ssl::SslContext>             sslCtx_; // SSL 上下文
     bool                                         useSSL_; // 是否使用 SSL   
-    // TcpConnectionPtr -> SslConnectionPtr 
-    std::mutex                                   sslConnsMutex_;
-    std::map<muduo::TcpConnectionPtr, std::shared_ptr<ssl::SslConnection>> sslConns_;
 }; 
 
 } // namespace http

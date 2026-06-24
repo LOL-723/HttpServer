@@ -1,6 +1,7 @@
 #include "../../../include/httpserver/ssl/SslConnection.h"
 #include <muduo/Logger.h>
 #include <openssl/err.h>
+#include <algorithm>
 #include <string>
 
 namespace ssl
@@ -23,7 +24,6 @@ SslConnection::SslConnection(const TcpConnectionPtr& conn, SslContext* ctx)
     , state_(SSLState::HANDSHAKING)
     , readBio_(nullptr)
     , writeBio_(nullptr)
-    , messageCallback_(nullptr)
 {
     // 创建 SSL 对象
     ssl_=SSL_new(ctx->getNativeHandle());
@@ -44,8 +44,10 @@ SslConnection::SslConnection(const TcpConnectionPtr& conn, SslContext* ctx)
     SSL_set_bio(ssl_, readBio_, writeBio_);
     SSL_set_accept_state(ssl_);
     // 设置 SSL 选项
-    SSL_set_mode(ssl_, SSL_MODE_ACCEPT_MOVING_WRITE_BUFFER);
-    SSL_set_mode(ssl_,SSL_MODE_ENABLE_PARTIAL_WRITE);
+    SSL_set_mode(ssl_,
+                 SSL_MODE_ACCEPT_MOVING_WRITE_BUFFER |
+                 SSL_MODE_ENABLE_PARTIAL_WRITE |
+                 SSL_MODE_RELEASE_BUFFERS);
 }
 
 SslConnection::~SslConnection() 
@@ -68,29 +70,34 @@ void SslConnection::flushWriteBio()
         return;
     }
 
-    char buf[4096];
-    int pending = 0;
+    char buf[16 * 1024];
+    int pending = BIO_pending(writeBio_);
+    if (pending <= 0) {
+        return;
+    }
+
+    std::string encrypted;
+    encrypted.reserve(static_cast<size_t>(pending));
     while ((pending = BIO_pending(writeBio_)) > 0) {
         int bytes = BIO_read(writeBio_, buf, std::min(pending, static_cast<int>(sizeof(buf))));
         if (bytes <= 0) {
             break;
         }
-        conn_->send(std::string(buf, bytes));
+        encrypted.append(buf, static_cast<size_t>(bytes));
+    }
+
+    if (!encrypted.empty()) {
+        conn_->send(encrypted);
     }
 }
 
-void SslConnection::drainApplicationData(const TcpConnectionPtr& conn, muduo::Timestamp time)
+void SslConnection::drainApplicationData()
 {
     char decryptedData[4096];
     int ret = 0;
 
-    decryptedBuffer_.retrieveAll();
     while ((ret = SSL_read(ssl_, decryptedData, sizeof(decryptedData))) > 0) {
         decryptedBuffer_.append(decryptedData, ret);
-    }
-
-    if (decryptedBuffer_.readableBytes() > 0 && messageCallback_) {
-        messageCallback_(conn, &decryptedBuffer_, time);
     }
 
     int err = SSL_get_error(ssl_, ret);
@@ -114,9 +121,9 @@ void SslConnection::drainApplicationData(const TcpConnectionPtr& conn, muduo::Ti
 *                ↓
 *        decryptedData（明文）
 *                ↓
-*        muduo::Buffer
+*        decryptedBuffer_
 *                ↓
-*        messageCallback（HTTP/RPC等）
+*        返回 HttpServer::onMessage，由 HTTP 层统一解析
 */
 //发送数据
 void SslConnection::send(const void* data, size_t len) 
@@ -176,9 +183,11 @@ BIO_write（喂给SSL）
         ↓
 SSL_read（解密）
         ↓
-HTTP 明文
+HTTP 明文追加到 decryptedBuffer_
         ↓
-messageCallback（进入业务层）*/
+onRead() 返回
+        ↓
+HttpServer::onMessage 使用 decryptedBuffer_ 解析 HTTP*/
 
 //读取数据
 void SslConnection::onRead(const TcpConnectionPtr& conn, BufferPtr buf, 
@@ -193,7 +202,7 @@ void SslConnection::onRead(const TcpConnectionPtr& conn, BufferPtr buf,
         //完成握手
         handleHandshake();
         if (state_ == SSLState::ESTABLISHED) {
-            drainApplicationData(conn, time);
+            drainApplicationData();
         }
         return;
     }else if(state_==SSLState::ESTABLISHED){
@@ -202,7 +211,7 @@ void SslConnection::onRead(const TcpConnectionPtr& conn, BufferPtr buf,
         if(written>0){
             buf->retrieve(written);
         }
-        drainApplicationData(conn, time);
+        drainApplicationData();
     }
 }
 
@@ -213,14 +222,7 @@ void SslConnection::handleHandshake()
     
     if (ret == 1) {
         state_ = SSLState::ESTABLISHED;
-        LOG_INFO("SSL handshake completed successfully");
-        LOG_INFO("Using cipher: %s", SSL_get_cipher(ssl_));
-        LOG_INFO("Protocol version: %s", SSL_get_version(ssl_));
-        
-        // 握手完成后，确保设置了正确的回调
-        if (!messageCallback_) {
-            LOG_WARN("No message callback set after SSL handshake");
-        }
+        LOG_DEBUG("SSL handshake completed successfully");
         return;
     }
     

@@ -170,7 +170,6 @@ void TcpConnection::shutdownInLoop(){
 
 // 连接建立
 void TcpConnection::connectEstablished(){
-    LOG_INFO("=== connectEstablished called for fd=%d ===", channel_->fd());
     setState(kConnected);
     channel_->tie(shared_from_this());
     channel_->enableReading();// 向poller注册channel的EPOLLIN读事件
@@ -193,7 +192,7 @@ void TcpConnection::handleRead(Timestamp receivetime){
     int saveErrno=0;
     ssize_t n=inputBuffer_.readFd(channel_->fd(),&saveErrno);
     if(n>0){
-        // 已建立连接的用户有可读事件发生了 调用用户传入的回调操作onMessage shared_from_this就是获取了TcpConnection的智能指针
+        // 已建立连接的用户有可读事件发生了 调用用户传入的回调操作onMessage(HttpServer中) shared_from_this就是获取了TcpConnection的智能指针
         messageCallback_(shared_from_this(),&inputBuffer_,receivetime);
     }else {
         if(n==0){// 客户端断开
@@ -253,6 +252,10 @@ void TcpConnection::handleError(){
         err=errno;
     }else{
         err=optval;
+    }
+    if (err == ECONNRESET) {
+        LOG_DEBUG("TcpConnection::handleError name:%s - SO_ERROR:%d\n", name_.c_str(), err);
+        return;
     }
     LOG_ERROR("TcpConnection::handleError name:%s - SO_ERROR:%d\n", name_.c_str(), err);
 }

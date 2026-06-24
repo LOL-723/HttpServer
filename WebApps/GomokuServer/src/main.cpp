@@ -41,7 +41,7 @@ int main(int argc, char* argv[])
     sslConfig.setCertificateFile((projectRoot / "certs/server.crt").string());
     sslConfig.setPrivateKeyFile((projectRoot / "certs/server.key").string());
     server.setSslConfig(sslConfig);
-    server.setThreadNum(4);
+    server.setThreadNum(8);
     std::cout << "Gomoku HTTPS server listening on https://localhost:" << port << std::endl;
     server.start();
   } catch (const std::exception& e) {

@@ -12,11 +12,11 @@ namespace muduo
 
 enum LogLevel
 {
+    DEBUG,
     INFO,
+    WARN,
     ERROR,
     FATAL,
-    DEBUG,
-    WARN,
 };
 
 class Logger : noncopyable
@@ -25,11 +25,12 @@ public:
     static Logger& instance();   
 
     void setLogLevel(int level); 
-    void log(const std::string& msg); 
+    void log(int level, const std::string& msg); 
     int getLogLevel() const { return logLevel_; }
+    bool enabled(int level) const { return level >= logLevel_; }
 
 private:
-    int logLevel_;
+    int logLevel_ = INFO;
 };
 
 // ================= LogStream =================
@@ -74,20 +75,20 @@ inline std::string formatLog(const std::string& msg)
 // ================= 宏 =================
 
 #define LOG_INFO(...) \
-    muduo::LogStream(muduo::INFO) << muduo::formatLog(__VA_ARGS__)
+    do { if (muduo::Logger::instance().enabled(muduo::INFO)) muduo::LogStream(muduo::INFO) << muduo::formatLog(__VA_ARGS__); } while (0)
 
 #define LOG_ERROR(...) \
-    muduo::LogStream(muduo::ERROR) << muduo::formatLog(__VA_ARGS__)
+    do { if (muduo::Logger::instance().enabled(muduo::ERROR)) muduo::LogStream(muduo::ERROR) << muduo::formatLog(__VA_ARGS__); } while (0)
 
 #define LOG_WARN(...) \
-    muduo::LogStream(muduo::WARN) << muduo::formatLog(__VA_ARGS__)
+    do { if (muduo::Logger::instance().enabled(muduo::WARN)) muduo::LogStream(muduo::WARN) << muduo::formatLog(__VA_ARGS__); } while (0)
 
 #define LOG_FATAL(...) \
     muduo::LogStream(muduo::FATAL, true) << muduo::formatLog(__VA_ARGS__)
 
 #ifdef MUDEBUG
 #define LOG_DEBUG(...) \
-    muduo::LogStream(muduo::DEBUG) << muduo::formatLog(__VA_ARGS__)
+    do { if (muduo::Logger::instance().enabled(muduo::DEBUG)) muduo::LogStream(muduo::DEBUG) << muduo::formatLog(__VA_ARGS__); } while (0)
 #else
 #define LOG_DEBUG(...) do {} while(0)
 #endif
