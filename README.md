@@ -16,15 +16,20 @@ wrk -t8 -c5000 -d30s --latency http://localhost:8080/
 wrk -t8 -c8000 -d30s --latency http://localhost:8080/
 wrk -t8 -c10000 -d30s --latency http://localhost:8080/
 wrk -t4 -c100 -d30s --latency https://localhost:8443/
+wrk -t4 -c300 -d30s --latency https://localhost:8443/
+wrk -t4 -c500 -d30s --latency https://localhost:8443/
 
 压测结果
 并发连接数	线程数	   QPS	     平均延迟       P50	        P90	        P99	        Max	    Timeout  吞吐量
-100	        4	    8657.44	   11.67ms	    11.14ms	    16.12ms	    27.40ms	    103.36ms	0	  77.43MB/s
-2000	    8	    8399.04	   235.39ms	    237.84ms	271.19ms	300.80ms	576.76ms	0	  75.12MB/s
-5000	    8	    8442.68	   572.57ms	    586.67ms	637.99ms	716.53ms	1.32s	    0	  75.51MB/s
-8000	    8	    8161.36	   942.35ms	    966.47ms	1.07s	    1.15s	    2.00s	    4	  72.99MB/s(出现极少量timeout)
-10000	    8	    8001.96	   1.18s	    1.21s	    1.34s	    1.45s	    2.00s	    827	  71.57MB/S(timeout大量增加)
-100         4       6045.20    13.96ms      18.78ms     25.53ms     30.50ms     198.15ms    0     65.07MS/S
+100	        4	    9157.44	   11.67ms	    11.14ms	    16.12ms	    27.40ms	    103.36ms	0	  77.43MB/s
+2000	    8	    8699.04	   235.39ms	    237.84ms	271.19ms	300.80ms	576.76ms	0	  75.12MB/s
+5000	    8	    8842.68	   572.57ms	    586.67ms	637.99ms	716.53ms	1.32s	    0	  75.51MB/s
+8000	    8	    8461.36	   942.35ms	    966.47ms	1.07s	    1.15s	    2.00s	    4	  72.99MB/s(出现极少量timeout)
+10000	    8	    8201.96	   1.18s	    1.21s	    1.34s	    1.45s	    2.00s	    782	  71.57MB/S(timeout大量增加)
+
+100	        4	    6422.22	   16.38ms	    14.37ms	    23.31ms	    45.87ms	    433.38ms	0	  57.44MB/s
+300	        4	    5720.88	   58.08ms	    48.25ms	    63.25ms	    408.49ms	1.29s	    0	  51.16MB/s
+500	        4	    5563.41	   103.53ms	    81.35ms	    94.83ms	    900.02ms	1.97s	    15	  49.76MB/s
 
 ### 启动命令：
 
