@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>卡码五子棋</title>
+    <title>Srw五子棋</title>
     <style>
         /* 全局样式 */
         body {
@@ -144,7 +144,7 @@
 
 <body>
     <!-- 标题 -->
-    <h1>卡码五子棋</h1>
+    <h1>Srw五子棋</h1>
 
     <!-- 游戏容器 -->
     <div class="game-container">
@@ -278,31 +278,33 @@
                     isThinking = false; // 重置思考状态
                     hideThinkingMessage(); // 隐藏思考提示
 
-                    // 处理游戏结果
-                    if (data.winner !== 'none') {
-                        isGameOver = true; // 设置游戏结束标志
-                        hideThinkingMessage(); // 隐藏思考提示
-                        if (data.winner !== 'human') {
-                            const aiMove = data.last_move;
-                            const aiCell = document.querySelector(
-                                `[data-row="${aiMove.x}"][data-col="${aiMove.y}"]`
-                            );
-                            aiCell.classList.add('white'); // 添加白色棋子类
-                            gameState.boardState[aiMove.x][aiMove.y] = 'white'; // 更新游戏状态
-                            gameState.currentPlayer = 'black'; // 切换回人类玩家
-                        }
-                        setTimeout(() => {
-                            alert(data.winner === 'human' ? '恭喜你，获胜了！' : 'AI获胜！');
-                            displayWinner(data.winner); // 显示获胜方
-                            disableBoard(); // 禁用棋盘
-                            return; // 确保在胜利时直接返回，不执行后续逻辑
-                        }, 100);
-                    }
-
                     if (data.status === 'error') {
                         // 如果服务器返回错误，回滚前端的改动
                         alert(data.message);
                         return;
+                    }
+
+                    // 处理游戏结果
+                    if (data.winner && data.winner !== 'none') {
+                        isGameOver = true; // 设置游戏结束标志
+                        hideThinkingMessage(); // 隐藏思考提示
+                        if (data.winner !== 'human' && data.last_move) {
+                            const aiMove = data.last_move;
+                            const aiCell = document.querySelector(
+                                `[data-row="${aiMove.x}"][data-col="${aiMove.y}"]`
+                            );
+                            if (aiCell) {
+                                aiCell.classList.add('white'); // 添加白色棋子类
+                                gameState.boardState[aiMove.x][aiMove.y] = 'white'; // 更新游戏状态
+                            }
+                            gameState.currentPlayer = 'black'; // 切换回人类玩家
+                        }
+                        setTimeout(() => {
+                            alert(getWinnerMessage(data.winner));
+                            displayWinner(data.winner); // 显示获胜方
+                            disableBoard(); // 禁用棋盘
+                        }, 100);
+                        return; // 确保在胜利时直接返回，不执行后续逻辑
                     }
 
                     // 显示 AI 的落子
@@ -326,9 +328,22 @@
         }
 
         // 显示获胜方
+        function getWinnerMessage(winner) {
+            if (winner === 'human') {
+                return '恭喜你，获胜了！';
+            }
+            if (winner === 'ai') {
+                return 'AI获胜！';
+            }
+            if (winner === 'draw') {
+                return '平局！';
+            }
+            return '游戏结束！';
+        }
+
         function displayWinner(winner) {
             const winnerDisplay = document.getElementById('winner-display');
-            winnerDisplay.textContent = winner === 'human' ? '恭喜你，获胜了！' : 'AI获胜！';
+            winnerDisplay.textContent = getWinnerMessage(winner);
             winnerDisplay.style.display = 'block'; // 显示获胜信息
         }
 
