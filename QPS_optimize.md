@@ -419,3 +419,26 @@ HTTPS smoke test 已验证：
 5. 清理 muduo 事件循环、epoll、连接错误中的高频 INFO 日志。
 
 整体效果是 HTTPS 请求路径更短、锁更少、日志更少、TLS 发送更集中，因此 HTTPS QPS 从原先约 `2100` 提升到 README 当前记录的 `6400` 附近。
+
+### 同时间前端优化(已完成)
+
+Q:当前在对战AI时，当玩家赢的时候，会先显示：AI 对战请求失败，请重试。点击确定后才会正常显示：恭喜你，获胜了
+
+A:问题位置：[ChessGameVsAi.html (line 281)]
+当前逻辑是：
+玩家落子后请求 /aiBot/move
+后端发现玩家赢了，返回：status: "ok"
+winner: "human"
+没有 last_move
+
+前端进入 if (data.winner !== 'none')
+里面用了 setTimeout(... alert('恭喜你，获胜了！') ...)
+但是这个分支没有真正 return
+代码继续往下执行到：const aiMove = data.last_move;
+因为玩家胜利时没有 AI 落子，data.last_move 是 undefined
+
+JS 抛错，被 .catch() 捕获，于是先弹：AI 对战请求失败，请重试。
+
+用户点确定后，前面 setTimeout 里的胜利提示才继续弹出。
+推荐改法：
+在 [ChessGameVsAi.html (line 282)]的胜负处理分支中，处理完 data.winner !== 'none' 后，直接 return; 退出当前 .then(data => { ... })。
